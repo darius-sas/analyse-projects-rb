@@ -2,7 +2,7 @@ require 'daru'
 require 'concurrent'
 
 
-ARCAN_JAR = "/home/fenn/git/arcan-2/arcan-cli/target/Arcan2-cli-2.0.8-beta-jar-with-dependencies.jar"
+ARCAN_JAR = "/home/p284098/jars/Arcan2-cli-2.0.8-beta-jar-with-dependencies.jar"
 
 def run_arcan(project_name, input_dir, output_dir, branch, log_file)
     return `java -jar #{ARCAN_JAR} analyse -p #{project_name} -i #{input_dir} -o #{output_dir} -l JAVA --branch #{branch} --all -v 2>&1 > #{log_file}`
