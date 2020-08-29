@@ -10,4 +10,4 @@
 #SBATCH --mem=32000
 
 module restore trackas
-ruby main.rb ~/data/java-projects.csv ~/data/repos ~/data/output
+ruby main.rb ~/data/java-projects.csv ~/data/repos ~/data/output ~/data/filters
