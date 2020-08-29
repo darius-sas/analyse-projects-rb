@@ -8,7 +8,9 @@ def run_arcan(project_name, input_dir, output_dir, filters_dir, log_file)
     branch = "HEAD"
     filters_file = "#{filters_dir}/#{project_name}.yaml"
     filters_file = "#{filters_dir}/all-projects.yaml" unless File.exist? filters_file
-    return `java -jar #{ARCAN_JAR} analyse -p #{project_name} -i #{input_dir} -o #{output_dir} -l JAVA --branch #{branch} --filtersFile #{filters_file} --all -v 2>&1 > #{log_file}`
+    arcan_command = "java -jar #{ARCAN_JAR} analyse -p #{project_name} -i #{input_dir} -o #{output_dir} -l JAVA --branch #{branch} --filtersFile #{filters_file} --all -v"
+    `echo "#{arcan_command}" > #{log_file}`
+    return `#{arcan_command} &>> #{log_file}`
 end
 
 def git_clone(link, project_dir, log_file)
@@ -26,8 +28,13 @@ else
 end
 
 pool = Concurrent::FixedThreadPool.new([2, Concurrent.processor_count].max)
+puts "Thread pool size: #{pool.length}"
 projects = Daru::DataFrame.from_csv(projects_file)
 git_projects = projects.filter_rows { |r| r['link.git'] == "true" }
+
+success = Concurrent::Array.new
+failed = Concurrent::Array.new
+n_projects = git_projects.length
 
 git_projects.each_row do |p|
     puts "Queuing for analysis project '#{p['project.name']}'"
@@ -51,15 +58,26 @@ git_projects.each_row do |p|
             log_file = "#{output_dir}/#{folder_name}.arcan.log"
             #branch = p['project.branch']
             run_arcan(folder_name, project_dir, output_dir, filters_dir, log_file)
-            success = $?.success?
-            puts "Arcan successfully analysed #{folder_name}" if success
-            puts "Arcan failed to analyse #{folder_name}" if not success
-            `rm -rf #{output_dir}/arcanOutput/#{folder_name}` if not success
+
+            if $?.success?
+                puts "Arcan successfully analysed #{folder_name}"
+                `mv #{log_file} #{output_dir}/success/#{folder_name}.arcan.log`
+                success << folder_name
+            else
+                puts "Arcan failed to analyse #{folder_name}"
+                `rm -rf #{output_dir}/arcanOutput/#{folder_name}`
+                `mv #{log_file} #{output_dir}/failed/#{folder_name}.arcan.log`
+                failed << folder_name
+            end
         else
             puts "Project #{folder_name} was already analysed"
         end
+        puts "Progress: #{success.length + failed.length}/#{n_projects}"
     end
 end
 
 pool.shutdown
 pool.wait_for_termination
+
+
+puts "Summary: \nSuccessful: #{success.length}\nFailed: #{failed.length}\nTotal:#{n_projects}"
