@@ -5,7 +5,7 @@ require 'concurrent'
 ARCAN_JAR = "/home/p284098/jars/Arcan2-cli-2.0.8-beta-jar-with-dependencies.jar"
 
 def run_arcan(project_name, input_dir, output_dir, filters_dir, log_file)
-    branch = `git --git-dir=#{input_dir}/.git branch --show-current`
+    branch = "HEAD"
     filters_file = "#{filters_dir}/#{project_name}.yaml"
     filters_file = "#{filters_dir}/all-projects.yaml" unless File.exist? filters_file
     return `java -jar #{ARCAN_JAR} analyse -p #{project_name} -i #{input_dir} -o #{output_dir} -l JAVA --branch #{branch} --filtersFile #{filters_file} --all -v 2>&1 > #{log_file}`
