@@ -10,7 +10,6 @@ if (length(args) < 2) {
 
 merge.results <- function(dir, pattern){
   projectDirs <- list.files(dir, recursive = T, pattern = pattern)
-  print(projectDirs)
   df <- data.frame()
   
   for (entry in projectDirs) {
@@ -61,13 +60,7 @@ pattern = ".csv"
 # Invoke merging and do postprocessing
 if(smells){
   df <- merge.results(results.dir, paste("*smell-characteristics", pattern, sep=""))
-  df.projects <- merge.results(results.dir, paste("*project-sizes", pattern, sep=""))
-  df <- left_join(df, df.projects, by = c("project", "version"))
-  df <- df %>% mutate(pageRankWeighted = ifelse(affectedComponentType=="package", 
-                                                pageRankMax * nPackages, 
-                                                pageRankMax * nClasses))
   write.csv(df, file = sc.dataset, row.names = F)
-  write.csv(df.projects, file = ps.dataset, row.names = F)
 }
 if(sizes){
   df.projects <- merge.results(results.dir, paste("*project-sizes", pattern, sep=""))
