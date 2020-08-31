@@ -1,0 +1,5 @@
+scanners:
+- startDate: '0001-01-01'
+  endDate: '9999-01-01'
+  include: [app/oryx-*/src/main/java, framework/oryx-*/src/main/java, deploy/oryx-*/src/main/java]
+  exclude: [app/oryx-app-mllib]

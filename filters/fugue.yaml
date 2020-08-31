@@ -1,0 +1,5 @@
+scanners:
+- startDate: '0001-01-01'
+  endDate: '9999-01-01'
+  include: [fugue/src/main/java, fugue-*/src/main/java]
+  exclude: [fugue-deprecated, fugue-quickcheck-generators, src, fugue-scala, fugue-retry]
