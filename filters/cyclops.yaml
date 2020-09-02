@@ -1,0 +1,5 @@
+scanners:
+- startDate: '0001-01-01'
+  endDate: '9999-01-01'
+  include: [cyclops/src/main/java, cyclops-anym/src/main/java, cyclops-pure/src/main/java, cyclops-futurestream/src/main/java, cyclops-reactive-collections/src/main/java]
+  exclude: ['**/src/test/**', src/test, testing, '*-test*/**', test, '*examples']

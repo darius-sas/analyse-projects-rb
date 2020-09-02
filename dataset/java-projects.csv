@@ -7,77 +7,76 @@ Bean Mapping,Frameworks that ease bean mapping.,ModelMapper,https://github.com/m
 Bean Mapping,Frameworks that ease bean mapping.,Orika,https://github.com/orika-mapper/orika,true,master,JavaBean-mapping framework that recursively copies
 Bean Mapping,Frameworks that ease bean mapping.,reMap,https://github.com/remondis-it/remap,true,develop,Lambda and method handle-based mapping which requires code and not annotations if objects have different names.
 Bean Mapping,Frameworks that ease bean mapping.,Selma,https://github.com/xebia-france/selma,true,master,Annotation processor-based bean mapper.
-Build,Tools that handle the build cycle and dependencies of an application.,Apache Maven,https://gitbox.apache.org/repos/asf/maven.git,true,,"Declarative build and dependency management that favors convention over configuration. It might be preferable to Apache Ant, which uses a rather procedural approach and can be difficult to maintain."
-Build,Tools that handle the build cycle and dependencies of an application.,Bazel,https://github.com/bazelbuild/bazel.git,true,,Tool from Google that builds code quickly and reliably.
+Build,Tools that handle the build cycle and dependencies of an application.,Apache Maven,https://gitbox.apache.org/repos/asf/maven,true,,"Declarative build and dependency management that favors convention over configuration. It might be preferable to Apache Ant, which uses a rather procedural approach and can be difficult to maintain."
+Build,Tools that handle the build cycle and dependencies of an application.,Bazel,https://github.com/bazelbuild/bazel,true,,Tool from Google that builds code quickly and reliably.
 Build,Tools that handle the build cycle and dependencies of an application.,Buck,https://github.com/facebook/buck,true,master,"Encourages the creation of small, reusable modules consisting of code and resources."
-Build,Tools that handle the build cycle and dependencies of an application.,Gradle,https://github.com/gradle/gradle.git,true,,Incremental builds programmed via Groovy instead of declaring XML. Works well with Maven's dependency management.
-Bytecode Manipulation,Libraries to manipulate bytecode programmatically.,ASM,https://gitlab.ow2.org/asm/asm.git,true,,"All-purpose, low-level bytecode manipulation and analysis."
-Bytecode Manipulation,Libraries to manipulate bytecode programmatically.,Byte Buddy,https://github.com/raphw/byte-buddy.git,true,,Further simplifies bytecode generation with a fluent API.
+Build,Tools that handle the build cycle and dependencies of an application.,Gradle,https://github.com/gradle/gradle,true,,Incremental builds programmed via Groovy instead of declaring XML. Works well with Maven's dependency management.
+Bytecode Manipulation,Libraries to manipulate bytecode programmatically.,ASM,https://gitlab.ow2.org/asm/asm,true,,"All-purpose, low-level bytecode manipulation and analysis."
+Bytecode Manipulation,Libraries to manipulate bytecode programmatically.,Byte Buddy,https://github.com/raphw/byte-buddy,true,,Further simplifies bytecode generation with a fluent API.
 Bytecode Manipulation,Libraries to manipulate bytecode programmatically.,bytecode-viewer,https://github.com/Konloch/bytecode-viewer,true,master,Java 8 Jar & Android APK reverse engineering suite.
-Bytecode Manipulation,Libraries to manipulate bytecode programmatically.,Byteman,https://github.com/bytemanproject/byteman.git,true,,Manipulate bytecode at runtime via DSL
+Bytecode Manipulation,Libraries to manipulate bytecode programmatically.,Byteman,https://github.com/bytemanproject/byteman,true,,Manipulate bytecode at runtime via DSL
 Bytecode Manipulation,Libraries to manipulate bytecode programmatically.,cglib,https://github.com/cglib/cglib,true,master,Bytecode generation library.
 Bytecode Manipulation,Libraries to manipulate bytecode programmatically.,Javassist,https://github.com/jboss-javassist/javassist,true,master,Tries to simplify bytecode editing.
 Bytecode Manipulation,Libraries to manipulate bytecode programmatically.,Mixin,https://github.com/SpongePowered/Mixin,true,master,Manipulate bytecode at runtime using real Java code.
 Bytecode Manipulation,Libraries to manipulate bytecode programmatically.,Perses,https://github.com/nicolasmanic/perses,true,master,Dynamically injects failure/latency at the bytecode level according to principles of chaos engineering.
-Caching,Libraries that provide caching facilities.,cache2k,https://github.com/cache2k/cache2k.git,true,,In-memory high performance caching library.
+Caching,Libraries that provide caching facilities.,cache2k,https://github.com/cache2k/cache2k,true,,In-memory high performance caching library.
 Caching,Libraries that provide caching facilities.,Caffeine,https://github.com/ben-manes/caffeine,true,master,"High-performance, near-optimal caching library."
-Caching,Libraries that provide caching facilities.,Ehcache,https://github.com/ehcache/ehcache3.git,true,,Distributed general-purpose cache.
-Caching,Libraries that provide caching facilities.,Infinispan,https://github.com/infinispan/infinispan.git,true,,Highly concurrent key/value datastore used for caching.
+Caching,Libraries that provide caching facilities.,Ehcache,https://github.com/ehcache/ehcache3,true,,Distributed general-purpose cache.
+Caching,Libraries that provide caching facilities.,Infinispan,https://github.com/infinispan/infinispan,true,,Highly concurrent key/value datastore used for caching.
 CLI,Libraries for everything related to the CLI.,ASCII Table,https://github.com/vdmeer/asciitable,true,master,Library to draw tables in ASCII.
 CLI,Libraries for everything related to the CLI.,Airline,https://github.com/airlift/airline,true,master,Annotation-based framework for parsing Git-like command-line arguments.
-CLI,Libraries for everything related to the CLI.,args4j,https://github.com/kohsuke/args4j.git,true,,Small library to parse command-line arguments.
+CLI,Libraries for everything related to the CLI.,args4j,https://github.com/kohsuke/args4j,true,,Small library to parse command-line arguments.
 CLI,Libraries for everything related to the CLI.,Jansi,https://github.com/fusesource/jansi,true,master,ANSI escape codes to format console output.
 CLI,Libraries for everything related to the CLI.,Java ASCII Render,https://github.com/indvd00m/java-ascii-render,true,master,Graphical primitives for the console.
-CLI,Libraries for everything related to the CLI.,JCommander,https://github.com/cbeust/jcommander.git,true,,Command-line argument-parsing framework with custom types and validation via implementing interfaces.
+CLI,Libraries for everything related to the CLI.,JCommander,https://github.com/cbeust/jcommander,true,,Command-line argument-parsing framework with custom types and validation via implementing interfaces.
 CLI,Libraries for everything related to the CLI.,jbock,https://github.com/h908714124/jbock,true,master,"Typesafe, reflection-free, annotation based command-line parser."
 CLI,Libraries for everything related to the CLI.,Jexer,https://gitlab.com/klamonte/jexer,true,master,Advanced console
 CLI,Libraries for everything related to the CLI.,JLine,https://github.com/jline/jline3,true,master,Includes features from modern shells like completion or history.
-CLI,Libraries for everything related to the CLI.,JOpt Simple,https://github.com/jopt-simple/jopt-simple.git,true,,Fluent parser that uses the POSIX#getopt and GNU#getopt_long syntaxes.
-CLI,Libraries for everything related to the CLI.,picocli,https://github.com/remkop/picocli.git,true,,"ANSI colors and styles in usage help with annotation-based POSIX/GNU/any syntax, subcommands, strong typing for both options and positional args."
+CLI,Libraries for everything related to the CLI.,JOpt Simple,https://github.com/jopt-simple/jopt-simple,true,,Fluent parser that uses the POSIX#getopt and GNU#getopt_long syntaxes.
+CLI,Libraries for everything related to the CLI.,picocli,https://github.com/remkop/picocli,true,,"ANSI colors and styles in usage help with annotation-based POSIX/GNU/any syntax, subcommands, strong typing for both options and positional args."
 CLI,Libraries for everything related to the CLI.,Text-IO,https://github.com/beryx/text-io,true,master,Aids the creation of full console-based applications.
 CLI,Libraries for everything related to the CLI.,Lanterna,https://github.com/mabe02/lanterna,true,master,"Easy console text-GUI library, similar to curses."
-Cluster Management,Frameworks that can dynamically manage applications inside of a cluster.,Apache Aurora,https://gitbox.apache.org/repos/asf/attic-aurora.git,true,,Mesos framework for long-running services and cron jobs.
-Cluster Management,Frameworks that can dynamically manage applications inside of a cluster.,Singularity,https://github.com/HubSpot/Singularity.git,true,,"Mesos framework that makes deployment and operations easy. It supports web services, background workers, scheduled jobs, and one-off tasks."
+Cluster Management,Frameworks that can dynamically manage applications inside of a cluster.,Apache Aurora,https://gitbox.apache.org/repos/asf/attic-aurora,true,,Mesos framework for long-running services and cron jobs.
+Cluster Management,Frameworks that can dynamically manage applications inside of a cluster.,Singularity,https://github.com/HubSpot/Singularity,true,,"Mesos framework that makes deployment and operations easy. It supports web services, background workers, scheduled jobs, and one-off tasks."
 Code Analysis,Tools that provide metrics and quality measurements.,Checkstyle,https://github.com/checkstyle/checkstyle,true,master,Static analysis of coding conventions and standards.
 Code Analysis,Tools that provide metrics and quality measurements.,Error Prone,https://github.com/google/error-prone,true,master,Catches common programming mistakes as compile-time errors.
 Code Analysis,Tools that provide metrics and quality measurements.,Infer,https://github.com/facebook/infer,true,master,Modern static analysis tool for verifying the correctness of code.
-Code Analysis,Tools that provide metrics and quality measurements.,jQAssistant,https://github.com/jQAssistant/jqa-core-framework.git,true,,Static code analysis with Neo4J-based query language.
+Code Analysis,Tools that provide metrics and quality measurements.,jQAssistant,https://github.com/jQAssistant/jqa-core-framework,true,,Static code analysis with Neo4J-based query language.
 Code Analysis,Tools that provide metrics and quality measurements.,NullAway,https://github.com/uber/NullAway,true,master,Eliminates NullPointerExceptions with low build-time overhead.
 Code Analysis,Tools that provide metrics and quality measurements.,PMD,https://github.com/pmd/pmd,true,master,Source code analysis for finding bad coding practices.
 Code Analysis,Tools that provide metrics and quality measurements.,SonarJava,https://github.com/SonarSource/sonar-java,true,master,Static analyzer for SonarQube & SonarLint.
 Code Analysis,Tools that provide metrics and quality measurements.,Spoon,https://github.com/INRIA/spoon,true,master,Library for analyzing and transforming Java source code.
 Code Analysis,Tools that provide metrics and quality measurements.,Spotbugs,https://github.com/spotbugs/spotbugs,true,master,Static analysis of bytecode to find potential bugs.
-Code Coverage,Frameworks and tools that enable code coverage metrics collection for test suites.,Clover,https://bitbucket.org/atlassian/clover.git,true,,Relies on source-code instrumentation instead of bytecode instrumentation.
-Code Coverage,Frameworks and tools that enable code coverage metrics collection for test suites.,Cobertura,https://github.com/cobertura/cobertura.git,true,,Relies on offline
+Code Coverage,Frameworks and tools that enable code coverage metrics collection for test suites.,Clover,https://bitbucket.org/atlassian/clover,true,,Relies on source-code instrumentation instead of bytecode instrumentation.
+Code Coverage,Frameworks and tools that enable code coverage metrics collection for test suites.,Cobertura,https://github.com/cobertura/cobertura,true,,Relies on offline
 Code Generators,Frameworks and tools that enable code coverage metrics collection for test suites.,ADT4J,https://github.com/sviperll/adt4j,true,master,JSR-269 code generator for algebraic data types.
 Code Generators,Frameworks and tools that enable code coverage metrics collection for test suites.,Auto,https://github.com/google/auto,true,master,"Generates factory, service, and value classes."
 Code Generators,Frameworks and tools that enable code coverage metrics collection for test suites.,FreeBuilder,https://github.com/inferred/FreeBuilder,true,master,Automatically generates the Builder pattern.
-Code Generators,Frameworks and tools that enable code coverage metrics collection for test suites.,Immutables,https://github.com/immutables/immutables.git,true,,"Annotation processors to generate simple, safe and consistent value objects."
+Code Generators,Frameworks and tools that enable code coverage metrics collection for test suites.,Immutables,https://github.com/immutables/immutables,true,,"Annotation processors to generate simple, safe and consistent value objects."
 Code Generators,Frameworks and tools that enable code coverage metrics collection for test suites.,JavaPoet,https://github.com/square/javapoet,true,master,API to generate source files.
-Code Generators,Frameworks and tools that enable code coverage metrics collection for test suites.,Joda-Beans,https://github.com/JodaOrg/joda-beans.git,true,,"Small framework that adds queryable properties to Java, enhancing JavaBeans."
-Code Generators,Frameworks and tools that enable code coverage metrics collection for test suites.,Lombok,https://github.com/rzwitserloot/lombok.git,true,,Code generator that aims to reduce verbosity.
-Code Generators,Frameworks and tools that enable code coverage metrics collection for test suites.,Telosys,https://github.com/telosys-tools-bricks/telosys-cli.git,true,,Simple and light code generator available as an Eclipse Plugin and also as a CLI.
-Compilercompiler,Frameworks and tools that enable code coverage metrics collection for test suites.,ANTLR,https://github.com/antlr/antlr4.git,true,,Complex full-featured framework for top-down parsing.
-Compilercompiler,Frameworks and tools that enable code coverage metrics collection for test suites.,JavaCC,https://github.com/javacc/javacc.git,true,,Parser generator that generates top-down parsers. Allows lexical state switching and permits extended BNF specifications.
-Compilercompiler,Frameworks and tools that enable code coverage metrics collection for test suites.,JFlex,https://github.com/jflex-de/jflex.git,true,,Lexical analyzer generator.
+Code Generators,Frameworks and tools that enable code coverage metrics collection for test suites.,Joda-Beans,https://github.com/JodaOrg/joda-beans,true,,"Small framework that adds queryable properties to Java, enhancing JavaBeans."
+Code Generators,Frameworks and tools that enable code coverage metrics collection for test suites.,Lombok,https://github.com/rzwitserloot/lombok,true,,Code generator that aims to reduce verbosity.
+Code Generators,Frameworks and tools that enable code coverage metrics collection for test suites.,Telosys,https://github.com/telosys-tools-bricks/telosys-cli,true,,Simple and light code generator available as an Eclipse Plugin and also as a CLI.
+Compilercompiler,Frameworks and tools that enable code coverage metrics collection for test suites.,ANTLR,https://github.com/antlr/antlr4,true,,Complex full-featured framework for top-down parsing.
+Compilercompiler,Frameworks and tools that enable code coverage metrics collection for test suites.,JavaCC,https://github.com/javacc/javacc,true,,Parser generator that generates top-down parsers. Allows lexical state switching and permits extended BNF specifications.
+Compilercompiler,Frameworks and tools that enable code coverage metrics collection for test suites.,JFlex,https://github.com/jflex-de/jflex,true,,Lexical analyzer generator.
 Configuration,Libraries that provide external configuration.,centraldogma,https://github.com/line/centraldogma,true,master,"Highly-available version-controlled service configuration repository based on Git, ZooKeeper and HTTP/2."
 Configuration,Libraries that provide external configuration.,cfg4j,https://github.com/cfg4j/cfg4j,true,master,Modern configuration library for distributed apps written in Java.
 Configuration,Libraries that provide external configuration.,config,https://github.com/lightbend/config,true,master,"Configuration library supporting Java properties, JSON or its human optimized superset HOCON."
 Configuration,Libraries that provide external configuration.,dotenv,https://github.com/shyiko/dotenv,true,master,Twelve-factor configuration library which uses environment-specific files.
 Configuration,Libraries that provide external configuration.,KAConf,https://github.com/mariomac/kaconf,true,master,Annotation-based configuration system for Java and Kotlin.
-Configuration,Libraries that provide external configuration.,microconfig,https://github.com/microconfig/microconfig.git,true,,Configuration system designed for microservices which helps to separate configuration from code. The configuration for different services can have common and specific parts and can be dynamically distributed.
+Configuration,Libraries that provide external configuration.,microconfig,https://github.com/microconfig/microconfig,true,,Configuration system designed for microservices which helps to separate configuration from code. The configuration for different services can have common and specific parts and can be dynamically distributed.
 Configuration,Libraries that provide external configuration.,owner,https://github.com/lviggiano/owner,true,master,Reduces boilerplate of properties.
-Constraint Satisfaction Problem Solver,Libraries that help with implementing optimization and satisfiability problems.,Choco,https://github.com/chocoteam/choco-solver.git,true,,Off-the-shelf constraint satisfaction problem solver that uses constraint programming techniques.
+Constraint Satisfaction Problem Solver,Libraries that help with implementing optimization and satisfiability problems.,Choco,https://github.com/chocoteam/choco-solver,true,,Off-the-shelf constraint satisfaction problem solver that uses constraint programming techniques.
 Constraint Satisfaction Problem Solver,Libraries that help with implementing optimization and satisfiability problems.,JaCoP,https://github.com/radsz/jacop,true,develop,"Includes an interface for the FlatZinc language, enabling it to execute MiniZinc models."
-Constraint Satisfaction Problem Solver,Libraries that help with implementing optimization and satisfiability problems.,OptaPlanner,https://github.com/kiegroup/optaplanner.git,true,,Business planning and resource scheduling optimization solver.
+Constraint Satisfaction Problem Solver,Libraries that help with implementing optimization and satisfiability problems.,OptaPlanner,https://github.com/kiegroup/optaplanner,true,,Business planning and resource scheduling optimization solver.
 CSV,Libraries that help with implementing optimization and satisfiability problems.,jackson-dataformat-csv,https://github.com/FasterXML/jackson-dataformat-csv,true,master,Jackson extension for reading and writing CSV.
 CSV,Libraries that help with implementing optimization and satisfiability problems.,opencsv,https://git.code.sf.net/p/opencsv/source,true,,Simple CSV parser.
-CSV,Libraries that help with implementing optimization and satisfiability problems.,Super CSV,https://github.com/super-csv/super-csv.git,true,,"Powerful CSV parser with support for Dozer, Joda-Time and Java 8."
+CSV,Libraries that help with implementing optimization and satisfiability problems.,Super CSV,https://github.com/super-csv/super-csv,true,,"Powerful CSV parser with support for Dozer, Joda-Time and Java 8."
 CSV,Libraries that help with implementing optimization and satisfiability problems.,uniVocity-parsers,https://github.com/uniVocity/univocity-parsers,true,master,One of the fastest and most feature-complete parsers. Also comes with parsers for TSV and fixed-width records.
-Data Structures,Efficient and specific data structures.,Apache Avro,https://gitbox.apache.org/repos/asf/avro.git,true,,"Data interchange format with dynamic typing, untagged data, and absence of manually assigned IDs."
-Data Structures,Efficient and specific data structures.,Apache Orc,https://gitbox.apache.org/repos/asf/orc.git,true,,Fast and efficient columnar storage format for Hadoop-based workloads.
-Data Structures,Efficient and specific data structures.,Apache Parquet,https://gitbox.apache.org/repos/asf/parquet-mr.git,true,,Columnar storage format based on assembly algorithms from Google's paper on Dremel.
-Data Structures,Efficient and specific data structures.,Apache Thrift,https://gitbox.apache.org/repos/asf/thrift.git,true,,Data interchange format that originated at Facebook.
+Data Structures,Efficient and specific data structures.,Apache Orc,https://gitbox.apache.org/repos/asf/orc,true,,Fast and efficient columnar storage format for Hadoop-based workloads.
+Data Structures,Efficient and specific data structures.,Apache Parquet,https://gitbox.apache.org/repos/asf/parquet-mr,true,,Columnar storage format based on assembly algorithms from Google's paper on Dremel.
+Data Structures,Efficient and specific data structures.,Apache Thrift,https://gitbox.apache.org/repos/asf/thrift,true,,Data interchange format that originated at Facebook.
 Data Structures,Efficient and specific data structures.,Big Queue,https://github.com/bulldog2011/bigqueue,true,master,Fast and persistent queue based on memory-mapped files.
 Data Structures,Efficient and specific data structures.,HyperMinHash-java,https://github.com/LiveRamp/HyperMinHash-java,true,master,"Probabilistic data structure for computing union, intersection, and set cardinality in loglog space."
 Data Structures,Efficient and specific data structures.,Persistent Collection,https://github.com/hrldcpr/pcollections,true,master,Persistent and immutable analogue of the Java Collections Framework.
@@ -85,100 +84,100 @@ Data Structures,Efficient and specific data structures.,Protobuf,https://github.
 Data Structures,Efficient and specific data structures.,SBE,https://github.com/real-logic/simple-binary-encoding,true,master,"Simple Binary Encoding, one of the fastest message formats around."
 Data Structures,Efficient and specific data structures.,Tape,https://github.com/square/tape,true,master,"Lightning-fast, transactional, file-based FIFO."
 Data Structures,Efficient and specific data structures.,Wire,https://github.com/square/wire,true,master,"Clean, lightweight protocol buffers."
-Database,Everything that simplifies interactions with the database.,Apache Calcite,https://gitbox.apache.org/repos/asf/calcite.git,true,,Dynamic data management framework. It contains many of the pieces that comprise a typical database management system.
-Database,Everything that simplifies interactions with the database.,Apache Drill,https://gitbox.apache.org/repos/asf/drill.git,true,,"Distributed, schema on-the-fly, ANSI SQL query engine for Big Data exploration."
-Database,Everything that simplifies interactions with the database.,Apache Phoenix,https://gitbox.apache.org/repos/asf/phoenix.git,true,,High-performance relational database layer over HBase for low-latency applications.
+Database,Everything that simplifies interactions with the database.,Apache Calcite,https://gitbox.apache.org/repos/asf/calcite,true,,Dynamic data management framework. It contains many of the pieces that comprise a typical database management system.
+Database,Everything that simplifies interactions with the database.,Apache Drill,https://gitbox.apache.org/repos/asf/drill,true,,"Distributed, schema on-the-fly, ANSI SQL query engine for Big Data exploration."
+Database,Everything that simplifies interactions with the database.,Apache Phoenix,https://gitbox.apache.org/repos/asf/phoenix,true,,High-performance relational database layer over HBase for low-latency applications.
 Database,Everything that simplifies interactions with the database.,AranoDB,https://github.com/arangodb/arangodb-java-driver,true,master,ArangoDB Java driver.
 Database,Everything that simplifies interactions with the database.,Chronicle Map,https://github.com/OpenHFT/Chronicle-Map,true,master,"Efficient, in-memory"
-Database,Everything that simplifies interactions with the database.,Debezium,https://github.com/debezium/debezium.git,true,,Low latency data streaming platform for change data capture.
-Database,Everything that simplifies interactions with the database.,druid,https://gitbox.apache.org/repos/asf/druid.git,true,,"High-performance, column-oriented, distributed data store."
+Database,Everything that simplifies interactions with the database.,Debezium,https://github.com/debezium/debezium,true,,Low latency data streaming platform for change data capture.
+Database,Everything that simplifies interactions with the database.,druid,https://gitbox.apache.org/repos/asf/druid,true,,"High-performance, column-oriented, distributed data store."
 Database,Everything that simplifies interactions with the database.,eXist,https://github.com/eXist-db/exist,true,develop,NoSQL document database and application platform.
 Database,Everything that simplifies interactions with the database.,FlexyPool,https://github.com/vladmihalcea/flexy-pool,true,master,Brings metrics and failover strategies to the most common connection pooling solutions.
-Database,Everything that simplifies interactions with the database.,Flyway,https://github.com/flyway/flyway.git,true,,Simple database migration tool.
-Database,Everything that simplifies interactions with the database.,H2,https://github.com/h2database/h2database.git,true,,Small SQL database notable for its in-memory functionality.
+Database,Everything that simplifies interactions with the database.,Flyway,https://github.com/flyway/flyway,true,,Simple database migration tool.
+Database,Everything that simplifies interactions with the database.,H2,https://github.com/h2database/h2database,true,,Small SQL database notable for its in-memory functionality.
 Database,Everything that simplifies interactions with the database.,HikariCP,https://github.com/brettwooldridge/HikariCP,true,dev,High-performance JDBC connection pool.
-Database,Everything that simplifies interactions with the database.,JDBI,https://github.com/jdbi/jdbi.git,true,,Convenient abstraction of JDBC.
+Database,Everything that simplifies interactions with the database.,JDBI,https://github.com/jdbi/jdbi,true,,Convenient abstraction of JDBC.
 Database,Everything that simplifies interactions with the database.,Jedis,https://github.com/xetorthio/jedis,true,master,"Small client for interaction with Redis, with methods for commands."
 Database,Everything that simplifies interactions with the database.,Jest,https://github.com/searchbox-io/Jest,true,master,Client for the Elasticsearch REST API.
 Database,Everything that simplifies interactions with the database.,jetcd,https://github.com/justinsb/jetcd,true,master,Client library for etcd.
 Database,Everything that simplifies interactions with the database.,Jinq,https://github.com/my2iu/Jinq,true,master,Typesafe database queries via symbolic execution of Java 8 Lambdas
-Database,Everything that simplifies interactions with the database.,jOOQ,https://github.com/jOOQ/jOOQ.git,true,,Generates typesafe code based on SQL schema.
+Database,Everything that simplifies interactions with the database.,jOOQ,https://github.com/jOOQ/jOOQ,true,,Generates typesafe code based on SQL schema.
 Database,Everything that simplifies interactions with the database.,Leaf,https://github.com/Meituan-Dianping/Leaf,true,master,Distributed ID generate service.
-Database,Everything that simplifies interactions with the database.,MapDB,https://github.com/jankotek/mapdb.git,true,,Embedded database engine that provides concurrent collections backed on disk or in off-heap memory.
+Database,Everything that simplifies interactions with the database.,MapDB,https://github.com/jankotek/mapdb,true,,Embedded database engine that provides concurrent collections backed on disk or in off-heap memory.
 Database,Everything that simplifies interactions with the database.,MariaDB4j,https://github.com/vorburger/MariaDB4j,true,master,Launcher for MariaDB that requires no installation or external dependencies.
 Database,Everything that simplifies interactions with the database.,Modality,https://github.com/arkanovicz/modality,true,master,Lightweight ORM with database reverse engineering features.
-Database,Everything that simplifies interactions with the database.,Presto,https://github.com/prestosql/presto.git,true,,Distributed SQL query engine for big data.
+Database,Everything that simplifies interactions with the database.,Presto,https://github.com/prestosql/presto,true,,Distributed SQL query engine for big data.
 Database,Everything that simplifies interactions with the database.,QueryStream,https://github.com/querystream/querystream,true,master,Build JPA Criteria queries using a Stream-like API.
-Database,Everything that simplifies interactions with the database.,Querydsl,https://github.com/querydsl/querydsl.git,true,,Typesafe unified queries.
+Database,Everything that simplifies interactions with the database.,Querydsl,https://github.com/querydsl/querydsl,true,,Typesafe unified queries.
 Database,Everything that simplifies interactions with the database.,Realm,https://github.com/realm/realm-java,true,master,"Mobile database to run directly inside phones, tablets or wearables."
 Database,Everything that simplifies interactions with the database.,Redisson,https://github.com/redisson/redisson,true,master,Allows for distributed and scalable data structures on top of a Redis server.
 Database,Everything that simplifies interactions with the database.,requery,https://github.com/requery/requery,true,master,"Modern, lightweight but powerful object mapping and SQL generator. Easily map to or create databases, or perform queries and updates from any Java-using platform."
 Database,Everything that simplifies interactions with the database.,Speedment,https://github.com/speedment/speedment,true,master,Database access library that utilizes Java 8's Stream API for querying.
-Database,Everything that simplifies interactions with the database.,sql2o,https://github.com/aaberg/sql2o.git,true,,Thin JDBC wrapper that simplifies database access and provides simple mapping of ResultSets to POJOs.
-Database,Everything that simplifies interactions with the database.,Vibur DBCP,https://github.com/vibur/vibur-dbcp.git,true,,JDBC connection pool library with advanced performance monitoring capabilities.
+Database,Everything that simplifies interactions with the database.,sql2o,https://github.com/aaberg/sql2o,true,,Thin JDBC wrapper that simplifies database access and provides simple mapping of ResultSets to POJOs.
+Database,Everything that simplifies interactions with the database.,Vibur DBCP,https://github.com/vibur/vibur-dbcp,true,,JDBC connection pool library with advanced performance monitoring capabilities.
 Database,Everything that simplifies interactions with the database.,Xodus,https://github.com/JetBrains/xodus,true,master,Highly concurrent transactional schema-less and ACID-compliant embedded database.
 Date and Time,Libraries related to handling date and time.,Almanac Converter,https://github.com/chrisengelsma/almanac-converter,true,master,Simple conversion between different calendar systems.
 Date and Time,Libraries related to handling date and time.,iCal4j,https://github.com/ical4j/ical4j,true,develop,Parse and build iCalendar
 Date and Time,Libraries related to handling date and time.,ThreeTen-Extra,https://github.com/ThreeTen/threeten-extra,true,master,Additional date-time classes that complement those in JDK 8.
 Date and Time,Libraries related to handling date and time.,Time4J,https://github.com/MenoData/Time4J,true,master,Advanced date and time library.
-Dependency Injection,Libraries that help to realize the Inversion of Controlhttpsen.wikipedia.orgwikiInversionofcontrol paradigm.,Apache DeltaSpike,https://gitbox.apache.org/repos/asf/deltaspike.git,true,,CDI extension framework.
-Dependency Injection,Libraries that help to realize the Inversion of Controlhttpsen.wikipedia.orgwikiInversionofcontrol paradigm.,Dagger,https://github.com/google/dagger.git,true,,Compile-time injection framework without reflection.
+Dependency Injection,Libraries that help to realize the Inversion of Controlhttpsen.wikipedia.orgwikiInversionofcontrol paradigm.,Apache DeltaSpike,https://gitbox.apache.org/repos/asf/deltaspike,true,,CDI extension framework.
+Dependency Injection,Libraries that help to realize the Inversion of Controlhttpsen.wikipedia.orgwikiInversionofcontrol paradigm.,Dagger,https://github.com/google/dagger,true,,Compile-time injection framework without reflection.
 Dependency Injection,Libraries that help to realize the Inversion of Controlhttpsen.wikipedia.orgwikiInversionofcontrol paradigm.,Feather,https://github.com/zsoltherpai/feather,true,master,"Ultra-lightweight, JSR-330-compliant dependency injection library."
 Dependency Injection,Libraries that help to realize the Inversion of Controlhttpsen.wikipedia.orgwikiInversionofcontrol paradigm.,Governator,https://github.com/Netflix/governator,true,master,Extensions and utilities that enhance Google Guice.
 Dependency Injection,Libraries that help to realize the Inversion of Controlhttpsen.wikipedia.orgwikiInversionofcontrol paradigm.,Guice,https://github.com/google/guice,true,master,Lightweight and opinionated framework that completes Dagger.
 Dependency Injection,Libraries that help to realize the Inversion of Controlhttpsen.wikipedia.orgwikiInversionofcontrol paradigm.,JayWire,https://github.com/vanillasource/jaywire,true,master,Lightweight dependency injection framework.
-Development,Augmentation of the development process at a fundamental level.,AspectJ,https://git.eclipse.org/c/aspectj/org.aspectj.git,true,,Seamless aspect-oriented programming extension.
-Development,Augmentation of the development process at a fundamental level.,DCEVM,https://github.com/dcevm/dcevm.git,true,,JVM modification that allows unlimited redefinition of loaded classes at runtime.
+Development,Augmentation of the development process at a fundamental level.,AspectJ,https://git.eclipse.org/c/aspectj/org.aspectj,true,,Seamless aspect-oriented programming extension.
+Development,Augmentation of the development process at a fundamental level.,DCEVM,https://github.com/dcevm/dcevm,true,,JVM modification that allows unlimited redefinition of loaded classes at runtime.
 Development,Augmentation of the development process at a fundamental level.,HotswapAgent,https://github.com/HotswapProjects/HotswapAgent,true,master,Unlimited runtime class and resource redefinition.
 Development,Augmentation of the development process at a fundamental level.,JavaParser,https://github.com/javaparser/javaparser,true,master,"Parse, modify and generate Java code."
 Development,Augmentation of the development process at a fundamental level.,JavaSymbolSolver,https://github.com/javaparser/javasymbolsolver,true,master,Symbol solver.
 Development,Augmentation of the development process at a fundamental level.,Manifold,https://github.com/manifold-systems/manifold,true,master,"Re-energizes Java with powerful features like type-safe metaprogramming, structural typing and extension methods."
-Development,Augmentation of the development process at a fundamental level.,NoException,https://github.com/robertvazan/noexception.git,true,,Allows checked exceptions in functional interfaces and converts exceptions to Optional return.
+Development,Augmentation of the development process at a fundamental level.,NoException,https://github.com/robertvazan/noexception,true,,Allows checked exceptions in functional interfaces and converts exceptions to Optional return.
 Development,Augmentation of the development process at a fundamental level.,SneakyThrow,https://github.com/rainerhahnekamp/sneakythrow,true,master,Ignores checked exceptions without bytecode manipulation. Can also be used inside Java 8 stream operations.
-Development,Augmentation of the development process at a fundamental level.,Tail,https://github.com/kag0/tail.git,true,,Enable infinite recursion using tail call optimization.
-Distributed Applications,Augmentation of the development process at a fundamental level.,Apache Geode,https://gitbox.apache.org/repos/asf/geode.git,true,,In-memory data management system that provides reliable asynchronous event notifications and guaranteed message delivery.
-Distributed Applications,Augmentation of the development process at a fundamental level.,Apache Storm,https://gitbox.apache.org/repos/asf/storm.git,true,,Realtime computation system.
-Distributed Applications,Augmentation of the development process at a fundamental level.,Apache ZooKeeper,https://gitbox.apache.org/repos/asf/zookeeper.git,true,,"Coordination service with distributed configuration, synchronization, and naming registry for large distributed systems."
-Distributed Applications,Augmentation of the development process at a fundamental level.,Atomix,https://github.com/atomix/atomix.git,true,,Fault-tolerant distributed coordination framework.
+Development,Augmentation of the development process at a fundamental level.,Tail,https://github.com/kag0/tail,true,,Enable infinite recursion using tail call optimization.
+Distributed Applications,Augmentation of the development process at a fundamental level.,Apache Geode,https://gitbox.apache.org/repos/asf/geode,true,,In-memory data management system that provides reliable asynchronous event notifications and guaranteed message delivery.
+Distributed Applications,Augmentation of the development process at a fundamental level.,Apache Storm,https://gitbox.apache.org/repos/asf/storm,true,,Realtime computation system.
+Distributed Applications,Augmentation of the development process at a fundamental level.,Apache ZooKeeper,https://gitbox.apache.org/repos/asf/zookeeper,true,,"Coordination service with distributed configuration, synchronization, and naming registry for large distributed systems."
+Distributed Applications,Augmentation of the development process at a fundamental level.,Atomix,https://github.com/atomix/atomix,true,,Fault-tolerant distributed coordination framework.
 Distributed Applications,Augmentation of the development process at a fundamental level.,Dropwizard Circuit Breaker,https://github.com/mtakaki/dropwizard-circuitbreaker,true,master,Circuit breaker design pattern for Dropwizard.
 Distributed Applications,Augmentation of the development process at a fundamental level.,Failsafe,https://github.com/jhalterman/failsafe,true,master,Simple failure handling with retries and circuit breakers.
 Distributed Applications,Augmentation of the development process at a fundamental level.,Hazelcast,https://github.com/hazelcast/hazelcast,true,master,Highly scalable in-memory datagrid with a free open-source version.
-Distributed Applications,Augmentation of the development process at a fundamental level.,JGroups,https://github.com/belaban/JGroups.git,true,,Toolkit for reliable messaging and cluster creation.
-Distributed Applications,Augmentation of the development process at a fundamental level.,Quasar,https://github.com/puniverse/quasar.git,true,,Lightweight threads and actors for the JVM.
+Distributed Applications,Augmentation of the development process at a fundamental level.,JGroups,https://github.com/belaban/JGroups,true,,Toolkit for reliable messaging and cluster creation.
+Distributed Applications,Augmentation of the development process at a fundamental level.,Quasar,https://github.com/puniverse/quasar,true,,Lightweight threads and actors for the JVM.
 Distributed Applications,Augmentation of the development process at a fundamental level.,ScaleCube Services,https://github.com/scalecube/scalecube-services,true,develop,Embeddable Cluster-Membership library based on SWIM and gossip protocol.
 Distributed Applications,Augmentation of the development process at a fundamental level.,Zuul,https://github.com/Netflix/zuul,true,master,"Gateway service that provides dynamic routing, monitoring, resiliency, security, and more."
 Distributed Transactions,Distributed transactions provide a mechanism for ensuring consistency of data updates in the presence of concurrent access and partial failures.,Bitronix,https://github.com/bitronix/btm,true,master,Simple but complete implementation of the JTA 1.1 API.
-Distributed Transactions,Distributed transactions provide a mechanism for ensuring consistency of data updates in the presence of concurrent access and partial failures.,Narayana,https://github.com/jbosstm/narayana.git,true,,"Provides support for traditional ACID and compensation transactions, also complies with JTA, JTS and other standards."
+Distributed Transactions,Distributed transactions provide a mechanism for ensuring consistency of data updates in the presence of concurrent access and partial failures.,Narayana,https://github.com/jbosstm/narayana,true,,"Provides support for traditional ACID and compensation transactions, also complies with JTA, JTS and other standards."
 Distributed Transactions,Distributed transactions provide a mechanism for ensuring consistency of data updates in the presence of concurrent access and partial failures.,Seata,https://github.com/seata/seata,true,develop,Delivers high performance and easy to use distributed transaction services under a microservices architecture.
 Distribution,Tools that handle the distribution of applications in native formats.,Capsule,https://github.com/puniverse/capsule,true,master,"Simple and powerful packaging and deployment. A fat JAR on steroids, or a ""Docker for Java"" that supports JVM-optimized containers."
-Distribution,Tools that handle the distribution of applications in native formats.,IzPack,https://github.com/izpack/izpack.git,true,,Setup authoring tool for cross-platform deployments.
+Distribution,Tools that handle the distribution of applications in native formats.,IzPack,https://github.com/izpack/izpack,true,,Setup authoring tool for cross-platform deployments.
 Distribution,Tools that handle the distribution of applications in native formats.,jlink.online,https://github.com/cilki/jlink.online,true,master,Builds optimized runtimes over HTTP.
 Distribution,Tools that handle the distribution of applications in native formats.,packr,https://github.com/libgdx/packr,true,master,"Packs JARs, assets and the JVM for native distribution on Windows, Linux and macOS."
 Distribution,Tools that handle the distribution of applications in native formats.,really-executable-jars-maven-plugin,https://github.com/brianm/really-executable-jars-maven-plugin,true,master,Maven plugin for making self-executing JARs.
-Document Processing,Libraries that assist with processing office document formats.,Apache POI,https://github.com/apache/poi.git,true,,Supports OOXML
-Document Processing,Libraries that assist with processing office document formats.,documents4j,https://github.com/documents4j/documents4j.git,true,,API for document format conversion using third-party converters such as MS Word.
-Document Processing,Libraries that assist with processing office document formats.,docx4j,https://github.com/plutext/docx4j.git,true,,Create and manipulate Microsoft Open XML files.
+Document Processing,Libraries that assist with processing office document formats.,Apache POI,https://github.com/apache/poi,true,,Supports OOXML
+Document Processing,Libraries that assist with processing office document formats.,documents4j,https://github.com/documents4j/documents4j,true,,API for document format conversion using third-party converters such as MS Word.
+Document Processing,Libraries that assist with processing office document formats.,docx4j,https://github.com/plutext/docx4j,true,,Create and manipulate Microsoft Open XML files.
 Document Processing,Libraries that assist with processing office document formats.,zerocell,https://github.com/creditdatamw/zerocell,true,master,Annotation-based API for reading data from Excel sheets into POJOs with focus on reduced overhead.
 Financial,Libraries related to the financial domain.,Parity,https://github.com/paritytrading/parity,true,master,Platform for trading venues.
 Financial,Libraries related to the financial domain.,Philadelphia,https://github.com/paritytrading/philadelphia,true,master,Low-latency financial information exchange.
 Financial,Libraries related to the financial domain.,Square,https://github.com/square/connect-java-sdk,true,master,Integration with the Square API.
 Financial,Libraries related to the financial domain.,Stripe,https://github.com/stripe/stripe-java,true,master,Integration with the Stripe API.
 Formal Verification,Libraries related to the financial domain.,CATG,https://github.com/ksen007/janala2,true,master,Concolic unit testing engine. Automatically generates unit tests using formal methods.
-Formal Verification,Libraries related to the financial domain.,Checker Framework,https://github.com/typetools/checker-framework.git,true,,"Pluggable type systems. Includes nullness types, physical units, immutability types and more."
-Formal Verification,Libraries related to the financial domain.,OpenJML,https://github.com/OpenJML/OpenJML.git,true,,Translates JML specifications into SMT-LIB format and passes the proof problems implied by the program to backend solvers.
+Formal Verification,Libraries related to the financial domain.,Checker Framework,https://github.com/typetools/checker-framework,true,,"Pluggable type systems. Includes nullness types, physical units, immutability types and more."
+Formal Verification,Libraries related to the financial domain.,OpenJML,https://github.com/OpenJML/OpenJML,true,,Translates JML specifications into SMT-LIB format and passes the proof problems implied by the program to backend solvers.
 Functional Programming,Libraries that facilitate functional programming.,Cyclops,https://github.com/aol/cyclops,true,master,"Monad and stream utilities, comprehensions, pattern matching, functional extensions for all JDK collections, future streams, trampolines and much more."
 Functional Programming,Libraries that facilitate functional programming.,derive4j,https://github.com/derive4j/derive4j,true,master,"Java 8 annotation processor and framework for deriving algebraic data types constructors, pattern-matching and morphisms."
 Functional Programming,Libraries that facilitate functional programming.,Fugue,https://bitbucket.org/atlassian/fugue,true,master,Functional extensions to Guava.
-Functional Programming,Libraries that facilitate functional programming.,Functional Java,https://github.com/functionaljava/functionaljava.git,true,,Implements numerous basic and advanced programming abstractions that assist composition-oriented development.
+Functional Programming,Libraries that facilitate functional programming.,Functional Java,https://github.com/functionaljava/functionaljava,true,,Implements numerous basic and advanced programming abstractions that assist composition-oriented development.
 Functional Programming,Libraries that facilitate functional programming.,jOO?,https://github.com/jOOQ/jOOL,true,main,Extension to Java 8 that aims to fix gaps in lambda by providing numerous missing types and a rich set of sequential Stream API additions.
 Functional Programming,Libraries that facilitate functional programming.,protonpack,https://github.com/poetix/protonpack,true,master,Collection of stream utilities.
 Functional Programming,Libraries that facilitate functional programming.,StreamEx,https://github.com/amaembo/streamex,true,master,Enhances Java 8 Streams.
-Functional Programming,Libraries that facilitate functional programming.,Vavr,https://github.com/vavr-io/vavr.git,true,,Functional component library that provides persistent data types and functional control structures.
-Game Development,Frameworks that support the development of games.,FXGL,https://github.com/AlmasB/FXGL.git,true,,JavaFX Game Development Framework.
-Game Development,Frameworks that support the development of games.,jMonkeyEngine,https://github.com/jMonkeyEngine/jmonkeyengine.git,true,,Game engine for modern 3D development.
-Game Development,Frameworks that support the development of games.,libGDX,https://github.com/libgdx/libgdx.git,true,,"All-round cross-platform, high-level framework."
-Game Development,Frameworks that support the development of games.,LWJGL,https://github.com/LWJGL/lwjgl3.git,true,,Robust framework that abstracts libraries like OpenGL/CL/AL.
-Game Development,Frameworks that support the development of games.,Mini2Dx,https://github.com/mini2Dx/mini2Dx.git,true,,"Beginner-friendly, master-ready framework for rapidly prototyping and building 2D games."
+Functional Programming,Libraries that facilitate functional programming.,Vavr,https://github.com/vavr-io/vavr,true,,Functional component library that provides persistent data types and functional control structures.
+Game Development,Frameworks that support the development of games.,FXGL,https://github.com/AlmasB/FXGL,true,,JavaFX Game Development Framework.
+Game Development,Frameworks that support the development of games.,jMonkeyEngine,https://github.com/jMonkeyEngine/jmonkeyengine,true,,Game engine for modern 3D development.
+Game Development,Frameworks that support the development of games.,libGDX,https://github.com/libgdx/libgdx,true,,"All-round cross-platform, high-level framework."
+Game Development,Frameworks that support the development of games.,LWJGL,https://github.com/LWJGL/lwjgl3,true,,Robust framework that abstracts libraries like OpenGL/CL/AL.
+Game Development,Frameworks that support the development of games.,Mini2Dx,https://github.com/mini2Dx/mini2Dx,true,,"Beginner-friendly, master-ready framework for rapidly prototyping and building 2D games."
 Geospatial,Libraries for working with geospatial data and algorithms.,Apache SIS,https://gitbox.apache.org/repos/asf/sis,true,,Library for developing geospatial applications.
 Geospatial,Libraries for working with geospatial data and algorithms.,Geo,https://github.com/davidmoten/geo,true,master,GeoHash utilities in Java.
 Geospatial,Libraries for working with geospatial data and algorithms.,GeoTools,https://github.com/geotools/geotools,true,,Library that provides tools for geospatial data.
@@ -195,7 +194,7 @@ High Performance,Libraries to create modern graphical user interfaces.,fastutil,
 High Performance,Libraries to create modern graphical user interfaces.,HPPC,https://github.com/carrotsearch/hppc,true,,Primitive collections.
 High Performance,Libraries to create modern graphical user interfaces.,JCTools,https://github.com/JCTools/JCTools,true,master,Concurrency tools currently missing from the JDK.
 High Performance,Libraries to create modern graphical user interfaces.,Koloboke,https://github.com/leventov/Koloboke,true,master,Carefully designed extension of the Java Collections Framework with primitive specializations and more.
-HTTP Clients,Libraries to create modern graphical user interfaces.,Apache HttpComponents,https://gitbox.apache.org/repos/asf/httpcomponents-core.git,true,,A toolset of low level Java components focused on HTTP and associated protocols.
+HTTP Clients,Libraries to create modern graphical user interfaces.,Apache HttpComponents,https://gitbox.apache.org/repos/asf/httpcomponents-core,true,,A toolset of low level Java components focused on HTTP and associated protocols.
 HTTP Clients,Libraries to create modern graphical user interfaces.,Async Http Client,https://github.com/AsyncHttpClient/async-http-client,true,master,Asynchronous HTTP and WebSocket client library.
 HTTP Clients,Libraries to create modern graphical user interfaces.,Feign,https://github.com/OpenFeign/feign,true,master,"HTTP client binder inspired by Retrofit, JAXRS-2.0, and WebSocket."
 HTTP Clients,Libraries to create modern graphical user interfaces.,methanol,https://github.com/mizosoft/methanol,true,master,HTTP client extensions library.
@@ -240,7 +239,7 @@ JSON,Libraries for serializing and deserializing JSON to and from Java objects.,
 JSON,Libraries for serializing and deserializing JSON to and from Java objects.,Jolt,https://github.com/bazaarvoice/jolt,true,master,JSON to JSON transformation tool.
 JSON,Libraries for serializing and deserializing JSON to and from Java objects.,JsonPath,https://github.com/json-path/JsonPath,true,master,Extract data from JSON using XPATH-like syntax.
 JSON,Libraries for serializing and deserializing JSON to and from Java objects.,JsonSurfer,https://github.com/jsurfer/JsonSurfer,true,master,Streaming JsonPath processor dedicated to processing big and complicated JSON data.
-JVM and JDK,Libraries for serializing and deserializing JSON to and from Java objects.,Avian,https://github.com/ReadyTalk/avian,true,master,"JVM with JIT, AOT modes and iOS port."
+,,,,,,
 JVM and JDK,Libraries for serializing and deserializing JSON to and from Java objects.,Graal,https://github.com/oracle/graal,true,master,Polyglot embeddable JVM.
 JVM and JDK,Libraries for serializing and deserializing JSON to and from Java objects.,OpenJ9,https://github.com/eclipse/openj9,true,master,"High performance, enterprise-calibre, flexibly licensed, openly-governed cross-platform JVM extending and augmenting the runtime technology components from the Eclipse OMR and OpenJDK project."
 JVM and JDK,Libraries for serializing and deserializing JSON to and from Java objects.,ParparVM,https://github.com/codenameone/CodenameOne/tree/master/vm,true,master,"VM with non-blocking, concurrent GC for iOS."
@@ -409,11 +408,11 @@ Reactive libraries,Libraries for developing reactive applications.,RxJava,https:
 Reactive libraries,Libraries for developing reactive applications.,vert.x,https://vertx.io,false,,Polyglot event-driven application framework.
 REST Frameworks,Frameworks specifically for creating RESTful services.,Dropwizard,https://github.com/dropwizard/dropwizard,true,master,"Opinionated framework for setting up modern web applications with Jetty, Jackson, Jersey and Metrics."
 REST Frameworks,Frameworks specifically for creating RESTful services.,Elide,https://elide.io,false,,Opinionated framework for JSON- or GraphQL-APIs based on a JPA data model.
-REST Frameworks,Frameworks specifically for creating RESTful services.,Jersey,https://jersey.github.io,false,,JAX-RS reference implementation.
+REST Frameworks,Frameworks specifically for creating RESTful services.,Jersey,https://jerseyhub.io,false,,JAX-RS reference implementation.
 REST Frameworks,Frameworks specifically for creating RESTful services.,Microserver,https://github.com/aol/micro-server,true,master,"Convenient, extensible microservices plugin system for Spring & Spring Boot. With more than 30 plugins and growing, it supports both micro-monolith and pure microservices styles."
 REST Frameworks,Frameworks specifically for creating RESTful services.,Rapidoid,https://www.rapidoid.org,false,,"Simple, secure and extremely fast framework consisting of an embedded HTTP server, GUI components and dependency injection."
 REST Frameworks,Frameworks specifically for creating RESTful services.,rest.li,https://github.com/linkedin/rest.li,true,master,"Framework for building robust, scalable RESTful architectures using typesafe bindings and asynchronous, non-blocking IO with an end-to-end developer workflow that promotes clean practices, uniform interface design and consistent data modeling."
-REST Frameworks,Frameworks specifically for creating RESTful services.,RESTEasy,https://resteasy.github.io,false,,Fully certified and portable implementation of the JAX-RS specification.
+REST Frameworks,Frameworks specifically for creating RESTful services.,RESTEasy,https://resteasyhub.io,false,,Fully certified and portable implementation of the JAX-RS specification.
 REST Frameworks,Frameworks specifically for creating RESTful services.,RestExpress,https://github.com/RestExpress/RestExpress,true,master,Thin wrapper on the JBoss Netty HTTP stack that provides scaling and performance.
 REST Frameworks,Frameworks specifically for creating RESTful services.,Restlet Framework,https://github.com/restlet/restlet-framework-java,true,2.4,"Pioneering framework with powerful routing and filtering capabilities, and a unified client and server API."
 REST Frameworks,Frameworks specifically for creating RESTful services.,Spark,http://sparkjava.com,false,,Sinatra inspired framework.
@@ -462,7 +461,7 @@ Server,Servers specifically used to deploy applications.,Jetty,https://www.eclip
 Server,Servers specifically used to deploy applications.,nanohttpd,https://github.com/NanoHttpd/nanohttpd,true,master,"Tiny, easily embeddable HTTP server."
 Server,Servers specifically used to deploy applications.,WildFly,https://www.wildfly.org,false,,Formerly known as JBoss and developed by Red Hat with extensive Java EE support.
 Template Engine,Tools that substitute expressions in a template.,Freemarker,https://freemarker.apache.org,false,,Library to generate text output
-Template Engine,Tools that substitute expressions in a template.,Handlebars.java,https://jknack.github.io/handlebars.java/,false,,Logicless and semantic Mustache templates.
+Template Engine,Tools that substitute expressions in a template.,Handlebars.java,https://jknackhub.io/handlebars.java/,false,,Logicless and semantic Mustache templates.
 Template Engine,Tools that substitute expressions in a template.,Jade4J,https://github.com/neuland/jade4j,true,master,Implementation of Pug
 Template Engine,Tools that substitute expressions in a template.,Pebble,https://pebbletemplates.io,false,,Inspired by Twig and separates itself with its inheritance feature and its easy-to-read syntax. It ships with built-in autoescaping for security and it includes integrated support for internationalization.
 Template Engine,Tools that substitute expressions in a template.,Rocker,https://github.com/fizzed/rocker,true,master,"Optimized, memory efficient and speedy template engine producing statically typed, plain objects."
@@ -494,7 +493,7 @@ Frameworks,Provide environments to run tests for a specific use case.,JUnit,http
 Frameworks,Provide environments to run tests for a specific use case.,jqwik,https://jqwik.net,false,,Engine for property-based testing built on JUnit 5.
 Frameworks,Provide environments to run tests for a specific use case.,Pact JVM,https://github.com/DiUS/pact-jvm,true,master,Consumer-driven contract testing.
 Frameworks,Provide environments to run tests for a specific use case.,PIT,http://pitest.org,false,,Fast mutation-testing framework for evaluating fault-detection abilities of existing JUnit or TestNG test suites.
-Matchers,Libraries that provide custom matchers.,AssertJ,https://joel-costigliola.github.io/assertj/,false,,Fluent assertions that improve readability.
+Matchers,Libraries that provide custom matchers.,AssertJ,https://joel-costigliolahub.io/assertj/,false,,Fluent assertions that improve readability.
 Matchers,Libraries that provide custom matchers.,Hamcrest,http://hamcrest.org/JavaHamcrest/,false,,Matchers that can be combined to create flexible expressions of intent.
 Matchers,Libraries that provide custom matchers.,JSONAssert,http://jsonassert.skyscreamer.org,false,,Simplifies testing JSON strings.
 Matchers,Libraries that provide custom matchers.,Truth,https://truth.dev,false,,Google's fluent assertion and proposition framework.
@@ -504,7 +503,7 @@ Miscellaneous,Other stuff related to testing.,Mutability Detector,https://github
 Miscellaneous,Other stuff related to testing.,raml-tester,https://github.com/nidi3/raml-tester,true,master,Tests if a request/response matches a given RAML definition.
 Miscellaneous,Other stuff related to testing.,TestContainers,https://github.com/testcontainers/testcontainers-java,true,master,"Provides throwaway instances of common databases, Selenium web browsers, or anything else that can run in a Docker container."
 Miscellaneous,Other stuff related to testing.,pojo-tester,https://www.pojo.pl,false,,Automatically performs tests on basic POJO methods.
-Mocking,Other stuff related to testing.,JMockit,http://jmockit.github.io,false,,"Integration testing, API mocking and faking, and code coverage."
+Mocking,Other stuff related to testing.,JMockit,http://jmockithub.io,false,,"Integration testing, API mocking and faking, and code coverage."
 Mocking,Other stuff related to testing.,Mockito,https://github.com/mockito/mockito,true,release/3.x,Mocking framework that lets you write tests with a clean and simple API.
 Mocking,Other stuff related to testing.,MockServer,https://www.mock-server.com,false,,Allows mocking of systems integrated with HTTPS.
 Mocking,Other stuff related to testing.,Moco,https://github.com/dreamhead/moco,true,master,Concise web services for stubs and mocks.
@@ -514,7 +513,6 @@ Utility,Libraries which provide general utility functions.,Arthas,https://github
 Utility,Libraries which provide general utility functions.,bucket4j,https://github.com/vladimir-bukhtoyarov/bucket4j,true,master,Rate limiting library based on token-bucket algorithm.
 Utility,Libraries which provide general utility functions.,cactoos,https://github.com/yegor256/cactoos,true,master,Collection of object-oriented primitives.
 Utility,Libraries which provide general utility functions.,CRaSH,http://www.crashub.org,false,,Provides a shell into a JVM that's running CRaSH. Used by Spring Boot and others.
-Utility,Libraries which provide general utility functions.,Dex,https://github.com/PatMartin/Dex,true,master,Java/JavaFX tool capable of powerful ETL and data visualization.
 Utility,Libraries which provide general utility functions.,Embulk,https://github.com/embulk/embulk,true,master,"Bulk data loader that helps data transfer between various databases, storages, file formats, and cloud services."
 Utility,Libraries which provide general utility functions.,fswatch,https://github.com/vorburger/ch.vorburger.fswatch,true,master,"Micro library to watch for directory file system changes, simplifying java.nio.file.WatchService."
 Utility,Libraries which provide general utility functions.,Gephi,https://github.com/gephi/gephi,true,master,Cross-platform for visualizing and manipulating large graph networks.
@@ -522,7 +520,7 @@ Utility,Libraries which provide general utility functions.,Guava,https://github.
 Utility,Libraries which provide general utility functions.,JADE,http://jade.tilab.com,false,,Framework and environment for building and debugging multi-agent systems.
 Utility,Libraries which provide general utility functions.,JGit,https://www.eclipse.org/jgit/,false,,"Lightweight, pure Java library implementing the Git version control system."
 Utility,Libraries which provide general utility functions.,minio-java,https://github.com/minio/minio-java,true,release,Provides simple APIs to access any Amazon S3-compatible object storage server.
-Utility,Libraries which provide general utility functions.,Prot‚g‚,https://protege.stanford.edu,false,,Provides an ontology editor and a framework to build knowledge-based systems.
+Utility,Libraries which provide general utility functions.,Protege,https://protege.stanford.edu,false,,Provides an ontology editor and a framework to build knowledge-based systems.
 Utility,Libraries which provide general utility functions.,Underscore-java,https://github.com/javadev/underscore-java,true,master,Port of Underscore.js functions.
 Web Crawling,Libraries that analyze the content of websites.,Apache Nutch,https://nutch.apache.org,false,,"Highly extensible, highly scalable web crawler for production environments."
 Web Crawling,Libraries that analyze the content of websites.,Crawler4j,https://github.com/yasserg/crawler4j,true,master,Simple and lightweight web crawler.

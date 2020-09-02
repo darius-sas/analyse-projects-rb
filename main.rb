@@ -32,7 +32,7 @@ pool = Concurrent::FixedThreadPool.new(thread_pool_size)
 puts "Thread pool size: #{thread_pool_size}"
 
 projects = Daru::DataFrame.from_csv(projects_file)
-git_projects = projects.filter_rows { |r| r['link.git'] == "true" }
+git_projects = projects.filter_rows { |r| r['link.git'].downcase == "true" }
 
 success = Concurrent::Array.new
 failed = Concurrent::Array.new
@@ -51,7 +51,7 @@ git_projects.each_row do |p|
     puts "Queuing for analysis project '#{p['project.name']}'"
     pool.post do 
         link = p['project.link']
-        folder_name = link.chomp("/")[/[\w\d\-\.]+$/]
+        folder_name = link.chomp("/")[/[\w\d\-\.]+$/].chomp(".git")
         project_dir = "#{projects_dir}/#{folder_name}"
 
         if not Dir.exist? project_dir

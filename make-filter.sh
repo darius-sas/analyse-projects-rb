@@ -6,4 +6,6 @@ arcan(){
 
 project=$1
 arcan generate filter filters/${project}.yaml && nano filters/${project}.yaml
-arcan analyse -p ${project} -i repos/${project} -o . -l JAVA --all --filtersFile filters/${project}.yaml --fail
+arcan analyse -p ${project} -i /home/fenn/data/atd-estimation/repos/${project} -o /home/fenn/data/atd-estimation -l JAVA --all --filtersFile filters/${project}.yaml --fail
+
+# analyse(){arcan analyse -p $1 -i /home/fenn/data/atd-estimation/repos/$1 -o /home/fenn/data/atd-estimation --all --fail -v -l JAVA --filtersFile filters/$1.yaml}
