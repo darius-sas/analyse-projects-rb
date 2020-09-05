@@ -1,3 +1,5 @@
+#!/bin/ruby
+
 require 'daru'
 require 'concurrent'
 
@@ -32,7 +34,9 @@ pool = Concurrent::FixedThreadPool.new(thread_pool_size)
 puts "Thread pool size: #{thread_pool_size}"
 
 projects = Daru::DataFrame.from_csv(projects_file)
-git_projects = projects.filter_rows { |r| r['link.git'].downcase == "true" }
+git_projects = projects.filter_rows { |r| 
+    r['project.link'].match? /(github.com)|(bitbucket.org)|(gitlab.com)|(gitbox.apache.org)/ 
+}
 
 success = Concurrent::Array.new
 failed = Concurrent::Array.new
@@ -46,6 +50,7 @@ logs_dir_succ = "#{logs_dir}/success"
 `mkdir -p #{logs_dir_fail}`
 
 `rm #{logs_dir_fail}/*`
+`rm #{logs_dir_succ}/*`
 
 git_projects.each_row do |p|
     puts "Queuing for analysis project '#{p['project.name']}'"
@@ -56,7 +61,7 @@ git_projects.each_row do |p|
 
         if not Dir.exist? project_dir
             puts "Cloning #{link}"
-            log_file = "#{output_dir}/#{folder_name}.git.log"
+            log_file = "#{logs_dir}/#{folder_name}.git.log"
             git_clone(link, project_dir, log_file)
             puts "Git successfully cloned #{link}" if $?.success?
             puts "Git failed to clone #{link}" if not $?.success?
@@ -97,4 +102,5 @@ puts " - Successful: #{success.length}"
 puts " - Failed: #{failed.length}"
 puts " - Already analysed: #{already_analysed.length}"
 puts "-------------------"
-puts "=> Total:#{n_projects}"
+puts "=> Analysed corpus: #{success.length + already_analysed.length}"
+puts "=> Total projects: #{n_projects}"
