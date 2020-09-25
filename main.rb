@@ -6,11 +6,11 @@ require 'concurrent'
 
 ARCAN_JAR = "/home/fenn/git/arcan-2/arcan-cli/target/Arcan2-cli-2.0.8-beta-jar-with-dependencies.jar"
 
-def run_arcan(project_name, input_dir, output_dir, filters_dir, log_file)
+def run_arcan(project_name, input_dir, output_dir, filters_dir, includes_dir, log_file)
     branch = "HEAD"
     filters_file = "#{filters_dir}/#{project_name}.yaml"
     filters_file = "#{filters_dir}/all-projects.yaml" unless File.exist? filters_file
-    arcan_command = "java -jar #{ARCAN_JAR} analyse -p #{project_name} -i #{input_dir} -o #{output_dir} -l JAVA --branch #{branch} --filtersFile #{filters_file} --all -v"
+    arcan_command = "java -jar #{ARCAN_JAR} analyse -p #{project_name} -i #{input_dir} -o #{output_dir} -l CPP --branch #{branch} --filtersFile #{filters_file} --auxiliaryPaths #{includes_dir} --all -v"
     `echo "#{arcan_command}" > #{log_file}`
     return `#{arcan_command} 2>&1 >> #{log_file}`
 end
@@ -19,15 +19,19 @@ def git_clone(link, project_dir, log_file)
     return `git clone --progress --depth 1 #{link} #{project_dir} 2> #{log_file}`
 end
 
-if ARGV.length != 4
-    puts "Usage <projects-file> <repos-dir> <output-dir> <filters-dir>"
+if ARGV.length <= 5
+    puts "Usage <projects-file> <repos-dir> <output-dir> <filters-dir> <includes-dir> [--runArcan] [--runGit]"
     exit 0
 else
     projects_file = ARGV[0]
     projects_dir = ARGV[1]
     output_dir = ARGV[2]
     filters_dir = ARGV[3]
+    includes_dir = ARGV[4]
+    run_arcan = ARGV.include? "--runArcan";
+    run_git = ARGV.include? "--runGit";
 end
+
 
 thread_pool_size = [2, Concurrent.processor_count].max
 pool = Concurrent::FixedThreadPool.new(thread_pool_size)
@@ -59,7 +63,7 @@ git_projects.each_row do |p|
         folder_name = link.chomp("/")[/[\w\d\-\.]+$/].chomp(".git")
         project_dir = "#{projects_dir}/#{folder_name}"
 
-        if not Dir.exist? project_dir
+        if not Dir.exist? project_dir and run_git
             puts "Cloning #{link}"
             log_file = "#{logs_dir}/#{folder_name}.git.log"
             git_clone(link, project_dir, log_file)
@@ -69,11 +73,11 @@ git_projects.each_row do |p|
             puts "Git repo already cloned #{project_dir}"
         end
         
-        if Dir.exists? project_dir and Dir["#{output_dir}/arcanOutput/#{folder_name}"].empty?
+        if Dir.exists? project_dir and Dir["#{output_dir}/arcanOutput/#{folder_name}"].empty? and run_arcan
             puts "Running Arcan on #{project_dir}"
             log_file = "#{output_dir}/#{folder_name}.arcan.log"
 
-            run_arcan(folder_name, project_dir, output_dir, filters_dir, log_file)
+            run_arcan(folder_name, project_dir, output_dir, filters_dir, includes_dir, log_file)
             complete_success = $?.success?
             if complete_success
                 puts "Arcan successfully analysed #{folder_name}"

@@ -1,0 +1,5 @@
+scanners:
+- startDate: '0001-01-01'
+  endDate: '9999-01-01'
+  include: ['**/src/main/java', src/main/java, src/java]
+  exclude: ['**/src/test/**', geode-tests, geode-experimental-driver, geode-junit, geode-docs, geode-old-client-support, geode-book, geode-concurrency-tests]

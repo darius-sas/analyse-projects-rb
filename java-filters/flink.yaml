@@ -1,0 +1,5 @@
+scanners:
+- startDate: '0001-01-01'
+  endDate: '9999-01-01'
+  include: ['**/src/main/java', src/main/java, src/java]
+  exclude: ['**/src/test/**', flink-docs, flink-examples, flink-python, flink-scala, flink-tests, flink-test-utils-parent, flink-fs-tests, flink-yarn-tests, flink-scala-shell, flink-streaming-scala, flink-end-to-end-tests, flink-external-resources, flink-quickstart, flink-walkthroughs, flink-filesystems, flink-optimizer, flink-metrics, flink-kubernetes, flink-libraries, flink-mesos, flink-metrics, flink-ml-parent, flink-queryable-state, flink-connectors]

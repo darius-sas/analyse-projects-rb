@@ -1,0 +1,734 @@
+category.name,category.desc,project.name,project.link,link.git,project.desc
+Compression,Compression and Archiving Libraries,bit7z,https://github.com/rikyoz/bit7z,true,A C++ static library offering a clean and simple interface to the 7-zip DLLs.
+Compression,Compression and Archiving Libraries,Brotli,https://github.com/google/brotli,true,Brotli compression format. Developed by Google.
+Compression,Compression and Archiving Libraries,bzip2,http://www.bzip.org/,false,"A freely available, patent free, high-quality data compressor."
+Compression,Compression and Archiving Libraries,FiniteStateEntropy,https://github.com/Cyan4973/FiniteStateEntropy,true,New generation entropy codecs : Finite State Entropy and Huff0.
+Compression,Compression and Archiving Libraries,PhysicsFS,https://icculus.org/physfs/,false,"A library to provide abstract access to various archives. It is intended for use in video games, and the design was somewhat inspired by Quake 3's file subsystem."
+Compression,Compression and Archiving Libraries,KArchive,https://quickgit.kde.org/?p=karchive.git,false,"A library for creating, reading, writing and manipulating file archives like zip and tar. It also provides transparent compression and decompression of data, using formats like gzip, via a subclass of QIODevice."
+Compression,Compression and Archiving Libraries,libarchive,https://github.com/libarchive/libarchive,true,Multi-format archive and compression library.
+Compression,Compression and Archiving Libraries,LZ4,https://github.com/lz4/lz4,true,Extremely Fast Compression algorithm.
+Compression,Compression and Archiving Libraries,LZFSE,https://github.com/lzfse/lzfse,true,LZFSE compression library and command line tool. Developed by Apple.
+Compression,Compression and Archiving Libraries,LZHAM,https://code.google.com/p/lzham/,false,Lossless data compression library with a compression ratio similar to LZMA but with much faster decompression.
+Compression,Compression and Archiving Libraries,LZMA,http://www.7-zip.org/sdk.html,false,The default and general compression method of 7z format.
+Compression,Compression and Archiving Libraries,LZMAT,http://www.matcode.com/lzmat.htm,false,An extremely fast real-time lossless data compression library.
+Compression,Compression and Archiving Libraries,miniz,https://github.com/richgel999/miniz,true,"Single C source file Deflate/Inflate compression library with zlib-compatible API, ZIP archive reading/writing, PNG writing."
+Compression,Compression and Archiving Libraries,Minizip,https://github.com/nmoinvaz/minizip,true,"Zlib with latest bug fixes that supports PKWARE disk spanning, AES encryption, and IO buffering."
+Compression,Compression and Archiving Libraries,smaz,https://github.com/antirez/smaz,true,Small strings compression library.
+Compression,Compression and Archiving Libraries,Snappy,https://google.github.io/snappy/,false,A fast compressor/decompressor.
+Compression,Compression and Archiving Libraries,ZLib,http://zlib.net/,false,A very compact compression library for data streams.
+Compression,Compression and Archiving Libraries,zlib-ng,https://github.com/Dead2/zlib-ng,true,"zlib for the ""next generation"" systems. Drop-In replacement with some serious optimizations."
+Compression,Compression and Archiving Libraries,zstd,https://github.com/facebook/zstd,true,Zstandard
+Compression,Compression and Archiving Libraries,ZZIPlib,http://zziplib.sourceforge.net/,false,Provides read access on ZIP-archives.
+Concurrency,Concurrency and Multithreading,alpaka,https://github.com/ComputationalRadiationPhysics/alpaka,true,Abstraction library for parallel kernel acceleration.
+Concurrency,Concurrency and Multithreading,ArrayFire,https://github.com/arrayfire/arrayfire,true,A general purpose GPU library.
+Concurrency,Concurrency and Multithreading,Async++,https://github.com/Amanieu/asyncplusplus,true,"A lightweight concurrency framework for C++11, inspired by the Microsoft PPL library and the N3428 C++ standard proposal."
+Concurrency,Concurrency and Multithreading,Boost.Compute,https://github.com/boostorg/compute,true,A C++ GPU Computing Library for OpenCL.
+Concurrency,Concurrency and Multithreading,Bolt,https://github.com/HSA-Libraries/Bolt,true,A C++ template library optimized for GPUs.
+Concurrency,Concurrency and Multithreading,ck,https://github.com/concurrencykit/ck,true,"Concurrency primitives, safe memory reclamation mechanisms and non-blocking data structures."
+Concurrency,Concurrency and Multithreading,concurrentqueue,https://github.com/cameron314/concurrentqueue,true,"A fast multi-producer, multi-consumer lock-free concurrent queue for C++11."
+Concurrency,Concurrency and Multithreading,Cpp-Taskflow,https://github.com/cpp-taskflow/cpp-taskflow,true,Fast C++ Parallel Programming with Task Dependencies.
+Concurrency,Concurrency and Multithreading,CUB,https://github.com/NVlabs/cub,true,"CUB provides state-of-the-art, reusable software components for every layer of the CUDA programming mode."
+Concurrency,Concurrency and Multithreading,cupla,https://github.com/ComputationalRadiationPhysics/cupla,true,"C++ API to run CUDA/C++ on OpenMP, Threads, TBB, ... through Alpaka."
+Concurrency,Concurrency and Multithreading,C++React,https://github.com/schlangster/cpp.react,true,A reactive programming library for C++11.
+Concurrency,Concurrency and Multithreading,FiberTaskingLib,https://github.com/RichieSams/FiberTaskingLib,true,Task-based multi-threading library that supports task graphs with arbitrary dependencies.
+Concurrency,Concurrency and Multithreading,HPX,https://github.com/STEllAR-GROUP/hpx/,true,A general purpose C++ runtime system for parallel and distributed applications of any scale.
+Concurrency,Concurrency and Multithreading,Intel Games Task Scheduler,https://github.com/GameTechDev/GTS-GamesTaskScheduler,true,A task scheduling framework designed for the needs of game developers.
+Concurrency,Concurrency and Multithreading,Intel Parallel STL,https://github.com/intel/parallelstl,true,Intel® implementation of C++17 STL for C++11 and above.
+Concurrency,Concurrency and Multithreading,Intel TBB,https://www.threadingbuildingblocks.org/,false,Intel® Threading Building Blocks.
+Concurrency,Concurrency and Multithreading,junction,https://github.com/preshing/junction,true,A library of concurrent data structures in C++.
+Concurrency,Concurrency and Multithreading,Kokkos,https://github.com/kokkos/kokkos,true,A performance portable programming model for parallel execution and memory abstraction.
+Concurrency,Concurrency and Multithreading,libcds,https://github.com/khizmax/libcds,true,A C++ library of Concurrent Data Structures.
+Concurrency,Concurrency and Multithreading,Libclsph,https://github.com/libclsph/libclsph,true,An OpenCL based GPU accelerated SPH fluid simulation library.
+Concurrency,Concurrency and Multithreading,libdill,https://github.com/sustrik/libdill/,true,Introduces structured concurrency in C.
+Concurrency,Concurrency and Multithreading,libdispatch,https://github.com/apple/swift-corelibs-libdispatch,true,Grand Central Dispatch
+Concurrency,Concurrency and Multithreading,libmill,https://github.com/sustrik/libmill/,true,Introduces Go-style concurrency in C.
+Concurrency,Concurrency and Multithreading,marl,https://github.com/google/marl,true,Marl is a hybrid thread / fiber task scheduler written in C++ 11.
+Concurrency,Concurrency and Multithreading,moderngpu,https://github.com/moderngpu/moderngpu,true,moderngpu is a productivity library for general-purpose computing on GPUs. It is a header-only C++ library written for CUDA. The unique value of the library is in its accelerated primitives for solving irregularly parallel problems.
+Concurrency,Concurrency and Multithreading,NCCL,https://github.com/NVIDIA/nccl,true,Optimized primitives for collective multi-GPU communication.
+Concurrency,Concurrency and Multithreading,OpenCL,https://www.khronos.org/opencl/,false,The open standard for parallel programming of heterogeneous systems.
+Concurrency,Concurrency and Multithreading,OpenMP,http://openmp.org/,false,The OpenMP API.
+Concurrency,Concurrency and Multithreading,SObjectizer,https://github.com/Stiffstream/sobjectizer,true,"An implementation of Actor, Publish-Subscribe, and CSP models in one rather small C++ framework."
+Concurrency,Concurrency and Multithreading,Quantum,https://github.com/bloomberg/quantum,true,A powerful C++ coroutine dispatcher framework built on top of
+Concurrency,Concurrency and Multithreading,RaftLib,http://raftlib.io/,false,"The RaftLib C++ library, streaming/dataflow concurrency via C++ iostream-like operators"
+Concurrency,Concurrency and Multithreading,readerwriterqueue,https://github.com/cameron314/readerwriterqueue,true,"A fast single-producer, single-consumer lock-free queue for C++."
+Concurrency,Concurrency and Multithreading,stdgpu,https://github.com/stotko/stdgpu,true,Efficient STL-like Data Structures on the GPU.
+Concurrency,Concurrency and Multithreading,Thrust,http://thrust.github.io/,false,A parallel algorithms library which resembles the C++ Standard Template Library
+Concurrency,Concurrency and Multithreading,transwarp,https://github.com/bloomen/transwarp,true,A header-only C++ library for task concurrency.
+Concurrency,Concurrency and Multithreading,VexCL,https://github.com/ddemidov/vexcl,true,A C++ vector expression template library for OpenCL/CUDA.
+Configuration,Concurrency and Multithreading,inih,https://github.com/benhoyt/inih,true,"Simple .INI file parser in C, good for embedded systems."
+Configuration,Concurrency and Multithreading,inih,https://github.com/jtilly/inih,true,Single header only C++ version of
+Configuration,Concurrency and Multithreading,iniparser,https://github.com/ndevilla/iniparser,true,INI file parser.
+Configuration,Concurrency and Multithreading,libconfig,https://github.com/hyperrealm/libconfig,true,"C, C++ library for processing structured configuration files."
+Configuration,Concurrency and Multithreading,libconfuse,https://github.com/martinh/libconfuse,true,Small configuration file parser library for C.
+Configuration,Concurrency and Multithreading,simpleini,https://github.com/brofield/simpleini,true,Cross-platform C++ library providing a simple API to read and write INI-style configuration files.
+Configuration,Concurrency and Multithreading,toml++,https://github.com/marzer/tomlplusplus,true,Header-only TOML parser and serializer for C++17 and later.
+Containers,Concurrency and Multithreading,C++ B-tree,https://code.google.com/p/cpp-btree/,false,A template library that implements ordered in-memory containers based on a B-tree data structure.
+Containers,Concurrency and Multithreading,Colony,https://github.com/mattreecebentley/plf_colony,true,"An unordered ""bag""-type container which outperforms std containers in high-modification scenarios while maintaining permanent pointers to non-erased elements regardless of insertion/erasure."
+Containers,Concurrency and Multithreading,dynamic_bitset,https://github.com/pinam45/dynamic_bitset,true,A C++17 header-only dynamic bitset.
+Containers,Concurrency and Multithreading,Forest,https://github.com/xorz57/forest,true,"Template library implementing an AVL, a Binary Search, a KD and a Quad Tree."
+Containers,Concurrency and Multithreading,Hashmaps,https://github.com/goossaert/hashmap,true,Implementation of open addressing hash table algorithms in C++.
+Containers,Concurrency and Multithreading,Hopscotch map,https://github.com/Tessil/hopscotch-map,true,A fast header-only hash map which uses hopscotch hashing for collisions resolution.
+Containers,Concurrency and Multithreading,LSHBOX,https://github.com/RSIA-LIESMARS-WHU/LSHBOX,true,A c++ toolbox of locality-sensitive hashing
+Containers,Concurrency and Multithreading,PGM-index,https://github.com/gvinciguerra/PGM-index,true,"A data structure that enables fast lookup, predecessor, range searches and updates in arrays of billions of items using orders of magnitude less space than traditional indexes."
+Containers,Concurrency and Multithreading,plf::list,https://github.com/mattreecebentley/plf_list,true,"A std::list implementation which removes range splicing in order to enable cache-friendlier structure, yielding significant performance gains."
+Containers,Concurrency and Multithreading,plf::stack,https://github.com/mattreecebentley/plf_stack,true,"A replacement container for the std::stack container adaptor, with better performance than any std container in a stack context."
+Containers,Concurrency and Multithreading,ring_span lite,https://github.com/martinmoene/ring-span-lite,true,A simplified implementation of Arthur O'Dwyer's ring_span implementation ie. a circular buffer view.
+Containers,Concurrency and Multithreading,robin-hood-hashing,https://github.com/martinus/robin-hood-hashing,true,Fast & memory efficient hashtable based on robin hood hashing for C++14.
+Containers,Concurrency and Multithreading,robin-map,https://github.com/Tessil/robin-map,true,Fast hash map and hash set using robin hood hashing.
+Containers,Concurrency and Multithreading,sparsepp,https://github.com/greg7mdp/sparsepp,true,"A fast, memory efficient hash map for C++."
+Cryptography,Cryptography and Encryption Libraries,Bcrypt,http://bcrypt.sourceforge.net/,false,A cross platform file encryption utility. Encrypted files are portable across all supported operating systems and processors.
+Cryptography,Cryptography and Encryption Libraries,BeeCrypt,http://beecrypt.sourceforge.net/,false,A portable and fast cryptography library.
+Cryptography,Cryptography and Encryption Libraries,Botan,http://botan.randombit.net/,false,A crypto library for C++.
+Cryptography,Cryptography and Encryption Libraries,Crypto++,https://github.com/weidai11/cryptopp,true,A free C++ class library of cryptographic schemes.
+Cryptography,Cryptography and Encryption Libraries,digestpp,https://github.com/kerukuro/digestpp,true,C++11 header-only message digest
+Cryptography,Cryptography and Encryption Libraries,GnuPG,https://www.gnupg.org/,false,A complete and free implementation of the OpenPGP standard.
+Cryptography,Cryptography and Encryption Libraries,GnuTLS,http://www.gnutls.org/,false,"A secure communications library implementing the SSL, TLS and DTLS protocols."
+Cryptography,Cryptography and Encryption Libraries,Libgcrypt,http://www.gnu.org/software/libgcrypt/,false,A general purpose cryptographic library originally based on code from GnuPG.
+Cryptography,Cryptography and Encryption Libraries,LibreSSL,http://www.libressl.org/,false,A free version of the SSL/TLS protocol forked from OpenSSL in 2014.
+Cryptography,Cryptography and Encryption Libraries,libsodium,https://github.com/jedisct1/libsodium,true,P
+Cryptography,Cryptography and Encryption Libraries,libhydrogen,https://github.com/jedisct1/libhydrogen,true,"A lightweight, secure, easy-to-use crypto library suitable for constrained environments."
+Cryptography,Cryptography and Encryption Libraries,LibTomCrypt,https://github.com/libtom/libtomcrypt,true,"A fairly comprehensive, modular and portable cryptographic toolkit."
+Cryptography,Cryptography and Encryption Libraries,mbedTLS,https://github.com/ARMmbed/mbedtls,true,"An open source, portable, easy to use, readable and flexible SSL library, previously known as PolarSSL."
+Cryptography,Cryptography and Encryption Libraries,Nettle,http://www.lysator.liu.se/~nisse/nettle/,false,A low-level cryptographic library.
+Cryptography,Cryptography and Encryption Libraries,OpenSSL,https://github.com/openssl/openssl,true,"A robust, commercial-grade, full-featured, and Open Source cryptography library."
+Cryptography,Cryptography and Encryption Libraries,retter,https://github.com/MaciejCzyzewski/retter,true,"A collection of hash functions, ciphers, tools, libraries, and materials related to cryptography."
+Cryptography,Cryptography and Encryption Libraries,s2n,https://github.com/awslabs/s2n,true,An implementation of the TLS/SSL protocols.
+Cryptography,Cryptography and Encryption Libraries,sha1collisiondetection,https://github.com/cr-marcstevens/sha1collisiondetection,true,Library and command line tool to detect SHA-1 collision in a file.
+Cryptography,Cryptography and Encryption Libraries,Tink,https://github.com/google/tink,true,"A multi-language, cross-platform library that provides cryptographic APIs that are secure, easy to use correctly, and hard"
+Cryptography,Cryptography and Encryption Libraries,Tiny AES in C,https://github.com/kokke/tiny-AES-c,true,Small portable AES128/192/256 in C.
+Cryptography,Cryptography and Encryption Libraries,Themis,https://github.com/cossacklabs/themis,true,"crypto library for painless data security, providing symmetric and asymmetric encryption, secure sockets with forward secrecy, for mobile and server platforms."
+CSV,Cryptography and Encryption Libraries,csv2,https://github.com/p-ranav/csv2,true,Fast CSV parser for modern C++.
+CSV,Cryptography and Encryption Libraries,Fast C++ CSV Parser,https://github.com/ben-strasser/fast-cpp-csv-parser,true,"Small, easy-to-use and fast header-only library for reading CSV files."
+CSV,Cryptography and Encryption Libraries,Vince's CSV Parser,https://github.com/vincentlaucsb/csv-parser,true,"A fast, self-contained, streaming C++17 CSV parser with optional type-casting and statistics."
+Database,Cryptography and Encryption Libraries,hiberlite,https://github.com/paulftw/hiberlite,true,C++ Object-relational mapping for sqlite3.
+Database,Cryptography and Encryption Libraries,Hiredis,https://github.com/redis/hiredis,true,A minimalistic C client library for the Redis database.
+Database,Cryptography and Encryption Libraries,LevelDB,https://github.com/google/leveldb,true,A fast key-value storage library written at Google that provides an ordered mapping from string keys to string values.
+Database,Cryptography and Encryption Libraries,LMDB,http://symas.com/mdb/,false,Very fast embedded key/value store with full ACID semantics.
+Database,Cryptography and Encryption Libraries,LMDB++,https://github.com/bendiken/lmdbxx,true,C++11 wrapper for the LMDB embedded database library.
+Database,Cryptography and Encryption Libraries,MongoDB C Driver,https://github.com/mongodb/mongo-c-driver,true,MongoDB client library for C.
+Database,Cryptography and Encryption Libraries,MongoDB C++ Driver,https://github.com/mongodb/mongo-cxx-driver,true,C++ driver for MongoDB.
+Database,Cryptography and Encryption Libraries,MongoDB Libbson,https://github.com/mongodb/libbson,true,A BSON utility library.
+Database,Cryptography and Encryption Libraries,MySQL++,http://www.tangentsoft.net/mysql++/,false,A C++ wrapper for MySQL's C API.
+Database,Cryptography and Encryption Libraries,nanodbc,https://github.com/nanodbc/nanodbc,true,A small C++ wrapper for the native C ODBC API.
+Database,Cryptography and Encryption Libraries,ODB,https://www.codesynthesis.com/products/odb/,false,"An open-source, cross-platform, and cross-database object-relational mapping"
+Database,Cryptography and Encryption Libraries,redis3m,https://github.com/luca3m/redis3m,true,"Wrapper of hiredis with clean C++ interface, supporting sentinel and ready to use patterns."
+Database,Cryptography and Encryption Libraries,RocksDB,https://github.com/facebook/rocksdb,true,Embedded key-value store for fast storage from facebook.
+Database,Cryptography and Encryption Libraries,SimDB,https://github.com/LiveAsynchronousVisualizedArchitecture/simdb,true,"High performance, shared memory, lock free, cross platform, single file, minimal dependencies, C++11 key-value store"
+Database,Cryptography and Encryption Libraries,SOCI,https://github.com/SOCI/soci,true,A database abstraction layer for C++.
+Database,Cryptography and Encryption Libraries,SQLite,http://www.sqlite.org/,false,"A completely embedded, full-featured relational database in a few 100k that you can include right into your project."
+Database,Cryptography and Encryption Libraries,SQLiteC++,https://github.com/SRombauts/SQLiteCpp,true,SQLiteC++
+Database,Cryptography and Encryption Libraries,sqlite_modern_cpp,https://github.com/SqliteModernCpp/sqlite_modern_cpp,true,Header only C++14 wrapper around sqlite library.
+Database,Cryptography and Encryption Libraries,sqlite_orm,https://github.com/fnc12/sqlite_orm,true,SQLite ORM light header only library for modern C++.
+Database,Cryptography and Encryption Libraries,sqlpp11,https://github.com/rbock/sqlpp11,true,A type safe embedded domain specific language for SQL queries and results in C++.
+Database,Cryptography and Encryption Libraries,TileDB,https://github.com/TileDB-Inc/TileDB,true,Fast Dense and Sparse Multidimensional Array DBMS.
+Database,Cryptography and Encryption Libraries,UnQLite,https://github.com/symisc/unqlite,true,"A self-contained, serverless, zero-configuration, transactional NoSQL engine."
+Database,Cryptography and Encryption Libraries,upscaledb,https://upscaledb.com,false,"An embedded ""typed"" key/value store with a built-in query interface."
+Debug,Cryptography and Encryption Libraries,backward-cpp,https://github.com/bombela/backward-cpp,true,A beautiful stack trace pretty printer for C++.
+Debug,Cryptography and Encryption Libraries,benchmark,https://github.com/google/benchmark,true,Google provided small microbenchmark support library.
+Debug,Cryptography and Encryption Libraries,Boost.Test,http://www.boost.org/doc/libs/master/libs/test/doc/html/index.html,false,Boost Test Library.
+Debug,Cryptography and Encryption Libraries,check,https://github.com/libcheck/check,true,Check is a unit testing framework for C.
+Debug,Cryptography and Encryption Libraries,doctest,https://github.com/onqtam/doctest,true,The lightest feature rich C++ single header testing framework.
+Debug,Cryptography and Encryption Libraries,Catch,https://github.com/philsquared/Catch,true,"A modern, C++-native, header-only, framework for unit-tests, TDD and BDD."
+Debug,Cryptography and Encryption Libraries,Catch2,https://github.com/catchorg/Catch2,true,"A modern, C++-native, header-only, test framework for unit-tests, TDD and BDD."
+Debug,Cryptography and Encryption Libraries,Celero,https://github.com/DigitalInBlue/Celero,true,C++ Benchmarking Framework.
+Debug,Cryptography and Encryption Libraries,CppUTest,https://github.com/cpputest/cpputest,true,Unit testing and mocking framework for C/C++.
+Debug,Cryptography and Encryption Libraries,CUTE,http://cute-test.com,false,C++ Unit Testing Easier.
+Debug,Cryptography and Encryption Libraries,CMocka,https://cmocka.org/,false,unit testing framework for C with support for mock objects.
+Debug,Cryptography and Encryption Libraries,CppUnit,http://www.freedesktop.org/wiki/Software/cppunit/,false,C++ port of JUnit.
+Debug,Cryptography and Encryption Libraries,CTest,https://cmake.org/cmake/help/v2.8.8/ctest.html,false,The CMake test driver program.
+Debug,Cryptography and Encryption Libraries,dbg-macro,https://github.com/sharkdp/dbg-macro,true,A dbg
+Debug,Cryptography and Encryption Libraries,fff,https://github.com/meekrosoft/fff,true,A micro-framework for creating fake C functions.
+Debug,Cryptography and Encryption Libraries,Google Test,https://github.com/google/googletest,true,Google C++ Testing Framework.
+Debug,Cryptography and Encryption Libraries,ig-debugheap,https://github.com/deplinenoise/ig-debugheap,true,Multiplatform debug heap useful for tracking down memory errors.
+Debug,Cryptography and Encryption Libraries,libtap,https://github.com/zorgnax/libtap,true,Write tests in C.
+Debug,Cryptography and Encryption Libraries,MemTrack,http://www.almostinfinite.com/memtrack.html,false,Tracking memory allocations in C++.
+Debug,Cryptography and Encryption Libraries,microprofile,https://github.com/jonasmr/microprofile,true,Profiler with web-view for multiple platforms.
+Debug,Cryptography and Encryption Libraries,MinUnit,https://github.com/siu/minunit,true,A minimal unit testing framework for C self-contained in a single header file.
+Debug,Cryptography and Encryption Libraries,Mockator,http://www.mockator.com,false,Eclipse CDT plug-in for C++ Seams and Mock Objects.
+Debug,Cryptography and Encryption Libraries,Nanotimer,https://github.com/mattreecebentley/plf_nanotimer,true,A simple low-overhead cross-platform timer class for benchmarking.
+Debug,Cryptography and Encryption Libraries,Nonius,https://github.com/libnonius/nonius,true,A C++ micro-benchmarking framework.
+Debug,Cryptography and Encryption Libraries,Remotery,https://github.com/Celtoys/Remotery,true,Single C File Profiler with Web Viewer.
+Debug,Cryptography and Encryption Libraries,UnitTest++,https://github.com/unittest-cpp/unittest-cpp,true,A lightweight unit testing framework for C++.
+Debug,Cryptography and Encryption Libraries,Unity,https://github.com/ThrowTheSwitch/Unity,true,Simple Unit Testing for C.
+Debug,Cryptography and Encryption Libraries,utest.h,https://github.com/sheredom/utest.h,true,Single header unit testing framework for C and C++.
+Debug,Cryptography and Encryption Libraries,μt,https://github.com/boost-experimental/ut,true,"C++20 single header/single module, macro-free μ"
+Debug,Cryptography and Encryption Libraries,VLD,http://vld.codeplex.com/,false,"Visual Leak Detector. A free, robust, open-source memory leak detection system for Visual C++."
+Font,Libraries for parsing and manipulating font files.,Fontconfig,https://gitlab.freedesktop.org/fontconfig/fontconfig,false,Font configuration and customization library.
+Font,Libraries for parsing and manipulating font files.,FreeType,https://www.freetype.org/,false,FreeType is a freely available software library to render fonts.
+Font,Libraries for parsing and manipulating font files.,otfcc,https://github.com/caryll/otfcc,true,A C library and utility used for parsing and writing OpenType font files.
+Game Engine,Libraries for parsing and manipulating font files.,Acid,https://github.com/Equilibrium-Games/Acid,true,A high speed C++17 Vulkan game engine.
+Game Engine,Libraries for parsing and manipulating font files.,Allegro,http://liballeg.org/,false,A cross-platform library mainly aimed for video games and multimedia programming.
+Game Engine,Libraries for parsing and manipulating font files.,Cocos2d-x,http://www.cocos2d-x.org/,false,"A multi-platform framework for building 2d games, interactive books, demos and other graphical applications."
+Game Engine,Libraries for parsing and manipulating font files.,Corange,https://github.com/orangeduck/Corange,true,"A game engine written in pure C, SDL and OpenGL."
+Game Engine,Libraries for parsing and manipulating font files.,crown,https://github.com/dbartolini/crown,true,"Crown is a general purpose data-driven game engine, written from scratch in orthodox C++ with a minimalistic and data-oriented design philosophy in mind."
+Game Engine,Libraries for parsing and manipulating font files.,delta3d,http://sourceforge.net/projects/delta3d/,false,A robust simulation platform.
+Game Engine,Libraries for parsing and manipulating font files.,EnTT,https://github.com/skypjack/entt,true,Gaming meets modern C++.
+Game Engine,Libraries for parsing and manipulating font files.,GamePlay,https://github.com/gameplay3d/GamePlay,true,A cross-platform native C++ game framework for creating 2D/3D mobile and desktop games.
+Game Engine,Libraries for parsing and manipulating font files.,Godot,https://github.com/godotengine/godot,true,"A fully featured, open source, MIT licensed, game engine."
+Game Engine,Libraries for parsing and manipulating font files.,Grit,https://github.com/grit-engine/grit-engine,true,Community project to build a free game engine for implementing open world 3D games.
+Game Engine,Libraries for parsing and manipulating font files.,Halley,https://github.com/amzeratul/halley,true,"A lightweight game engine written in C++14 with a ""true"" entity-component system."
+Game Engine,Libraries for parsing and manipulating font files.,KlayGE,https://github.com/gongminmin/KlayGE,true,a cross-platform open source game engine with plugin-based architecture.
+Game Engine,Libraries for parsing and manipulating font files.,OpenXRay,https://github.com/OpenXRay/xray-16,true,a community-modified X-Ray engine used in S.T.A.L.K.E.R. game series.
+Game Engine,Libraries for parsing and manipulating font files.,Oxygine,http://oxygine.org/,false,A cross-platform 2D C++ game engine.
+Game Engine,Libraries for parsing and manipulating font files.,Panda3D,https://github.com/panda3d/panda3d,true,"A game engine, a framework for 3D rendering and game development for Python and C++ programs."
+Game Engine,Libraries for parsing and manipulating font files.,PixelGameEngine,https://github.com/OneLoneCoder/olcPixelGameEngine,true,"The official distribution of olcPixelGameEngine, a tool used in javidx9's YouTube videos and projects."
+Game Engine,Libraries for parsing and manipulating font files.,Polycode,https://github.com/ivansafrin/Polycode,true,A cross-platform framework for creative code in C++
+Game Engine,Libraries for parsing and manipulating font files.,raylib,https://github.com/raysan5/raylib,true,A simple and easy-to-use library to enjoy videogames programming.
+Game Engine,Libraries for parsing and manipulating font files.,Spring,https://github.com/spring/spring,true,A powerful free cross-platform RTS game engine.
+Game Engine,Libraries for parsing and manipulating font files.,Torque2D,https://github.com/GarageGames/Torque2D,true,An open-source and cross-platform C++ engine built for 2D game development.
+Game Engine,Libraries for parsing and manipulating font files.,Torque3D,https://github.com/GarageGames/Torque3D,true,An open-source C++ engine built for 3D game development.
+Game Engine,Libraries for parsing and manipulating font files.,toy engine,https://github.com/hugoam/toy,true,toy is a thin and modular c++ game engine and offers simple expressive c++ idioms to design full featured 2D or 3D games in fast iterations.
+Game Engine,Libraries for parsing and manipulating font files.,Urho3D,https://urho3d.github.io/,false,"A free lightweight, cross-platform 2D and 3D game engine implemented in C++. Greatly inspired by OGRE and Horde3D."
+GUI,Graphic User Interface,Boden,https://github.com/AshampooSystems/boden,true,"Native, mobile, cross-platform GUI Framework."
+GUI,Graphic User Interface,CEGUI,http://cegui.org.uk/,false,"Flexible, cross-platform GUI library."
+GUI,Graphic User Interface,Elements,https://github.com/cycfi/elements,true,"Lightweight, fine-grained, resolution independent, modular GUI library."
+GUI,Graphic User Interface,FLTK,http://www.fltk.org/index.php,false,"Fast, light, cross-platform C++ GUI toolkit."
+GUI,Graphic User Interface,GacUI,https://github.com/vczh-libraries/GacUI,true,"GPU Accelerated C++ User Interface, with WYSIWYG developing tools, XML supports, built-in data binding and MVVM features."
+GUI,Graphic User Interface,GTK+,http://www.gtk.org/,false,A multi-platform toolkit for creating graphical user interfaces.
+GUI,Graphic User Interface,gtkmm,http://www.gtkmm.org/en/,false,The official C++ interface for the popular GUI library GTK+.
+GUI,Graphic User Interface,imgui,https://github.com/ocornut/imgui,true,Immediate Mode Graphical User Interface with minimal dependencies.
+GUI,Graphic User Interface,implot,https://github.com/epezent/implot,true,Immediate Mode Plotting widgets for imgui.
+GUI,Graphic User Interface,iup,https://www.tecgraf.puc-rio.br/iup,false,Multi-platform toolkit for building graphical user interfaces.
+GUI,Graphic User Interface,libui,https://github.com/andlabs/libui,true,Simple and portable
+GUI,Graphic User Interface,MyGUI,http://mygui.info/,false,"Fast, flexible and simple GUI."
+GUI,Graphic User Interface,nana,http://nanapro.org/en-us/,false,Nana is a cross-platform library for GUI programming in modern C++ style.
+GUI,Graphic User Interface,NanoGui,https://github.com/wjakob/nanogui,true,A minimalistic cross-platform widget library for OpenGL 3.x or higher.
+GUI,Graphic User Interface,nuklear,https://github.com/Immediate-Mode-UI/Nuklear,true,A single-header ANSI C gui library.
+GUI,Graphic User Interface,QCustomPlot,http://qcustomplot.com/,false,Qt plotting widget without further dependencies.
+GUI,Graphic User Interface,Qwt,http://qwt.sourceforge.net/,false,Qt Widgets for Technical Applications.
+GUI,Graphic User Interface,QwtPlot3D,http://qwtplot3d.sourceforge.net/,false,"A feature-rich Qt/OpenGL-based C++ programming library, providing essentially a bunch of 3D-widgets."
+GUI,Graphic User Interface,RmlUi,https://github.com/mikke89/RmlUi,true,The HTML/CSS User Interface library evolved. Fork of libRocket.
+GUI,Graphic User Interface,Sciter,http://sciter.com/,false,Sciter is an embeddable HTML/CSS/scripting engine aimed to be used as an UI layer of modern desktop applications.
+GUI,Graphic User Interface,wxWidgets,http://wxwidgets.org/,false,"A C++ library that lets developers create applications for Windows, Mac OS X, Linux and other platforms with a single code base."
+GUI,Graphic User Interface,Yue,https://github.com/yue/yue,true,A library for creating native cross-platform GUI apps.
+Graphics,Graphic User Interface,assimp,https://github.com/assimp/assimp,true,Open Asset Import Library
+Graphics,Graphic User Interface,bgfx,https://github.com/bkaradzic/bgfx,true,A cross-platform rendering library.
+Graphics,Graphic User Interface,Blend2D,https://github.com/blend2d/blend2d,true,2D vector graphics engine powered by a JIT compiler.
+Graphics,Graphic User Interface,bs::framework,https://github.com/GameFoundry/bsf,true,Modern C++14 library for the development of real-time graphical applications.
+Graphics,Graphic User Interface,Cairo,http://www.cairographics.org/,false,A 2D graphics library with support for multiple output devices.
+Graphics,Graphic User Interface,Diligent Engine,https://github.com/DiligentGraphics/DiligentEngine,true,A modern cross-platform low-level 3D graphics library.
+Graphics,Graphic User Interface,DirectXTK,https://github.com/Microsoft/DirectXTK,true,A collection of helper classes for writing DirectX 11.x code in C++.
+Graphics,Graphic User Interface,GLFW,https://github.com/glfw/glfw,true,"A simple, cross-platform OpenGL wrangling library."
+Graphics,Graphic User Interface,herebedragons,https://github.com/kosua20/herebedragons,true,"A basic 3D scene implemented with various engines, frameworks or APIs."
+Graphics,Graphic User Interface,Horde3D,https://github.com/horde3d/Horde3D,true,A small 3D rendering and animation engine.
+Graphics,Graphic User Interface,Ion,https://github.com/google/ion,true,A small and efficient set of libraries for building cross-platform client or server applications that use 3D graphics.
+Graphics,Graphic User Interface,Irrlicht,http://irrlicht.sourceforge.net/,false,A high performance realtime 3D engine written in C++.
+Graphics,Graphic User Interface,libigl,https://github.com/libigl/libigl,true,Simple C++ geometry processing library.
+Graphics,Graphic User Interface,LLGL,https://github.com/LukasBanana/LLGL,true,Low Level Graphics Library
+Graphics,Graphic User Interface,magnum,https://github.com/mosra/magnum,true,Lightweight and modular C++11/C++14 graphics middleware for games and data visualization.
+Graphics,Graphic User Interface,NanoVG,https://github.com/memononen/nanovg,true,Antialiased 2D vector drawing library on top of OpenGL for UI and visualizations.
+Graphics,Graphic User Interface,Ogre 3D,http://www.ogre3d.org/,false,"A scene-oriented, real-time, flexible 3D rendering engine"
+Graphics,Graphic User Interface,OpenSceneGraph,http://www.openscenegraph.org/,false,An open source high performance 3D graphics toolkit.
+Graphics,Graphic User Interface,OpenSubdiv,https://github.com/PixarAnimationStudios/OpenSubdiv,true,Pixar's library for evaluating and rendering subdivision surfaces on CPU and GPU.
+Graphics,Graphic User Interface,OpenVDB,http://www.openvdb.org/,false,"Library and tools for storing, editing, and rendering volumetric datasets."
+Graphics,Graphic User Interface,Panda3D,http://www.panda3d.org/,false,A framework for 3D rendering and game development for Python and C++.
+Graphics,Graphic User Interface,Partio,https://github.com/wdas/partio,true,"Library for wrangling particle data, with support for most common file formats."
+Graphics,Graphic User Interface,Skia,https://github.com/google/skia,true,"A complete 2D graphic library for drawing Text, Geometries, and Images."
+Graphics,Graphic User Interface,TinySpline,https://github.com/msteinbeck/tinyspline,true,"A small, yet powerful ANSI C library for interpolating, transforming, and querying arbitrary NURBS, B-Splines, and Bézier curves."
+Graphics,Graphic User Interface,urho3d,https://github.com/urho3d/Urho3D,true,Cross-platform rendering and game engine.
+Graphics,Graphic User Interface,Yocto/GL,https://github.com/xelatihy/yocto-gl,true,Tiny C++ Libraries for Data-Driven Physically-based Graphics.
+Image Processing,Graphic User Interface,Boost.GIL,http://www.boost.org/doc/libs/1_56_0/libs/gil/doc/index.html,false,Generic Image Library.
+Image Processing,Graphic User Interface,CImg,http://cimg.eu/,false,"A small, open source, C++ toolkit for image processing."
+Image Processing,Graphic User Interface,CxImage,https://www.codeproject.com/Articles/1300/CxImage,false,"An image processing and conversion library to load, save, display, transform BMP, JPEG, GIF, PNG, TIFF, MNG, ICO, PCX, TGA, WMF, WBMP, JBG, J2K images."
+Image Processing,Graphic User Interface,Dlib,https://github.com/davisking/dlib,true,"A modern C++11 machine learning, computer vision, numerical optimization, and deep learning toolkit."
+Image Processing,Graphic User Interface,FreeImage,http://freeimage.sourceforge.net/,false,An open source library that supports popular graphics image formats and others as needed by today's multimedia applications.
+Image Processing,Graphic User Interface,GD,https://github.com/libgd/libgd,true,"GD Graphics Library, famously used in PHP for image loading/manipulation & thumbnail generation."
+Image Processing,Graphic User Interface,DCMTK,http://dicom.offis.de/dcmtk.php.en,false,DICOM Toolkit.
+Image Processing,Graphic User Interface,GDCM,http://gdcm.sourceforge.net/wiki/index.php/Main_Page,false,Grassroots DICOM library.
+Image Processing,Graphic User Interface,ITK,http://www.itk.org/,false,"An open-source, cross-platform system for image analysis."
+Image Processing,Graphic User Interface,Leptonica,https://github.com/DanBloomberg/leptonica,true,Leptonica is an open source library containing software that is broadly useful for image processing and image analysis applications.
+Image Processing,Graphic User Interface,libfacedetection,https://github.com/ShiqiYu/libfacedetection,true,Open source library for face detection in images. The face detection speed can reach 1500FPS.
+Image Processing,Graphic User Interface,libjpeg-turbo,https://github.com/libjpeg-turbo/libjpeg-turbo,true,A JPEG image codec that uses SIMD instructions to accelerate baseline JPEG encoding and decoding.
+Image Processing,Graphic User Interface,libvips,https://github.com/jcupitt/libvips,true,A fast image processing library with low memory needs.
+Image Processing,Graphic User Interface,Magick++,http://www.imagemagick.org/script/api.php,false,ImageMagick program interfaces for C++.
+Image Processing,Graphic User Interface,MagickWnd,http://www.imagemagick.org/script/api.php,false,ImageMagick program interfaces for C.
+Image Processing,Graphic User Interface,OpenCV,http://opencv.org/,false,Open source computer vision.
+Image Processing,Graphic User Interface,OpenEXR,http://www.openexr.com/,false,Cross-platform library for high dynamic range imaging.
+Image Processing,Graphic User Interface,OpenImageIO,https://github.com/OpenImageIO/oiio,true,Powerful image and texture wrangling library with support for a wide number of common lossy and RAW formats.
+Image Processing,Graphic User Interface,Simd,https://github.com/ermig1979/Simd,true,"C++ image processing library with using of SIMD: SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2, AVX, AVX2, AVX-512, VMX"
+Image Processing,Graphic User Interface,stb-image,https://github.com/nothings/stb,true,STB single-header image loading library.
+Image Processing,Graphic User Interface,tesseract-ocr,https://github.com/tesseract-ocr/tesseract,true,An OCR engine.
+Image Processing,Graphic User Interface,TinyEXIF,https://github.com/cdcseacave/TinyEXIF,true,Tiny ISO-compliant C++ EXIF and XMP parsing library for JPEG.
+Image Processing,Graphic User Interface,Video++,https://github.com/matt-42/vpp,true,A C++14 high performance video and image processing library.
+Image Processing,Graphic User Interface,VIGRA,https://github.com/ukoethe/vigra,true,A generic C++ computer vision library for image analysis.
+Image Processing,Graphic User Interface,VTK,http://www.vtk.org/,false,"Open-source, freely available software system for 3D computer graphics, image processing and visualization."
+Internationalization,Graphic User Interface,gettext,http://www.gnu.org/software/gettext/,false,GNU 'gettext'.
+Internationalization,Graphic User Interface,IBM ICU,http://site.icu-project.org/,false,A set of C/C++ and Java libraries providing Unicode and Globalization support.
+Internationalization,Graphic User Interface,libiconv,http://www.gnu.org/software/libiconv/,false,An encoding conversion library between different character encodings.
+Internationalization,Graphic User Interface,utf8.h,https://github.com/sheredom/utf8.h,true,Single header utf8 string functions for C and C++.
+Internationalization,Graphic User Interface,utf8proc,https://github.com/JuliaStrings/utf8proc,true,A clean C library for processing UTF-8 Unicode data.
+Interprocess communication,Graphic User Interface,Apache Thrift,https://thrift.apache.org/,false,"Efficient cross-language IPC/RPC, works between C++, Java, Python, PHP, C#, and many more other languages. Originally developed by Facebook."
+Interprocess communication,Graphic User Interface,Cap'n Proto,https://github.com/capnproto/capnproto,true,Fast data interchange format and capability-based RPC system.
+Interprocess communication,Graphic User Interface,eCAL,https://github.com/continental/ecal,true,"Pub/sub, client/server, C++/Python/C#, various message protocols"
+Interprocess communication,Graphic User Interface,gRPC,https://github.com/grpc/grpc,true,"A high performance, open source, general-purpose RPC framework."
+Interprocess communication,Graphic User Interface,Ice,https://github.com/zeroc-ice/ice,true,"Comprehensive RPC framework with support for C++, C#, Java, JavaScript, Python and more."
+Interprocess communication,Graphic User Interface,libjson-rpc-cpp,https://github.com/cinemast/libjson-rpc-cpp,true,JSON-RPC framework for C++ servers and clients.
+Interprocess communication,Graphic User Interface,nanomsg,https://github.com/nanomsg/nanomsg,true,"A simple high-performance implementation of several ""scalability protocols""."
+Interprocess communication,Graphic User Interface,nng,https://github.com/nanomsg/nng,true,"nanomsg-next-generation, a light-weight brokerless messaging library."
+Interprocess communication,Graphic User Interface,rpclib,https://github.com/rpclib/rpclib,true,A modern C++ msgpack-RPC server and client library.
+Interprocess communication,Graphic User Interface,simple-rpc-cpp,https://github.com/pearu/simple-rpc-cpp,true,A simple RPC wrapper generator to C/C++ functions.
+Interprocess communication,Graphic User Interface,WAMP,http://wamp.ws/,false,Provides RPC and pub/sub messaging patterns.
+Interprocess communication,Graphic User Interface,xmlrpc-c,http://xmlrpc-c.sourceforge.net/,false,A lightweight RPC library based on XML and HTTP.
+JSON,Graphic User Interface,Boost.PropertyTree,http://www.boost.org/doc/libs/1_55_0/doc/html/property_tree.html,false,A property tree parser/generator that can be used to parse XML/JSON/INI/Info files.
+JSON,Graphic User Interface,cJSON,https://github.com/DaveGamble/cJSON,true,Ultralightweight JSON parser in ANSI C.
+JSON,Graphic User Interface,frozen,https://github.com/cesanta/frozen,true,JSON parser and generator for C/C++.
+JSON,Graphic User Interface,Jansson,https://github.com/akheron/jansson,true,"C library for encoding, decoding and manipulating JSON data."
+JSON,Graphic User Interface,jbson,https://github.com/chrismanning/jbson,true,"jbson is a library for building & iterating BSON data, and JSON documents in C++14."
+JSON,Graphic User Interface,JeayeSON,https://github.com/jeaye/jeayeson,true,A very sane
+JSON,Graphic User Interface,Jsmn,https://github.com/zserge/jsmn,true,A minimalistic JSON parser in C.
+JSON,Graphic User Interface,json,https://github.com/nlohmann/json,true,JSON for Modern C++.
+JSON,Graphic User Interface,JSON++,https://github.com/hjiang/jsonxx,true,A JSON parser in C++.
+JSON,Graphic User Interface,json.h,https://github.com/sheredom/json.h,true,A simple one header/one source solution to parsing JSON in C and C++.
+JSON,Graphic User Interface,json-c,https://github.com/json-c/json-c,true,A JSON implementation in C.
+JSON,Graphic User Interface,jsoncons,https://github.com/danielaparker/jsoncons,true,"A C++ header-only library for JSON and JSON-like binary formats with JSONPointer, JSONPatch, JSONPath and JMESPath."
+JSON,Graphic User Interface,JsonCpp,https://github.com/open-source-parsers/jsoncpp,true,A C++ library for interacting with JSON.
+JSON,Graphic User Interface,json-parser,https://github.com/udp/json-parser,true,Very low footprint JSON parser written in portable ANSI C.
+JSON,Graphic User Interface,json11,https://github.com/dropbox/json11,true,A tiny JSON library for C++11.
+JSON,Graphic User Interface,json-voorhees,https://github.com/tgockel/json-voorhees,true,"JSON library for C++. Support for C++11. No dependencies, fast and dev-friendly."
+JSON,Graphic User Interface,jute,https://github.com/amir-s/jute,true,Very simple C++ JSON Parser.
+JSON,Graphic User Interface,libjson,https://github.com/vincenthz/libjson,true,A JSON parser and printer library in C. easy to integrate with any model.
+JSON,Graphic User Interface,libjson,http://sourceforge.net/projects/libjson/,false,Lightweight JSON library.
+JSON,Graphic User Interface,LIBUCL,https://github.com/vstakhov/libucl,true,Universal configuration library parser
+JSON,Graphic User Interface,parson,https://github.com/kgabis/parson,true,Parson is a lighweight json library written in C.
+JSON,Graphic User Interface,PicoJSON,https://github.com/kazuho/picojson,true,"A header-file-only, JSON parser serializer in C++."
+JSON,Graphic User Interface,qt-json,https://github.com/gaudecker/qt-json,true,A simple class for parsing JSON data into a QVariant hierarchy and vice versa.
+JSON,Graphic User Interface,QJson,https://github.com/flavio/qjson,true,A qt-based library that maps JSON data to QVariant objects.
+JSON,Graphic User Interface,RapidJSON,https://github.com/miloyip/rapidjson,true,A fast JSON parser/generator for C++ with both SAX/DOM style API.
+JSON,Graphic User Interface,sajson,https://github.com/chadaustin/sajson,true,"Lightweight, extremely high-performance JSON parser for C++11."
+JSON,Graphic User Interface,simdjson,https://github.com/lemire/simdjson,true,Extremely fast JSON library that can parse gigabytes of JSON per second.
+JSON,Graphic User Interface,taoJSON,https://github.com/taocpp/json,true,Zero-dependency C++ header-only JSON library.
+JSON,Graphic User Interface,ujson,https://bitbucket.org/awangk/ujson,true,"µjson is a a small, C++11, UTF-8, JSON library."
+JSON,Graphic User Interface,YAJL,https://github.com/lloyd/yajl,true,A fast streaming JSON parsing library in C.
+Logging,Graphic User Interface,Blackhole,https://github.com/3Hren/blackhole,true,"Attribute-based logging framework, which is designed to be fast, modular and highly customizable."
+Logging,Graphic User Interface,Boost.Log,http://www.boost.org/doc/libs/1_56_0/libs/log/doc/html/index.html,false,Designed to be very modular and extensible.
+Logging,Graphic User Interface,Easylogging++,https://github.com/easylogging/easyloggingpp,true,Extremely light-weight high performance logging library for C++11
+Logging,Graphic User Interface,G3log,https://github.com/KjellKod/g3log,true,Asynchronous logger with Dynamic Sinks.
+Logging,Graphic User Interface,glog,https://github.com/google/glog,true,C++ implementation of the Google logging module.
+Logging,Graphic User Interface,Log4cpp,http://log4cpp.sourceforge.net/,false,"A library of C++ classes for flexible logging to files, syslog, IDSA and other destinations."
+Logging,Graphic User Interface,log4cplus,https://github.com/log4cplus/log4cplus,true,"A simple to use C++ logging API providing thread-safe, flexible, and arbitrarily granular control over log management and configuration."
+Logging,Graphic User Interface,loguru,https://github.com/emilk/loguru,true,A lightweight C++ logging library.
+Logging,Graphic User Interface,plog,https://github.com/SergiusTheBest/plog,true,Portable and simple log for C++ in less than 1000 lines of code.
+Logging,Graphic User Interface,reckless,https://github.com/mattiasflodin/reckless,true,"Low-latency, high-throughput, asynchronous logging library for C++."
+Logging,Graphic User Interface,spdlog,https://github.com/gabime/spdlog,true,"Super fast, header only, C++ logging library."
+Logging,Graphic User Interface,templog,http://www.templog.org/,false,A very small and lightweight C++ library which you can use to add logging to your C++ applications.
+Logging,Graphic User Interface,P7Baical,http://baical.net/p7.html,false,An open source and cross-platform library for high-speed sending telemetry & trace data  with minimal usage of CPU and memory.
+Logging,Graphic User Interface,Quill,https://github.com/odygrd/quill,true,Asynchronous cross platform low latency logging library.
+Machine Learning,Graphic User Interface,Caffe,https://github.com/BVLC/caffe,true,A fast framework for neural networks.
+Machine Learning,Graphic User Interface,CCV,https://github.com/liuliu/ccv,true,"C-based/Cached/Core Computer Vision Library, A Modern Computer Vision Library."
+Machine Learning,Graphic User Interface,darknet,https://github.com/pjreddie/darknet,true,Open source neural network framework written in C and CUDA.
+Machine Learning,Graphic User Interface,Dlib,https://github.com/davisking/dlib,true,"A modern C++11 machine learning, computer vision, numerical optimization, and deep learning toolkit."
+Machine Learning,Graphic User Interface,Fido,https://github.com/FidoProject/Fido,true,A highly-modular C++ machine learning library for embedded electronics and robotics.
+Machine Learning,Graphic User Interface,flashlight,https://github.com/facebookresearch/flashlight,true,"A fast, flexible machine learning library from Facebook AI Research written entirely in C++ and based on the ArrayFire tensor library."
+Machine Learning,Graphic User Interface,libsvm,https://github.com/cjlin1/libsvm,true,"A simple, easy-to-use, efficient library for Support Vector Machines."
+Machine Learning,Graphic User Interface,MeTA,https://github.com/meta-toolkit/meta,true,A modern C++ data sciences toolkit.
+Machine Learning,Graphic User Interface,Minerva,https://github.com/dmlc/minerva,true,A fast and flexible system for deep learning.
+Machine Learning,Graphic User Interface,mlpack,https://github.com/mlpack/mlpack,true,A scalable c++ machine learning library.
+Machine Learning,Graphic User Interface,OpenCV,https://github.com/Itseez/opencv,true,Open Source Computer Vision Library.
+Machine Learning,Graphic User Interface,Recommender,https://github.com/GHamrouni/Recommender,true,C library for product recommendations/suggestions using collaborative filtering
+Machine Learning,Graphic User Interface,RNNLIB,https://github.com/szcom/rnnlib,true,RNNLIB is a recurrent neural network library for sequence learning problems.
+Machine Learning,Graphic User Interface,SHOGUN,https://github.com/shogun-toolbox/shogun,true,The Shogun Machine Learning Toolbox.
+Machine Learning,Graphic User Interface,sofia-ml,https://code.google.com/p/sofia-ml/,false,The suite of fast incremental algorithms for machine learning.
+Machine Learning,Graphic User Interface,VLFeat,https://github.com/vlfeat/vlfeat,true,The VLFeat open source library implements popular computer vision algorithms specialising in image understanding and local featurexs extraction and matching.
+Machine Learning,Graphic User Interface,xgboost,https://github.com/dmlc/xgboost,true,"Scalable, Portable and Distributed Gradient Boosting"
+Math,Graphic User Interface,Apophenia,https://github.com/b-k/apophenia,true,A C library for statistical and scientific computing
+Math,Graphic User Interface,Armadillo,https://gitlab.com/conradsnicta/armadillo-code,true,Fast C++ library for linear algebra & scientific computing.
+Math,Graphic User Interface,autodiff,https://github.com/autodiff/autodiff,true,"A modern, fast and expressive C++ library for automatic differentiation."
+Math,Graphic User Interface,blaze,https://bitbucket.org/blaze-lib/blaze,true,high-performance C++ math library for dense and sparse arithmetic.
+Math,Graphic User Interface,Boost.Multiprecision,http://www.boost.org/doc/libs/master/libs/multiprecision/doc/html/index.html,false,"provides higher-range/precision integer, rational and floating-point types in C++, header-only or with GMP/MPFR/LibTomMath backends."
+Math,Graphic User Interface,ceres-solver,http://ceres-solver.org/,false,C++ library for modeling and solving large complicated nonlinear least squares problems from google.
+Math,Graphic User Interface,CGAL,https://github.com/CGAL/cgal,true,Collection of efficient and reliable geometric algorithms.
+Math,Graphic User Interface,cml,http://cmldev.net/,false,free C++ math library for games and graphics.
+Math,Graphic User Interface,Dlib,https://github.com/davisking/dlib,true,"A modern C++11 machine learning, computer vision, numerical optimization, and deep learning toolkit."
+Math,Graphic User Interface,Eigen,http://eigen.tuxfamily.org/,false,"A high-level C++ library of template headers for linear algebra, matrix and vector operations, numerical solvers and related algorithms."
+Math,Graphic User Interface,ExprTK,http://www.partow.net/programming/exprtk/,false,The C++ Mathematical Expression Toolkit Library
+Math,Graphic User Interface,Geometric Tools,https://www.geometrictools.com,false,"C++ library for computing in the fields of mathematics, graphics, image analysis and physics."
+Math,Graphic User Interface,GLM,https://github.com/g-truc/glm,true,Header-only C++ math library that matches and inter-operates with OpenGL's GLSL math.
+Math,Graphic User Interface,GMTL,http://ggt.sourceforge.net/,false,Graphics Math Template Library is a collection of tools implementing Graphics primitives in generalized ways.
+Math,Graphic User Interface,GMP,https://gmplib.org/,false,"A C library for arbitrary precision arithmetic, operating on signed integers, rational numbers, and floating-point numbers."
+Math,Graphic User Interface,Klein,https://github.com/jeremyong/klein,true,"A fast, SIMD-optimized C++17 Geometric Algebra library for point, line, and plane projections, intersections, joins, rigid-body motion, and more."
+Math,Graphic User Interface,linalg.h,https://github.com/sgorsten/linalg,true,"Single header, public domain, short vector math library for C++."
+Math,Graphic User Interface,MIRACL,https://github.com/CertiVox/MIRACL,true,A Multiprecision Integer and Rational Arithmetic Cryptographic Library.
+Math,Graphic User Interface,muparser,http://beltoforion.de/article.php?a=muparser,false,muParser is an extensible high performance math expression parser library written in C++.
+Math,Graphic User Interface,LibTomMath,https://github.com/libtom/libtommath,true,A free open source portable number theoretic multiple-precision integer library written entirely in C.
+Math,Graphic User Interface,linmath.h,https://github.com/datenwolf/linmath.h,true,"A lean linear math library, aimed at graphics programming."
+Math,Graphic User Interface,lp_solve,https://sourceforge.net/projects/lpsolve,false,A library used to formulate and solve linear programming problems.
+Math,Graphic User Interface,OpenBLAS,https://github.com/xianyi/OpenBLAS,true,An optimized BLAS library based on GotoBLAS2 1.13 BSD version.
+Math,Graphic User Interface,QuantLib,https://github.com/lballabio/quantlib,true,A free/open-source library for quantitative finance.
+Math,Graphic User Interface,StatsLib,https://github.com/kthohr/stats,true,A C++ header-only library of statistical distribution functions.
+Math,Graphic User Interface,SymEngine,https://github.com/symengine/symengine,true,"Fast symbolic manipulation library, a rewriting of SymPy's core in C++."
+Math,Graphic User Interface,TinyExpr,https://github.com/codeplea/tinyexpr,true,A C library for parsing and evaluating math expressions from strings.
+Math,Graphic User Interface,Vc,https://github.com/VcDevel/Vc,true,SIMD Vector Classes for C++.
+Math,Graphic User Interface,Versor,http://versor.mat.ucsb.edu/,false,A
+Math,Graphic User Interface,Wykobi,http://www.wykobi.com/,false,"A C++ library of efficient, robust and simple to use C++ 2D/3D oriented computational geometry routines."
+Math,Graphic User Interface,xtensor,https://github.com/QuantStack/xtensor,true,"A C++14 library for numerical analysis with multi-dimensional array expressions, inspired by NumPy syntax."
+Math,Graphic User Interface,universal,https://github.com/stillwater-sc/universal,true,A C++14 header-only library implementing arbitrary posit arithmetic. The posit number system is a tapered floating point that is more efficient than IEEE floating point. Posits enable reproducible computational science.
+Memory Allocation,Graphic User Interface,Boehm GC,https://github.com/ivmai/bdwgc,true,Conservative garbage collector for C and C++.
+Memory Allocation,Graphic User Interface,C Smart Pointers,https://github.com/Snaipe/libcsptr,true,Smart pointers for the
+Memory Allocation,Graphic User Interface,Hoard,https://github.com/emeryberger/Hoard,true,"Fast, Scalable, and Memory-efficient Malloc for Linux, Windows, and Mac."
+Memory Allocation,Graphic User Interface,jemalloc,https://github.com/jemalloc/jemalloc,true,General purpose malloc
+Memory Allocation,Graphic User Interface,memory,https://github.com/foonathan/memory,true,STL compatible C++ memory allocator library.
+Memory Allocation,Graphic User Interface,memory-allocators,https://github.com/mtrebi/memory-allocators,true,Custom memory allocators to improve the performance of dynamic memory allocation.
+Memory Allocation,Graphic User Interface,mimalloc,https://github.com/microsoft/mimalloc,true,A compact general purpose allocator with excellent performance.
+Memory Allocation,Graphic User Interface,tgc,https://github.com/orangeduck/tgc,true,A tiny garbage collector for C written in \~500 LOC.
+Multimedia,Graphic User Interface,GStreamer,http://gstreamer.freedesktop.org/,false,A library for constructing graphs of media-handling components.
+Multimedia,Graphic User Interface,libass,https://github.com/libass/libass,true,Portable subtitle renderer for the ASS/SSA subtitle format.
+Multimedia,Graphic User Interface,libav,https://github.com/libav/libav,true,"A collection of libraries and tools to process multimedia content such as audio, video, subtitles and related metadata."
+Multimedia,Graphic User Interface,LIVE555 Streaming Media,http://www.live555.com/liveMedia/,false,Multimedia streaming library using open standard protocols
+Multimedia,Graphic User Interface,libVLC,https://wiki.videolan.org/LibVLC,false,libVLC
+Multimedia,Graphic User Interface,MediaInfoLib,https://github.com/MediaArea/MediaInfoLib,true,Convenient unified display of the most relevant technical and tag data for video and audio files.
+Multimedia,Graphic User Interface,QtAv,https://github.com/wang-bin/QtAV,true,A multimedia playback framework based on Qt and FFmpeg to write a player easily.
+Multimedia,Graphic User Interface,SDL,http://www.libsdl.org/,false,Simple DirectMedia Layer.
+Multimedia,Graphic User Interface,SFML,https://github.com/SFML/SFML,true,Simple and Fast Multimedia Library.
+Multimedia,Graphic User Interface,TagLib,https://github.com/taglib/taglib,true,A library for reading and editing the metadata of several popular audio formats.
+Networking,Graphic User Interface,ACE,http://www.dre.vanderbilt.edu/~schmidt/ACE.html,false,An OO Network Programming Toolkit in C++.
+Networking,Graphic User Interface,Boost.Asio,http://think-async.com/,false,A cross-platform C++ library for network and low-level I/O programming.
+Networking,Graphic User Interface,Boost.Beast,https://github.com/boostorg/beast,true,HTTP and WebSocket built on Boost.Asio in C++11.
+Networking,Graphic User Interface,Breep,https://github.com/Organic-Code/Breep,true,"Event based, high-level C++14 peer-to-peer library."
+Networking,Graphic User Interface,C++ REST SDK,https://github.com/Microsoft/cpprestsdk,true,C++ REST SDK
+Networking,Graphic User Interface,Restbed,https://github.com/corvusoft/restbed,true,C++11 Asynchronous RESTful framework.
+Networking,Graphic User Interface,Restinio,https://github.com/Stiffstream/restinio,true,A header-only C++14 library that gives you an embedded HTTP/Websocket server.
+Networking,Graphic User Interface,c-ares,https://github.com/c-ares/c-ares,true,A C library for asynchronous DNS requests.
+Networking,Graphic User Interface,cpp-httplib,https://github.com/yhirose/cpp-httplib,true,A single file C++11 header-only HTTP/HTTPS sever library.
+Networking,Graphic User Interface,cpp-netlib,http://cpp-netlib.org/,false,A collection of open-source libraries for high level network programming.
+Networking,Graphic User Interface,cpp-netlib/uri,https://github.com/cpp-netlib/uri,true,"URI parser/builder library for C++, compatible with RFC 3986 and RFC 3987."
+Networking,Graphic User Interface,cpr,https://github.com/whoshuu/cpr,true,A modern C++ HTTP requests library with a simple but powerful interface. Modeled after the Python Requests module.
+Networking,Graphic User Interface,curlcpp,https://github.com/JosephP91/curlcpp,true,An object oriented C++ wrapper for CURL
+Networking,Graphic User Interface,DPDK,https://github.com/DPDK/dpdk,true,"Data Plane Development Kit, libraries and drivers for fast packet processing."
+Networking,Graphic User Interface,Dyad.c,https://github.com/rxi/dyad,true,Asynchronous networking for C.
+Networking,Graphic User Interface,ENet,https://github.com/lsalzman/enet,true,Reliable UDP networking library.
+Networking,Graphic User Interface,evpp,https://github.com/Qihoo360/evpp,true,C++ high performance networking with TCP/UDP/HTTP protocols.
+Networking,Graphic User Interface,H2O,https://github.com/h2o/h2o,true,An optimized HTTP server with support for HTTP/1.x and HTTP/2. It can also be used as a library.
+Networking,Graphic User Interface,HTTP Parser,https://github.com/nodejs/http-parser,true,A http request/response parser for C.
+Networking,Graphic User Interface,KCP,https://github.com/skywind3000/kcp,true,A fast and reliable ARQ protocol that helps applications to reduce network latency.
+Networking,Graphic User Interface,libcurl,http://curl.haxx.se/libcurl/,false,Multiprotocol file transfer library.
+Networking,Graphic User Interface,libhttpserver,https://github.com/etr/libhttpserver,true,C++ library for creating an embedded Rest HTTP server
+Networking,Graphic User Interface,Libmicrohttpd,http://www.gnu.org/software/libmicrohttpd/,false,GNU libmicrohttpd is a small C library that is supposed to make it easy to run an HTTP server as part of another application.
+Networking,Graphic User Interface,libpcap,https://github.com/the-tcpdump-group/libpcap,true,A portable C/C++ library for network traffic capture.
+Networking,Graphic User Interface,libquic,https://github.com/devsisters/libquic,true,A QUIC protocol library extracted from Chromium's QUIC Implementation.
+Networking,Graphic User Interface,librdkafka,https://github.com/edenhill/librdkafka,true,Apache Kafka client library for C and C++.
+Networking,Graphic User Interface,libwebsockets,https://github.com/warmcat/libwebsockets,true,A lightweight pure C WebSocket implementation that provides both client and server libraries.
+Networking,Graphic User Interface,lwIP,http://savannah.nongnu.org/projects/lwip/,false,A lightweight TCP/IP stack.
+Networking,Graphic User Interface,Mongoose,https://github.com/cesanta/mongoose,true,Extremely lightweight webserver.
+Networking,Graphic User Interface,MQTT-C,https://github.com/LiamBindle/MQTT-C,true,A portable MQTT C client for embedded systems and PCs alike.
+Networking,Graphic User Interface,mTCP,https://github.com/mtcp-stack/mtcp,true,Highly scalable user-level TCP stack for multicore systems.
+Networking,Graphic User Interface,Muduo,https://github.com/chenshuo/muduo,true,A C++ non-blocking network library for multi-threaded server in Linux.
+Networking,Graphic User Interface,nghttp2,https://github.com/nghttp2/nghttp2,true,HTTP/2 C Library.
+Networking,Graphic User Interface,Onion,https://github.com/davidmoreno/onion,true,HTTP server library in C designed to be lightweight and easy to use.
+Networking,Graphic User Interface,PF_RING™,https://github.com/ntop/PF_RING,true,High-speed packet processing framework.
+Networking,Graphic User Interface,PicoHTTPParser,https://github.com/h2o/picohttpparser,true,"A tiny, primitive, fast HTTP request/response parser."
+Networking,Graphic User Interface,POCO,https://github.com/pocoproject/poco,true,"C++ class libraries and frameworks for building network- and internet-based applications that run on desktop, server, mobile and embedded systems."
+Networking,Graphic User Interface,Proxygen,https://github.com/facebook/proxygen,true,Facebook's collection of C++ HTTP libraries including an easy to use HTTP server.
+Networking,Graphic User Interface,RakNet,https://github.com/OculusVR/RakNet,true,"A cross platform, open source, C++ networking engine for game programmers."
+Networking,Graphic User Interface,restclient-cpp,https://github.com/mrtazz/restclient-cpp,true,Simple REST client for C++. It wraps libcurl for HTTP requests.
+Networking,Graphic User Interface,Seasocks,https://github.com/mattgodbolt/seasocks,true,"Simple, small, C++ embeddable webserver with WebSockets support."
+Networking,Graphic User Interface,Silicon,http://siliconframework.org,false,"A high performance, middleware oriented C++14 http web framework."
+Networking,Graphic User Interface,tlse,https://github.com/eduardsui/tlse,true,"Single C file TLS 1.2/1.3 implementation, using tomcrypt as crypto library"
+Networking,Graphic User Interface,Tufão,https://github.com/vinipsmaker/tufao,true,An asynchronous web framework for C++ built on top of Qt.
+Networking,Graphic User Interface,uriparser,https://github.com/uriparser/uriparser,true,Strictly RFC 3986 compliant URI parsing and handling library.
+Networking,Graphic User Interface,uWebSockets,https://github.com/uNetworking/uWebSockets,true,"µWS is one of the most lightweight, efficient & scalable WebSocket & HTTP server implementations available."
+Networking,Graphic User Interface,WAFer,https://github.com/riolet/WAFer,true,A C language-based ultra-light software platform for scalable server-side and networking applications. Think node.js for C programmers.
+Networking,Graphic User Interface,Wangle,https://github.com/facebook/wangle,true,"A client/server application framework to build asynchronous, event-driven modern C++ services."
+Networking,Graphic User Interface,wdt,https://github.com/facebook/wdt,true,An embeddedable library
+Networking,Graphic User Interface,WebSocket++,https://github.com/zaphoyd/websocketpp,true,C++/Boost Asio based websocket client/server library.
+Networking,Graphic User Interface,PcapPlusPlus,https://github.com/seladb/PcapPlusPlus,true,a multiplatform C++ network sniffing and packet parsing and crafting framework.
+Networking,Graphic User Interface,ZeroMQ,https://github.com/zeromq/libzmq,true,"High-speed, modular asynchronous communication library."
+PDF,Libraries for parsing and manipulating PDF documents.,libharu,https://github.com/libharu/libharu,true,"A free, cross platform, open-sourced software library for generating PDF."
+PDF,Libraries for parsing and manipulating PDF documents.,litePDF,https://litepdf.sourceforge.io,false,Library to create and edit PDF documents that uses GDI functions through a device context to draw the page content.
+PDF,Libraries for parsing and manipulating PDF documents.,MuPDF,https://mupdf.com/,false,"A lightweight PDF, XPS, and E-book viewer."
+PDF,Libraries for parsing and manipulating PDF documents.,PoDoFo,http://podofo.sourceforge.net/,false,A library to work with the PDF file format.
+PDF,Libraries for parsing and manipulating PDF documents.,Poppler,https://poppler.freedesktop.org/,false,Open-source multi-backend PDF rendering library based on the xpdf-3.0 code base.
+PDF,Libraries for parsing and manipulating PDF documents.,Xpdf,https://www.xpdfreader.com/,false,"Xpdf is a free PDF viewer and toolkit, including a text extractor, image converter, HTML converter, and more."
+PDF,Libraries for parsing and manipulating PDF documents.,DynaPDF,http://www.dynaforms.com/,false,An easy-to-use PDF generation library.
+Physics,Dynamics simulation engines,Box2D,https://github.com/erincatto/Box2D,true,A 2D physics engine for games.
+Physics,Dynamics simulation engines,Bullet,https://github.com/bulletphysics/bullet3,true,A 3D physics engine for games.
+Physics,Dynamics simulation engines,Chipmunk,https://github.com/slembcke/Chipmunk2D,true,A fast and lightweight 2D game physics library.
+Physics,Dynamics simulation engines,LiquidFun,https://github.com/google/liquidfun,true,A 2D physics engine for games.
+Physics,Dynamics simulation engines,Newton Dynamics,https://github.com/MADEAPPS/newton-dynamics,true,An integrated solution for real time simulation of physics environments.
+Physics,Dynamics simulation engines,ODE,http://www.ode.org/,false,Open Dynamics Engine
+Physics,Dynamics simulation engines,ofxBox2d,https://github.com/vanderlin/ofxBox2d,true,openFrameworks wrapper for Box2D.
+Physics,Dynamics simulation engines,PhysX,https://github.com/NVIDIAGameWorks/PhysX-3.4,true,An open-source realtime physics engine middleware SDK developed by Nvidia as a part of Nvidia GameWorks software suite.
+Physics,Dynamics simulation engines,Project Chrono,https://github.com/projectchrono/chrono,true,An open source multi-physics simulation engine.
+Physics,Dynamics simulation engines,Quantum++,https://github.com/vsoftco/qpp,true,A modern C++11 quantum computing library.
+Physics,Dynamics simulation engines,Simbody,https://github.com/simbody/simbody,true,"High-performance C++ multibody dynamics/physics library for simulating articulated biomechanical and mechanical systems like vehicles, robots, and the human skeleton."
+Physics,Dynamics simulation engines,SOFA,https://github.com/sofa-framework/sofa,true,"SOFA is an open-source framework targeting at real-time simulation, with an emphasis on medical simulation."
+Reflection,Dynamics simulation engines,Better Enums,https://github.com/aantron/better-enums,true,Reflective enums
+Reflection,Dynamics simulation engines,CPFG,https://github.com/cpgf/cpgf,true,"A C++03 library for reflection, callback and script binding."
+Reflection,Dynamics simulation engines,CPP-Reflection,https://github.com/AustinBrunkhorst/CPP-Reflection,true,C++ Reflection using clang.
+Reflection,Dynamics simulation engines,Magic Enum,https://github.com/Neargye/magic_enum,true,Header-only C++17 library provides static reflection for enums
+Reflection,Dynamics simulation engines,magic_get,https://github.com/apolukhin/magic_get,true,std::tuple like methods for user defined types without any macro or boilerplate code.
+Reflection,Dynamics simulation engines,meta,https://github.com/skypjack/meta,true,"Header-only, non-intrusive and macro-free runtime reflection system in C++."
+Reflection,Dynamics simulation engines,Nameof,https://github.com/Neargye/nameof,true,"Header-only C++17 library provides nameof macros and functions to obtain the simple name of variable, type, function, macro, and enum."
+Reflection,Dynamics simulation engines,Ponder,https://github.com/billyquith/ponder,true,A C++11 library for reflection.
+Reflection,Dynamics simulation engines,RTTR,https://github.com/rttrorg/rttr,true,A C++11 library for reflection.
+Reflection,Dynamics simulation engines,visit_struct,https://github.com/cbeck88/visit_struct,true,A miniature library for struct-field reflection in C++.
+Regular Expression,Dynamics simulation engines,CppVerbalExpressions,https://github.com/VerbalExpressions/CppVerbalExpressions,true,C++ regular expressions made easy.
+Regular Expression,Dynamics simulation engines,CTRE,https://github.com/hanickadot/compile-time-regular-expressions,true,A Compile time PCRE
+Regular Expression,Dynamics simulation engines,Hyperscan,https://github.com/intel/hyperscan,true,Hyperscan is a high-performance multiple regex matching library by Intel. Provides simultaneous matching of large numbers of regexps
+Regular Expression,Dynamics simulation engines,Oniguruma,https://github.com/kkos/oniguruma,true,A modern and flexible regular expressions library that supports a variety of character encodings.
+Regular Expression,Dynamics simulation engines,PCRE,http://pcre.org/,false,A regular expression C library inspired by the regular expression capabilities in Perl.
+Regular Expression,Dynamics simulation engines,PIRE,https://github.com/yandex/pire,true,Perl Incompatible Regular Expressions library by Yandex. Can be really fast
+Regular Expression,Dynamics simulation engines,RE2,https://github.com/google/re2,true,A software library for regular expressions via a finite-state machine using automata theory.
+Regular Expression,Dynamics simulation engines,SLRE,https://github.com/cesanta/slre,true,Super Light Regexp engine for C/C++.
+Regular Expression,Dynamics simulation engines,sregex,https://github.com/openresty/sregex,true,A non-backtracking NFA/DFA-based Perl-compatible regex engine library for matching on large data streams.
+Robotics,Dynamics simulation engines,MOOS-IvP,http://moos-ivp.org,false,"A set of open source C++ modules for providing autonomy on robotic platforms, in particular autonomous marine vehicles."
+Robotics,Dynamics simulation engines,MRPT,http://www.mrpt.org/,false,Mobile Robot Programming Toolkit.
+Robotics,Dynamics simulation engines,PCL,https://github.com/PointCloudLibrary/pcl,true,"Point Cloud Library is a standalone, large scale, open project for 2D/3D image and point cloud processing"
+Robotics,Dynamics simulation engines,ROS,http://wiki.ros.org/,false,Robot Operating System provides libraries and tools to help software developers create robot applications.
+Scientific Computing,Dynamics simulation engines,AMGCL,https://github.com/ddemidov/amgcl,true,a header-only C++ library for solving large sparse linear systems with algebraic multigrid.
+Scientific Computing,Dynamics simulation engines,FFTW,http://www.fftw.org/,false,A C library for computing the DFT in one or more dimensions.
+Scientific Computing,Dynamics simulation engines,GSL,http://www.gnu.org/software/gsl/,false,GNU scientific library.
+Scientific Computing,Dynamics simulation engines,TileDB,https://github.com/TileDB-Inc/TileDB,true,Fast Dense and Sparse Multidimensional Array DBMS.
+Scientific Computing,Dynamics simulation engines,Trilinos,https://github.com/trilinos/Trilinos,true,High performance PDE solvers.
+Scientific Computing,Dynamics simulation engines,Torch,https://github.com/torch/torch7,true,A scientific computing framework with wide support for machine learning algorithms that puts GPUs first.
+Scripting,Dynamics simulation engines,AngelScript,https://www.angelcode.com/angelscript/,false,AngelScript is a game-oriented interpreted/compiled scripting language.
+Scripting,Dynamics simulation engines,Boost.Python,http://www.boost.org/doc/libs/1_65_1/libs/python/doc/html/index.html,false,A C++ library which enables seamless interoperability between C++ and the Python programming language.
+Scripting,Dynamics simulation engines,cppimport,https://github.com/tbenthompson/cppimport,true,Import C++ files directly from Python!
+Scripting,Dynamics simulation engines,CppSharp,https://github.com/mono/CppSharp,true,Tools and libraries to glue C/C++ APIs to high-level languages.
+Scripting,Dynamics simulation engines,ChaiScript,https://github.com/ChaiScript/ChaiScript/,true,An easy to use embedded scripting language for C++.
+Scripting,Dynamics simulation engines,ctypes.sh,https://github.com/taviso/ctypes.sh,true,A foreign function interface for bash.
+Scripting,Dynamics simulation engines,Cython,https://github.com/cython/cython,true,Cython is an optimising static compiler for both the Python programming language and the extended Cython programming language
+Scripting,Dynamics simulation engines,djinni,https://github.com/dropbox/djinni,true,A tool for generating cross-language type declarations and interface bindings.
+Scripting,Dynamics simulation engines,Duktape,https://github.com/svaarala/duktape,true,An embeddable Javascript engine with compact footprint.
+Scripting,Dynamics simulation engines,JavaCpp,https://github.com/bytedeco/javacpp,true,The missing bridge between Java and native C++.
+Scripting,Dynamics simulation engines,libffi,https://github.com/libffi/libffi,true,A portable foreign-function interface library.
+Scripting,Dynamics simulation engines,Lua,http://www.lua.org/,false,A minimal and fast scripting engine for configuration files and basic application scripting.
+Scripting,Dynamics simulation engines,LuaBridge,https://github.com/vinniefalco/LuaBridge,true,"A lightweight, dependency-free library for binding Lua to C++."
+Scripting,Dynamics simulation engines,luacxx,https://github.com/dafrito/luacxx,true,C++11 API for creating Lua bindings.
+Scripting,Dynamics simulation engines,nbind,https://github.com/charto/nbind,true,Magical headers that make your C++ library accessible from JavaScript.
+Scripting,Dynamics simulation engines,PHP-CPP,https://github.com/CopernicaMarketingSoftware/PHP-CPP,true,A library to build PHP extensions with C++.
+Scripting,Dynamics simulation engines,pybind11,https://github.com/pybind/pybind11,true,Seamless operability between C++11 and Python.
+Scripting,Dynamics simulation engines,SIP,https://riverbankcomputing.com/software/sip/intro,false,C or C++ Bindings Generator for Python v2 and v3.
+Scripting,Dynamics simulation engines,sol2,https://github.com/ThePhD/sol2,true,A C++ <-> Lua API wrapper with advanced features and top notch performance.
+Scripting,Dynamics simulation engines,SWIG,https://github.com/swig/swig,true,"A wrapper/interface Generator that let you link your c++ code to Javascript, Perl, PHP, Python, Tcl and Ruby."
+Scripting,Dynamics simulation engines,V7,https://github.com/cesanta/v7,true,An embedded JavaScript engine.
+Scripting,Dynamics simulation engines,V8,https://v8.dev,false,A fast JavaScript engine by Google that can be embedded into any C++ application.
+Scripting,Dynamics simulation engines,ChakraCore,https://github.com/Microsoft/ChakraCore,true,
+Serialization,Dynamics simulation engines,Bitsery,https://github.com/fraillt/bitsery,true,Header only C++ binary serialization library.
+Serialization,Dynamics simulation engines,Bond,https://github.com/Microsoft/bond,true,"An open source, cross-platform framework for working with schematized data."
+Serialization,Dynamics simulation engines,Boost.Serialization,https://www.boost.org/doc/libs/master/libs/serialization/doc/index.html,false,Boost Serialization Library.
+Serialization,Dynamics simulation engines,Cap'n Proto,https://github.com/capnproto/capnproto,true,Fast data interchange format and capability-based RPC system.
+Serialization,Dynamics simulation engines,cereal,https://github.com/USCiLab/cereal,true,A C++11 library for serialization.
+Serialization,Dynamics simulation engines,cppcodec,https://github.com/tplgy/cppcodec,true,"Header-only C++11 library to encode/decode base64, base32 and hex with consistent, flexible API."
+Serialization,Dynamics simulation engines,FlatBuffers,https://github.com/google/flatbuffers,true,A Memory efficient serialization library.
+Serialization,Dynamics simulation engines,MessagePack,https://github.com/msgpack/msgpack-c,true,"Efficient binary serialization format ""like JSON"" for C and C++."
+Serialization,Dynamics simulation engines,nanopb,https://github.com/nanopb/nanopb,true,Small code-size Protocol Buffers implementation in ANSI C.
+Serialization,Dynamics simulation engines,protobuf,https://github.com/protocolbuffers/protobuf,true,Protocol Buffers
+Serialization,Dynamics simulation engines,protobuf-c,https://github.com/protobuf-c/protobuf-c,true,Protocol Buffers implementation in C.
+Serialization,Dynamics simulation engines,SimpleBinaryEncoding,https://github.com/real-logic/simple-binary-encoding,true,encoding and decoding application messages in binary format for low-latency applications.
+Serialization,Dynamics simulation engines,upb,https://github.com/protocolbuffers/upb,true,A small protobuf implementation in C.
+Sorting,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,pdqsort,https://github.com/orlp/pdqsort,true,Pattern-defeating quicksort.
+Sorting,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,Timsort,https://github.com/gfx/cpp-TimSort,true,"A templated stable sorting function which outperforms quicksort-based algorithms including std::sort, for reversed or semi-sorted data."
+Video,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,libvpx,http://www.webmproject.org/code/,false,VP8/VP9 Codec SDK.
+Video,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,FFmpeg,https://www.ffmpeg.org/,false,"A complete, cross-platform solution to record, convert and stream audio and video."
+Video,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,libde265,https://github.com/strukturag/libde265,true,Open h.265 video codec implementation.
+Video,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,OpenH264,https://github.com/cisco/openh264,true,Open Source H.264 Codec.
+Video,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,Theora,http://www.theora.org/,false,A free and open video compression format.
+Video,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,Vireo,https://github.com/twitter/vireo/,true,A lightweight and versatile video processing library by Twitter.
+Virtual Machines,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,CarpVM,https://github.com/tekknolagi/carp,true,"""interesting"" VM in C. Let's see how this goes."
+Virtual Machines,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,MicroPython,https://github.com/micropython/micropython,true,Aims to put an implementation of Python 3.x on a microcontroller.
+Virtual Machines,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,TinyVM,https://github.com/jakogut/tinyvm,true,"A small, fast, lightweight virtual machine written in pure ANSI C."
+Web Application Framework,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,Civetweb,https://github.com/civetweb/civetweb,true,"Provides easy to use, powerful, C/C++ embeddable web server with optional CGI, SSL and Lua support."
+Web Application Framework,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,C++ REST SDK,https://github.com/Microsoft/cpprestsdk,true,Microsoft project for cloud-based client-server communication in native code using a modern asynchronous C++ API design.
+Web Application Framework,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,CppCMS,http://cppcms.com/,false,A Free High Performance Web Development Framework
+Web Application Framework,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,Crow,https://github.com/ipkn/crow,true,Crow is C++ micro web framework
+Web Application Framework,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,Cutelyst,https://github.com/cutelyst/cutelyst,true,"A C++ Web Framework built on top of Qt, using the simple approach of Catalyst"
+Web Application Framework,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,Drogon,https://github.com/an-tao/drogon,true,"A C++14/17 based, high-performance HTTP application framework."
+Web Application Framework,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,facil.io,https://github.com/boazsegev/facil.io,true,"Evented, high performance C web framework supporting HTTP, WebSockets, SSE and more."
+Web Application Framework,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,Kore,https://kore.io/,false,ultra fast and flexible web server / framework for web applications developed in C.
+Web Application Framework,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,libOnion,http://www.coralbits.com/libonion/,false,lightweight library to help you create webservers in C programming language.
+Web Application Framework,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,lwan,https://github.com/lpereira/lwan,true,"Experimental, scalable, high performance HTTP server."
+Web Application Framework,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,oat++,https://github.com/oatpp/oatpp,true,"Light, zero-dependency framework to create high-performance web-services."
+Web Application Framework,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,Pistache,http://pistache.io/,false,Pistache is a C++ REST framework written in pure C++11 with no external dependency.
+Web Application Framework,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,QDjango,https://github.com/jlaine/qdjango/,true,"A web framework written in C++ and built on top of the Qt library. Where possible it tries to follow django's API, hence its name."
+Web Application Framework,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,TreeFrog Framework,https://github.com/treefrogframework/treefrog-framework,true,"High-speed and full-stack web application framework based on C++ and Qt, which supports HTTP and WebSocket protocol"
+Web Application Framework,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,Wt,http://www.webtoolkit.eu/wt,false,A C++ library for developing web applications.
+XML,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,Boost.PropertyTree,http://www.boost.org/doc/libs/1_55_0/doc/html/property_tree.html,false,A property tree parser/generator that can be used to parse XML/JSON/INI/Info files.
+XML,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,Expat,http://www.libexpat.org/,false,An XML parser library written in C.
+XML,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,Libxml2,http://xmlsoft.org/,false,The XML C parser and toolkit of Gnome.
+XML,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,libxml++,http://libxmlplusplus.sourceforge.net/,false,An XML Parser for C++.
+XML,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,Mini-XML,https://github.com/michaelrsweet/mxml,true,A small XML parsing library written in ANSI C.
+XML,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,PugiXML,http://pugixml.org/,false,"A light-weight, simple and fast XML parser for C++ with XPath support."
+XML,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,RapidXml,http://rapidxml.sourceforge.net/,false,"An attempt to create the fastest XML parser possible, while retaining useability, portability and reasonable W3C compatibility."
+XML,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,TinyXML,http://sourceforge.net/projects/tinyxml/,false,"A simple, small, minimal, C++ XML parser that can be easily integrating into other programs."
+XML,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,TinyXML2,https://github.com/leethomason/tinyxml2,true,"A simple, small, efficient, C++ XML parser that can be easily integrating into other programs."
+XML,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,TinyXML++,https://github.com/rjpcomputing/ticpp,true,"A completely new interface to TinyXML that uses MANY of the C++ strengths. Templates, exceptions, and much better error handling."
+XML,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,Xerces-C++,http://xerces.apache.org/xerces-c/,false,A validating XML parser written in a portable subset of C++.
+Miscellaneous,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,access_profiler,https://github.com/arvidn/access_profiler,true,A tool to count accesses to member variables in c++ programs.
+Miscellaneous,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,American fuzzy lop,http://lcamtuf.coredump.cx/afl/,false,Crazy fuzzing tool that automatically discovers bugs given time and minimal example input.
+Miscellaneous,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,Better String,http://bstring.sourceforge.net,false,An alternative to the string library for C which is more functional and does not have buffer overflow overrun problems. Also includes a C++ wrapper.
+Miscellaneous,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,Boost.Signals,http://www.boost.org/doc/libs/1_56_0/doc/html/signals.html,false,An implementation of a managed signals and slots system.
+Miscellaneous,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,CPPItertools,https://github.com/ryanhaining/cppitertools,true,Range-based for loop add-ons inspired by the Python builtins and itertools library.
+Miscellaneous,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,DynaMix,https://github.com/iboB/dynamix,true,A library which allows you to compose and modify objects at run time.
+Miscellaneous,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,{fmt},https://github.com/fmtlib/fmt,true,"Small, safe and fast formatting library for C++."
+Miscellaneous,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,FastFormat,http://www.fastformat.org,false,"Fast, Safe C++ Formatting inspired by log4j and Pantheios"
+Miscellaneous,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,casacore,https://code.google.com/p/casacore/,false,A set of c++ core libraries derived from aips++.
+Miscellaneous,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,QtVerbalExpressions,https://github.com/VerbalExpressions/QtVerbalExpressions,true,This Qt lib is based off of the C++ VerbalExpressions library.
+Miscellaneous,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,cxx-prettyprint,https://github.com/louisdx/cxx-prettyprint,true,A pretty printing library for C++ containers.
+Miscellaneous,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,icecream-cpp,https://github.com/renatoGarcia/icecream-cpp,true,A small printing library for debugging purposes.
+Miscellaneous,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,gcc-poison,https://github.com/leafsr/gcc-poison,true,A simple header file for developers to ban unsafe C/C++ functions from applications.
+Miscellaneous,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,Kangaru,https://github.com/gracicot/kangaru,true,A dependency injection container for C++11 and C++14.
+Miscellaneous,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,Klib,https://github.com/attractivechaos/klib,true,Small and lightweight implementations of common algorithms and data structures.
+Miscellaneous,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,libsigc++,http://libsigc.sourceforge.net/,false,A typesafe callback system for standard C++.
+Miscellaneous,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,libcpuid,https://github.com/anrieff/libcpuid,true,A small C library for x86 CPU detection and feature extraction.
+Miscellaneous,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,libevil,https://github.com/avati/libevil,true,The Evil License Manager.
+Miscellaneous,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,libnih,https://github.com/keybuk/libnih,true,A lightweight library of C functions and structures.
+Miscellaneous,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,libusb,https://libusb.info/,false,A universal USB library which allows for portable access to USB devices.
+Miscellaneous,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,Mach7,https://github.com/solodon4/Mach7,true,A Pattern-matching library for C++.
+Miscellaneous,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,mio,https://github.com/mandreyel/mio,true,Cross-platform C++11 header-only library for memory mapped file IO.
+Miscellaneous,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,PEGTL,https://github.com/taocpp/PEGTL,true,The Parsing Expression Grammar Template Library.
+Miscellaneous,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,Remote Call Framework,http://www.deltavsoft.com/,false,Inter-process communication framework for C++.
+Miscellaneous,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,Scintilla,http://scintilla.org/,false,A free source code editing component.
+Miscellaneous,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,SDS,https://github.com/antirez/sds,true,Simple Dynamic Strings library for C.
+Miscellaneous,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,semver.c,https://github.com/h2non/semver.c,true,A semver parser and render in ANSI C.
+Miscellaneous,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,Serial Communication Library,https://github.com/wjwwood/serial,true,"Cross-platform, Serial Port library written in C++."
+Miscellaneous,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,sigslot,http://sigslot.sourceforge.net/,false,C++ Signal/Slot Library.
+Miscellaneous,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,SimpleSignal,https://github.com/larspensjo/SimpleSignal,true,High performance C++11 signals.
+Miscellaneous,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,Stage,https://github.com/rtv/Stage,true,Mobile robot simulator.
+Miscellaneous,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,stdman,https://github.com/jeaye/stdman,true,.
+Miscellaneous,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,stb,https://github.com/nothings/stb,true,A range of single-file libraries for C/C++.
+Miscellaneous,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,StrTk,http://www.partow.net/programming/strtk/index.html,false,A C++ library consisting of high performance string processing routines.
+Miscellaneous,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,Tulip Indicators,https://tulipindicators.org,false,A C library of over 100 financial technical analysis indicators.
+Miscellaneous,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,ub-canaries,https://github.com/regehr/ub-canaries,true,A collection of C/C++ programs that try to get compilers to exploit undefined behavior.
+Miscellaneous,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,value-category-cheatsheet,https://github.com/jeaye/value-category-cheatsheet,true,
+Miscellaneous,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,VarTypes,https://github.com/szi/vartypes,true,"A feature-rich, object-oriented framework for managing variables in C++ / Qt4."
+Miscellaneous,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,ZBar,http://zbar.sourceforge.net/,false,"A barcode scanner library, which allows to scan photos/images/video streams for barcodes and return their value."
+Miscellaneous,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,ZXing,https://github.com/zxing/zxing/,true,"An open-source, multi-format 1D/2D barcode image processing library implemented in Java, with ports to other languages."
+Miscellaneous,YAShttpsgithub.comniXmanyas  Very fast Yet Another Serialization library supports the binarytextjson formats. Boost,pprint,https://github.com/p-ranav/pprint,true,Pretty Printer for Modern C++.
+Compiler,Software for creating a development environment.,8cc,https://github.com/rui314/8cc,true,A Small C Compiler.
+Compiler,Software for creating a development environment.,c,https://github.com/ryanmjacobs/c,true,"Compile and execute C ""scripts"" in one go!"
+Compiler,Software for creating a development environment.,Clang,http://clang.llvm.org/,false,A C compiler for LLVM. Supports C++11/14/1z C11. Developed by LLVM Team.
+Compiler,Software for creating a development environment.,GCC,https://gcc.gnu.org/,false,GNU Compiler Collection. Supports C++11/14/1z C11 and OpenMP.
+Compiler,Software for creating a development environment.,PCC,http://pcc.ludd.ltu.se/,false,A very old C compiler. Supports C99.
+Compiler,Software for creating a development environment.,Intel C++ Compiler,https://software.intel.com/en-us/c-compilers,false,Developed by Intel.
+Compiler,Software for creating a development environment.,LLVM,http://llvm.org/,false,Collection of modular and reusable compiler and toolchain technologies.
+Compiler,Software for creating a development environment.,Microsoft Visual C++,https://msdn.microsoft.com/en-us/vstudio/hh386302.aspx,false,"MSVC, developed by Microsoft."
+Compiler,Software for creating a development environment.,Open WatCom,https://github.com/open-watcom/open-watcom-v2,true,"Watcom C, C++, and Fortran cross compilers and tools."
+Compiler,Software for creating a development environment.,Oracle Solaris Studio,http://www.oracle.com/technetwork/server-storage/solarisstudio/overview/index.html,false,"C, C++ and Fortran compiler for SPARC and x86. Supports C++11. Available on Linux and Solaris."
+Compiler,Software for creating a development environment.,TCC,http://bellard.org/tcc/,false,Tiny C Compiler.
+Online Compiler,Software for creating a development environment.,codepad,http://codepad.org/,false,"An online compiler/interpreter, and a simple collaboration tool."
+Online Compiler,Software for creating a development environment.,coliru,http://coliru.stacked-crooked.com/,false,Online compiler/shell with support for various C++ compilers.
+Online Compiler,Software for creating a development environment.,Compiler Explorer,http://gcc.godbolt.org/,false,An interactive compiler with assembly output available.
+Online Compiler,Software for creating a development environment.,CompileOnline,http://www.tutorialspoint.com/codingground.htm,false,Compile and Execute C++ online on Linux.
+Online Compiler,Software for creating a development environment.,Ideone,http://ideone.com/,false,An online compiler and debugging tool which allows you to compile source code and execute it online in more than 60 programming languages.
+Online Compiler,Software for creating a development environment.,repl.it,https://repl.it,false,"A powerful yet simple tools and platforms for educators, learners, and developers."
+Online Compiler,Software for creating a development environment.,Rextester,http://rextester.com/runcode,false,Online compiler which provides several compilers
+Online Compiler,Software for creating a development environment.,Try It Online,https://tio.run/,false,TIO is a family of online interpreters for an evergrowing list of practical and recreational programming languages.
+Online Compiler,Software for creating a development environment.,Wandbox,http://melpon.org/wandbox/,false,An online Clang/GCC compiler with Boost available.
+Debugger,Software for creating a development environment.,Comparison of debuggers,https://en.wikipedia.org/wiki/Comparison_of_debuggers,false,A list of Debuggers from Wikipedia.
+Debugger,Software for creating a development environment.,GDB,https://www.gnu.org/software/gdb/,false,GNU Debugger.
+Debugger,Software for creating a development environment.,LLDB,http://lldb.llvm.org/,false,The LLDB Debugger.
+Debugger,Software for creating a development environment.,Metashell,https://metashell.readthedocs.org,false,An interactive template metaprogramming shell which includes the MDB metadebugger.
+Debugger,Software for creating a development environment.,Valgrind,http://valgrind.org/,false,"A tool for memory debugging, memory leak detection, and profiling."
+Debugger,Software for creating a development environment.,x64dbg,http://x64dbg.com/,false,An open-source x64/x32 debugger for windows.
+Integrated Development Environment,Software for creating a development environment.,Anjuta DevStudio,http://anjuta.org/,false,The GNOME IDE.
+Integrated Development Environment,Software for creating a development environment.,AppCode,http://www.jetbrains.com/objc/,false,"an IDE for Objective-C, C, C++, and JavaScript development built on JetBrains’ IntelliJ IDEA platform."
+Integrated Development Environment,Software for creating a development environment.,Cevelop,https://www.cevelop.com,false,Cross-platform C and C++ IDE based on Eclipse CDT with additional plug-ins.
+Integrated Development Environment,Software for creating a development environment.,CLion,http://www.jetbrains.com/clion/,false,Cross-platform C and C++ IDE from JetBrains.
+Integrated Development Environment,Software for creating a development environment.,Code::Blocks,http://www.codeblocks.org/,false,"A free C, C++ and Fortran IDE."
+Integrated Development Environment,Software for creating a development environment.,CodeLite,http://codelite.org/,false,"Another cross-plaform, free C and C++ IDE."
+Integrated Development Environment,Software for creating a development environment.,color_coded,https://github.com/jeaye/color_coded,true,A vim plugin for libclang-based highlighting.
+Integrated Development Environment,Software for creating a development environment.,Dev-C++,http://sourceforge.net/projects/orwelldevcpp/,false,A portable C/C++/C++11 IDE.
+Integrated Development Environment,Software for creating a development environment.,Eclipse CDT,http://www.eclipse.org/cdt/,false,A fully functional C and C++ IDE based on the Eclipse platform.
+Integrated Development Environment,Software for creating a development environment.,Geany,http://www.geany.org/,false,"Small, fast, cross-platform IDE."
+Integrated Development Environment,Software for creating a development environment.,IBM VisualAge,http://www-03.ibm.com/software/products/en/visgen,false,A family of computer integrated development environments from IBM.
+Integrated Development Environment,Software for creating a development environment.,Irony-mode,https://github.com/Sarcasm/irony-mode,true,A C/C++ minor mode for Emacs powered by libclang.
+Integrated Development Environment,Software for creating a development environment.,juCi++,https://gitlab.com/cppit/jucipp,true,"Cross-platform, lightweight C++ IDE with libclang integration."
+Integrated Development Environment,Software for creating a development environment.,KDevelop,https://www.kdevelop.org/,false,"A free, open source IDE."
+Integrated Development Environment,Software for creating a development environment.,Microsoft Visual Studio,https://www.visualstudio.com/,false,An IDE from Microsoft.
+Integrated Development Environment,Software for creating a development environment.,Microsoft Visual Studio Code,https://code.visualstudio.com/,false,An open-source IDE from Microsoft.
+Integrated Development Environment,Software for creating a development environment.,NetBeans,https://netbeans.org/,false,"An IDE for developing primarily with Java, but also with other languages, in particular PHP, C/C++, and HTML5."
+Integrated Development Environment,Software for creating a development environment.,Qt Creator,http://www.qt.io/developers/,false,"A cross-platform C++, JavaScript and QML IDE which is part of the SDK for Qt."
+Integrated Development Environment,Software for creating a development environment.,rtags,https://github.com/Andersbakken/rtags,true,A c/c++ client/server indexer with for integration with emacs based on clang.
+Integrated Development Environment,Software for creating a development environment.,Xcode,https://developer.apple.com/xcode/,false,Developed by Apple.
+Integrated Development Environment,Software for creating a development environment.,YouCompleteMe,https://github.com/ycm-core/YouCompleteMe,true,"YouCompleteMe is a fast, as-you-type, fuzzy-search code completion engine for Vim."
+Integrated Development Environment,Software for creating a development environment.,cquery,https://github.com/cquery-project/cquery/,true,"A C++ code completion engine for vscode, emacs, vim, etc."
+Build Systems,Software for creating a development environment.,Bazel,https://bazel.build,false,"A multi-language, fast and scalable build system from Google."
+Build Systems,Software for creating a development environment.,Bear,https://github.com/rizsotto/Bear,true,A tool to generate compilation database for clang tooling.
+Build Systems,Software for creating a development environment.,Buck,https://github.com/facebook/buck,true,"A fast build system that encourages the creation of small, reusable modules over a variety of platforms and languages including C++ developed and used at Facebook. Written in Java."
+Build Systems,Software for creating a development environment.,clib,https://github.com/clibs/clib,true,Package manager for the C programming language.
+Build Systems,Software for creating a development environment.,CMake,https://cmake.org/,false,Cross-platform free and open-source software for managing the build process of software using a compiler-independent method.
+Build Systems,Software for creating a development environment.,Cget,https://github.com/pfultz2/cget,true,Cmake package retrieval.
+Build Systems,Software for creating a development environment.,Conan,https://conan.io/,false,"C/C++ Package Manager, open sourced."
+Build Systems,Software for creating a development environment.,CPM,https://github.com/iauns/cpm,true,A C++ Package Manager based on CMake and Git.
+Build Systems,Software for creating a development environment.,FASTBuild,http://www.fastbuild.org/docs/home.html,false,"High performance, open-source build system supporting highly scalable compilation, caching and network distribution."
+Build Systems,Software for creating a development environment.,Hunter,https://www.github.com/ruslo/hunter,true,CMake driven cross-platform package manager for C++.
+Build Systems,Software for creating a development environment.,MesonBuild,http://mesonbuild.com,false,"An open source build system meant to be both extremely fast, and, even more importantly, as user friendly as possible."
+Build Systems,Software for creating a development environment.,Ninja,https://ninja-build.org/,false,A small build system with a focus on speed.
+Build Systems,Software for creating a development environment.,Scons,http://www.scons.org/,false,A software construction tool configured with a Python script.
+Build Systems,Software for creating a development environment.,Sconsolidator,http://www.sconsolidator.com/,false,Scons build system integration for Eclipse CDT.
+Build Systems,Software for creating a development environment.,Spack,https://spack.io/,false,"A flexible package manager that supports multiple versions, configurations, platforms, and compilers."
+Build Systems,Software for creating a development environment.,SW,https://software-network.org/,false,Cross-platform C++
+Build Systems,Software for creating a development environment.,tundra,https://github.com/deplinenoise/tundra,true,High-performance code build system designed to give the best possible incremental build times even for very large software projects.
+Build Systems,Software for creating a development environment.,tup,http://gittup.org/tup/,false,File-based build system that monitors in the background for changed files.
+Build Systems,Software for creating a development environment.,Premake,http://premake.github.io,false,"A tool configured with a Lua script to generate project files for Visual Studio, GNU Make, Xcode, Code::Blocks, and more across Windows, Mac OS X, and Linux."
+Build Systems,Software for creating a development environment.,Vcpkg,https://github.com/microsoft/vcpkg,true,"C++ library manager for Windows, Linux, and MacOS."
+Build Systems,Software for creating a development environment.,waf,https://github.com/waf-project/waf,true,"Python-based framework for configuring, compiling and installing applications."
+Build Systems,Software for creating a development environment.,XMake,https://xmake.io/,false,A C/C++ cross-platform build utility based on Lua.
+Static Code Analysis,List of tools for improving quality and reducing defects by code analysis,Cppcheck,http://cppcheck.sourceforge.net/,false,A tool for static C/C++ code analysis.
+Static Code Analysis,List of tools for improving quality and reducing defects by code analysis,CppDepend,https://www.cppdepend.com/,false,"Simplifies managing a complex C/C++ code base by analyzing and visualizing code dependencies, by defining design rules, by doing impact analysis, and comparing different versions of the code."
+Static Code Analysis,List of tools for improving quality and reducing defects by code analysis,cpplint,https://github.com/cpplint/cpplint,true,A C++ style checker following Google's C++ style guide.
+Static Code Analysis,List of tools for improving quality and reducing defects by code analysis,PVS-Studio,http://www.viva64.com/en/pvs-studio/,false,"A tool for bug detection in the source code of programs, written in C, C++ and C#."
+Static Code Analysis,List of tools for improving quality and reducing defects by code analysis,cpp-dependencies,https://github.com/tomtom-international/cpp-dependencies,true,Tool to check C++ #include dependencies
+Static Code Analysis,List of tools for improving quality and reducing defects by code analysis,include-what-you-use,https://github.com/include-what-you-use/include-what-you-use,true,A tool for use with clang to analyze includes in C and C++ source files.
+Static Code Analysis,List of tools for improving quality and reducing defects by code analysis,Infer,https://github.com/facebook/infer,true,"A static analyzer for Java, C and Objective-C."
+Static Code Analysis,List of tools for improving quality and reducing defects by code analysis,OCLint,http://oclint.org/,false,"A static source code analysis tool to improve quality and reduce defects for C, C++ and Objective-C."
+Static Code Analysis,List of tools for improving quality and reducing defects by code analysis,Clang Static Analyzer,http://clang-analyzer.llvm.org/index.html,false,"A source code analysis tool that finds bugs in C, C++, and Objective-C programs."
+Static Code Analysis,List of tools for improving quality and reducing defects by code analysis,Linticator,http://linticator.com,false,Eclipse CDT integration of Pc-/FlexeLint.
+Static Code Analysis,List of tools for improving quality and reducing defects by code analysis,IKOS,https://github.com/NASA-SW-VnV/ikos,true,Static analyzer for C/C++ based on the theory of Abstract Interpretation.
+Static Code Analysis,List of tools for improving quality and reducing defects by code analysis,List of tools for static code analysis,https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis#C.2FC.2B.2B,false,A list of tools for static code analysis from Wikipedia.
+Coding Style Tools,List of tools for improving quality and reducing defects by code analysis,Artistic Style,http://astyle.sourceforge.net/,false,A tool to format C/C++/C#/Obj-C/Java code. Also known as astyle.
+Coding Style Tools,List of tools for improving quality and reducing defects by code analysis,ClangFormat,http://clang.llvm.org/docs/ClangFormat.html,false,A tool to format C/C++/Obj-C code.
+Coding Style Tools,List of tools for improving quality and reducing defects by code analysis,Clang-Tidy,http://clang.llvm.org/extra/clang-tidy.html,false,Clang-based C++ linter tool.
+Coding Style Tools,List of tools for improving quality and reducing defects by code analysis,EditorConfig,https://editorconfig.org/,false,EditorConfig helps maintain consistent coding styles across different editors and IDEs.
+Coding Style Tools,List of tools for improving quality and reducing defects by code analysis,Uncrustify,https://github.com/uncrustify/uncrustify,true,Code beautifier.
+Articles,List of tools for improving quality and reducing defects by code analysis,CppCon 2019 Presentation Materials,https://github.com/CppCon/CppCon2019,true,CppCon 2019 Presentation Materials.
+Articles,List of tools for improving quality and reducing defects by code analysis,CppCon 2018 Presentation Materials,https://github.com/CppCon/CppCon2018,true,CppCon 2018 Presentation Materials.
+Articles,List of tools for improving quality and reducing defects by code analysis,CppCon 2017 Presentation Materials,https://github.com/CppCon/CppCon2017,true,CppCon 2017 Presentation Materials.
+Articles,List of tools for improving quality and reducing defects by code analysis,CppCon 2016 Presentation Materials,https://github.com/CppCon/CppCon2016,true,CppCon 2016 Presentation Materials.
+Articles,List of tools for improving quality and reducing defects by code analysis,CppCon 2015 Presentation Materials,https://github.com/CppCon/CppCon2015,true,CppCon 2015 Presentation Materials.
+Articles,List of tools for improving quality and reducing defects by code analysis,CppCon 2014 Presentation Materials,https://github.com/CppCon/CppCon2014,true,CppCon 2014 Presentation Materials.
+Articles,List of tools for improving quality and reducing defects by code analysis,C++Now 2019 Presentations,https://github.com/boostcon/cppnow_presentations_2019,true,Presentation materials presented at C++Now 2019.
+Articles,List of tools for improving quality and reducing defects by code analysis,C++Now 2018 Presentations,https://github.com/boostcon/cppnow_presentations_2018,true,Presentation materials presented at C++Now 2018.
+Articles,List of tools for improving quality and reducing defects by code analysis,C++Now 2017 Presentations,https://github.com/boostcon/cppnow_presentations_2017,true,Presentation materials presented at C++Now 2017.
+Articles,List of tools for improving quality and reducing defects by code analysis,C++Now 2016 Presentations,https://github.com/boostcon/cppnow_presentations_2016,true,Presentation materials presented at C++Now 2016.
+Articles,List of tools for improving quality and reducing defects by code analysis,C++Now 2015 Presentations,https://github.com/boostcon/cppnow_presentations_2015,true,Presentation materials presented at C++Now 2015.
+Articles,List of tools for improving quality and reducing defects by code analysis,C++Now 2014 Presentations,https://github.com/boostcon/cppnow_presentations_2014,true,Presentation materials presented at C++Now 2014.
+Articles,List of tools for improving quality and reducing defects by code analysis,C++Now 2013 Presentations,https://github.com/boostcon/cppnow_presentations_2013,true,Presentation materials presented at C++Now 2013.
+Articles,List of tools for improving quality and reducing defects by code analysis,C++Now 2012 Presentations,https://github.com/boostcon/cppnow_presentations_2012,true,Presentation materials presented at C++Now 2012.
+Books,List of tools for improving quality and reducing defects by code analysis,cppbestpractices,https://github.com/lefticus/cppbestpractices,true,Collaborative Collection of C++ Best Practices.
+Coding Style,List of tools for improving quality and reducing defects by code analysis,C++ Core Guidelines,https://github.com/isocpp/CppCoreGuidelines,true,"""Official"" set of C++ guidelines, reviewed by the author of C++."
+Coding Style,List of tools for improving quality and reducing defects by code analysis,C++ Dos and Don'ts,http://www.chromium.org/developers/coding-style/cpp-dos-and-donts,false,The Chromium Projects > For Developers > Coding Style > C++ Dos and Don'ts.
+Coding Style,List of tools for improving quality and reducing defects by code analysis,google-styleguide,https://github.com/google/styleguide,true,Style guides for Google-originated open-source projects.
+Podcasts,List of tools for improving quality and reducing defects by code analysis,CppCast,http://cppcast.com,false,The first podcast by C++ developers for C++ developers.
+Podcasts,List of tools for improving quality and reducing defects by code analysis,CppChat,http://cpp.chat,false,A
+Talks,List of tools for improving quality and reducing defects by code analysis,CppCon Talks,https://www.youtube.com/user/CppCon/videos,false,The C++ conference.
+Talks,List of tools for improving quality and reducing defects by code analysis,Quick game development with C++11/C++14,https://github.com/SuperV1234/cppcon2014,true,CppCon 2014 talk by Vittorio Romeo.
+Talks,List of tools for improving quality and reducing defects by code analysis,Meeting Cpp,https://www.youtube.com/user/MeetingCPP/videos,false,Meeting C++ Youtube Channel
+Videos,List of tools for improving quality and reducing defects by code analysis,C++,https://www.youtube.com/playlist?list=PL2F919ADECA5E39A6,false,by VoidRealms.
+Videos,List of tools for improving quality and reducing defects by code analysis,C++ Qt Programming,https://www.youtube.com/playlist?list=PL2D1942A4688E9D63,false,by VoidRealms.
+Videos,List of tools for improving quality and reducing defects by code analysis,C++ Programming Tutorials Playlist,https://www.youtube.com/playlist?list=PLAE85DE8440AA6B83,false,TheNewBoston Official Buckys C++ Programming Tutorials Playlist.
+Videos,List of tools for improving quality and reducing defects by code analysis,C++ Programming Tutorials from thenewboston,https://www.youtube.com/playlist?list=PLF541C2C1F671AEF6,false,These are all of thenewboston's C++ programming tutorials.
+Videos,List of tools for improving quality and reducing defects by code analysis,C++ GUI with Qt Playlist,https://www.youtube.com/playlist?list=PLD0D54219E5F2544D,false,Official Playlist for thenewboston C++ GUI with Qt tutorials.
+Videos,List of tools for improving quality and reducing defects by code analysis,C Programming Tutorials,https://www.youtube.com/playlist?list=PL78280D6BE6F05D34,false,All of TheNewBoston's C programming tutorials are right here.
+Videos,List of tools for improving quality and reducing defects by code analysis,Bo Qian's playlist,https://www.youtube.com/user/BoQianTheProgrammer/playlists,false,"Boost Library, C++ Standard Library, Modern C++, Advanced C++, Advanced STL, ..."
+Weblogs,List of tools for improving quality and reducing defects by code analysis,Coding For Speed,https://codingforspeed.com/,false,"Coding For Speed DOT COM, Less Execution Time."
+Weblogs,List of tools for improving quality and reducing defects by code analysis,ridiculousfish,http://ridiculousfish.com/blog/posts/will-it-optimize.html,false,Will It Optimize?
+Other Awesome Projects,List of tools for improving quality and reducing defects by code analysis,algorithms,https://github.com/xtaci/algorithms,true,Algorithms & Data Structures in C++.
+Other Awesome Projects,List of tools for improving quality and reducing defects by code analysis,c-algorithms,https://github.com/fragglet/c-algorithms,true,C algorithms library.
+Other Awesome Projects,List of tools for improving quality and reducing defects by code analysis,C++ Awesome Pack,https://github.com/juniandotnet/cpp-awesome-pack,true,"Contains some awesome c++ codes, packed in one."
+Other Awesome Projects,Other amazingly awesome lists,lists,https://github.com/jnv/lists,true,List of
+Other Awesome Projects,Other amazingly awesome lists,awesome-awesomeness,https://github.com/bayandin/awesome-awesomeness,true,A curated list of awesome awesomeness.
+Other Awesome Projects,Other amazingly awesome lists,awesome,https://github.com/sindresorhus/awesome,true,A curated list of awesome lists.
+Other Awesome Projects,Other amazingly awesome lists,C++ links,https://github.com/MattPD/cpplinks,true,A categorized list of C++ resources.
+Other Awesome Projects,Other amazingly awesome lists,Awesome C++,https://getawesomeness.herokuapp.com/get/cpp,false,getAwesomeness
+Other Awesome Projects,Other amazingly awesome lists,Awesome C++,https://cpp.libhunt.com/,false,LibHunt's mirror.
+Other Awesome Projects,Other amazingly awesome lists,Awesome Modern C++,https://github.com/rigtorp/awesome-modern-cpp,true,A collection of resources on modern C++.
+Other Awesome Projects,Other amazingly awesome lists,AwesomePerfCpp,https://github.com/fenbf/AwesomePerfCpp,true,A curated list of awesome C/C++ performance optimization resources.
+Other Awesome Projects,Other amazingly awesome lists,free-programming-books,https://github.com/vhf/free-programming-books,true,List of Freely Available Programming Books.
+Other Awesome Projects,Other amazingly awesome lists,Inqlude,http://inqlude.org/,false,The Qt library archive.
+Other Awesome Projects,Other amazingly awesome lists,papers-we-love,https://github.com/papers-we-love/papers-we-love,true,Papers from the computer science community to read and discuss.
+Other Awesome Projects,Other amazingly awesome lists,awesome-algorithms,https://github.com/tayllan/awesome-algorithms,true,A curated list of awesome places to learn and/or practice algorithms.
+Other Awesome Projects,Other amazingly awesome lists,awesome-talks,https://github.com/JanVanRyswyck/awesome-talks,true,"A lot of screencasts, recordings of user group gatherings and conference talks."
+Other Awesome Projects,Other amazingly awesome lists,Projects,https://github.com/karan/Projects,true,A list of practical projects that anyone can solve in any programming language.
+Other Awesome Projects,Other amazingly awesome lists,Awesome interview questions,https://github.com/MaximAbramchuck/awesome-interviews,true,"A list of lists of interview questions for the most popular technologies, including C and C++."
+Other Awesome Projects,Other amazingly awesome lists,nothings/single_file_libs,https://github.com/nothings/single_file_libs,true,List of single-file C/C++ libraries.

@@ -135,7 +135,6 @@ Development,Augmentation of the development process at a fundamental level.,Mani
 Development,Augmentation of the development process at a fundamental level.,NoException,https://github.com/robertvazan/noexception,true,Allows checked exceptions in functional interfaces and converts exceptions to Optional return.
 Development,Augmentation of the development process at a fundamental level.,SneakyThrow,https://github.com/rainerhahnekamp/sneakythrow,true,Ignores checked exceptions without bytecode manipulation. Can also be used inside Java 8 stream operations.
 Development,Augmentation of the development process at a fundamental level.,Tail,https://github.com/kag0/tail,true,Enable infinite recursion using tail call optimization.
-Distributed Applications,Augmentation of the development process at a fundamental level.,Apache Geode,https://gitbox.apache.org/repos/asf/geode,true,In-memory data management system that provides reliable asynchronous event notifications and guaranteed message delivery.
 Distributed Applications,Augmentation of the development process at a fundamental level.,Apache Storm,https://gitbox.apache.org/repos/asf/storm,true,Realtime computation system.
 Distributed Applications,Augmentation of the development process at a fundamental level.,Apache ZooKeeper,https://gitbox.apache.org/repos/asf/zookeeper,true,"Coordination service with distributed configuration, synchronization, and naming registry for large distributed systems."
 Distributed Applications,Augmentation of the development process at a fundamental level.,Atomix,https://github.com/atomix/atomix,true,Fault-tolerant distributed coordination framework.
@@ -436,7 +435,6 @@ Security,Engines that index documents for search and analysis.,Hdiv,https://gith
 Security,Engines that index documents for search and analysis.,jjwt,https://github.com/jwtk/jjwt,true,JSON web token for Java and Android.
 Security,Engines that index documents for search and analysis.,Jwks RSA,https://github.com/auth0/jwks-rsa-java,true,JSON Web Key Set parser.
 Security,Engines that index documents for search and analysis.,Kalium,https://github.com/abstractj/kalium,true,Binding for the Networking and Cryptography
-Security,Engines that index documents for search and analysis.,Keycloak,https://github.com/keycloak/keycloak,true,Integrated SSO and IDM for browser apps and RESTful web services.
 Security,Engines that index documents for search and analysis.,Keywhiz,https://github.com/square/keywhiz,true,System for distributing and managing secrets.
 Security,z,Nbvcxz,https://github.com/GoSimpleLLC/nbvcxz,true,Advanced password strength estimation.
 Security,Engines that index documents for search and analysis.,OACC,https://github.com/acciente/oacc-core,true,Provides permission-based authorization services.
