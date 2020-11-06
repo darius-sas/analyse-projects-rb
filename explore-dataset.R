@@ -39,7 +39,7 @@ ggplot(df.loc.cut, aes(project, LinesOfCode, fill = group, size = NumOfUnits)) +
   facet_wrap(.~group, scales = "free") +
   theme(legend.position = "none", axis.text.x = element_text(angle = 45, hjust = 1))
 
-qggplot(df, aes(project, LinesOfCode, color = project)) + 
+ggplot(df, aes(project, LinesOfCode, color = project)) + 
   geom_boxplot() + 
   theme(legend.position = "none", axis.text.x = element_text(angle = 45, hjust = 1)) + 
   facet_wrap(.~group, scales = "free") +
@@ -53,3 +53,13 @@ ggplot(df.artefacts, aes(project, n, fill = componentType)) +
   theme(legend.position = "none", axis.text.x = element_text(angle = 45, hjust = 1)) + 
   labs(x = "", y = "Lines of Code (LOC)", title = "Projects' LOC distribution grouped by project size (sum of LOC)")
 
+df.todDep = df %>% filter(componentType == "unit" & FanIn+FanOut > 0)
+ggplot(df.todDep, aes(FanIn+FanOut, y = group, fill = group)) + 
+  ggridges::geom_density_ridges(alpha = .5, color = "black") + 
+  scale_x_log10(breaks = c(1:10, 10^2, 10^3))
+
+ggplot(df.todDep, aes(FanIn+FanOut, fill = group)) + 
+  geom_histogram() + 
+  facet_wrap(~group, scales="free") +
+  xlim(0,50)
+  scale_x_log10(breaks = c(1:10, 10^2, 10^3))

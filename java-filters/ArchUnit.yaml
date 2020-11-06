@@ -1,5 +1,5 @@
 scanners:
 - startDate: '1-1-1'
   endDate: '9999-1-1'
-  include: [archunit/src/main]
-  exclude: [src/test]
+  include: [archunit/src/main/**]
+  exclude: [src/test/**]

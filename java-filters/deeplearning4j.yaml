@@ -1,5 +1,5 @@
 scanners:
 - startDate: '0001-01-01'
   endDate: '9999-01-01'
-  include: ['deeplearning4j/**/src/main/java']
-  exclude: ['**/src/test/**', deeplearning/*tests, src/test, testing, '*-test*/**', test, '*examples', '**/*solrj', '**/*nlp*/**']
+  include: ['deeplearning4j/**/src/main/java/**']
+  exclude: ['**/src/test/**', deeplearning/*tests/**, src/test/**, testing/**, '*-test*/**', test/**, '*examples/**', '**/*solrj/**', '**/*nlp*/**']

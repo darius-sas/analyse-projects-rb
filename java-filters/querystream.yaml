@@ -1,5 +1,5 @@
 scanners:
 - startDate: '0001-01-01'
   endDate: '9999-01-01'
-  include: [querystream-jpa/src/main/java]
-  exclude: [src/test]
+  include: [querystream-jpa/src/main/java/**]
+  exclude: [src/test/**]

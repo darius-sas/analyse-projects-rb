@@ -1,6 +1,6 @@
 scanners:
 - startDate: '1-1-1'
   endDate: '9999-06-01'
-  include: [guava]
-  exclude: [guava-*]
+  include: [guava/**]
+  exclude: [guava-*/**]
 

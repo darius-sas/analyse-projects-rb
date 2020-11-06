@@ -1,5 +1,5 @@
 scanners:
 - startDate: '0001-01-01'
   endDate: '9999-01-01'
-  include: [java8/src/main/java, joda/src/main/java, library/src/main/java, processor/src/main/java, threetenbp/src/main/java]
-  exclude: [src/test]
+  include: [java8/src/main/java/**, joda/src/main/java/**, library/src/main/java/**, processor/src/main/java/**, threetenbp/src/main/java/**]
+  exclude: [src/test/**]
