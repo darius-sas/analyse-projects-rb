@@ -4,13 +4,27 @@ require 'daru'
 require 'concurrent'
 
 
-ARCAN_JAR = "/home/fenn/git/arcan-2/arcan-cli/target/Arcan2-cli-2.0.8-beta-jar-with-dependencies.jar"
+ARCAN_JAR = "/home/fenn/git/arcan-2/arcan-cli/target/Arcan2-cli-2.0.9-beta-jar-with-dependencies.jar"
 
-def run_arcan(project_name, input_dir, output_dir, filters_dir, includes_dir, log_file)
+# TODO:
+# Make auxiliary path optional
+# Make language option
+# Fix paths when running
+
+def run_arcan_CPP(project_name, input_dir, output_dir, filters_dir, includes_dir, log_file)
     branch = "HEAD"
     filters_file = "#{filters_dir}/#{project_name}.yaml"
     filters_file = "#{filters_dir}/all-projects.yaml" unless File.exist? filters_file
-    arcan_command = "java -jar #{ARCAN_JAR} analyse -p #{project_name} -i #{input_dir} -o #{output_dir} -l CPP --branch #{branch} --filtersFile #{filters_file} --auxiliaryPaths #{includes_dir} --all -v"
+    arcan_command = "java -jar #{ARCAN_JAR} analyse -p #{project_name} -i #{input_dir} -o #{output_dir} -l CPP --branch #{branch} --filtersFile #{filters_file} --auxiliaryPaths #{includes_dir} --all -v output.dependencyGraph=true"
+    `echo "#{arcan_command}" > #{log_file}`
+    return `#{arcan_command} 2>&1 >> #{log_file}`
+end
+
+def run_arcan_JAVA(project_name, input_dir, output_dir, filters_dir, log_file)
+    branch = "HEAD"
+    filters_file = "#{filters_dir}/#{project_name}.yaml"
+    filters_file = "#{filters_dir}/all-projects.yaml" unless File.exist? filters_file
+    arcan_command = "java -jar #{ARCAN_JAR} analyse -p #{project_name} -i #{input_dir} -o #{output_dir} -l JAVA --branch #{branch} --filtersFile #{filters_file} --all -v output.dependencyGraph=true"
     `echo "#{arcan_command}" > #{log_file}`
     return `#{arcan_command} 2>&1 >> #{log_file}`
 end
@@ -30,6 +44,7 @@ else
     includes_dir = ARGV[4]
     run_arcan = ARGV.include? "--runArcan";
     run_git = ARGV.include? "--runGit";
+    is_cpp = ARGV.include? "--CPP";
 end
 
 
@@ -77,7 +92,12 @@ git_projects.each_row do |p|
             puts "Running Arcan on #{project_dir}"
             log_file = "#{output_dir}/#{folder_name}.arcan.log"
 
-            run_arcan(folder_name, project_dir, output_dir, filters_dir, includes_dir, log_file)
+            if is_cpp
+                run_arcan_CPP(folder_name, project_dir, output_dir, filters_dir, includes_dir, log_file)           
+            else
+                run_arcan_JAVA(folder_name, project_dir, output_dir, filters_dir, log_file)
+            end
+
             complete_success = $?.success?
             if complete_success
                 puts "Arcan successfully analysed #{folder_name}"
