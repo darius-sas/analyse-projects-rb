@@ -6,11 +6,6 @@ require 'concurrent'
 
 ARCAN_JAR = "/home/fenn/git/arcan-2/arcan-cli/target/Arcan2-cli-2.0.9-beta-jar-with-dependencies.jar"
 
-# TODO:
-# Make auxiliary path optional
-# Make language option
-# Fix paths when running
-
 def run_arcan_CPP(project_name, input_dir, output_dir, filters_dir, includes_dir, log_file)
     branch = "HEAD"
     filters_file = "#{filters_dir}/#{project_name}.yaml"
