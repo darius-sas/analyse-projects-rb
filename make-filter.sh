@@ -1,7 +1,7 @@
 #!/bin/bash
 
 arcan(){
-    java -jar /home/fenn/git/arcan-2/arcan-cli/target/Arcan2-cli-2.0.8-beta-jar-with-dependencies.jar $@
+    java -jar /home/fenn/git/arcan-2/arcan-cli/target/Arcan2-cli-2.0.9-beta-jar-with-dependencies.jar $@
 }
 
 project=$1
@@ -11,4 +11,4 @@ arcan generate includes cpp-includes/${project}.yaml && nano cpp-includes/${proj
 exit
 arcan analyse -p ${project} -i /home/fenn/data/atd-estimation/repos/${project} -o /home/fenn/data/atd-estimation -l CPP --all --filtersFile cpp-filters/cpp-project-filter.yaml --fail
 
-# analyse(){arcan analyse -p $1 -i /home/fenn/data/atd-estimation/repos/$1 -o /home/fenn/data/atd-estimation --all --fail -v -l CPP --includePaths cpp-includes/$1.yaml --filtersFile cpp-filters/cpp-project-filter.yaml}
+# analyse(){arcan analyse -p $1 -i /home/fenn/data/atd-estimation/repos/$1 -o /home/fenn/data/atd-estimation --all --fail -v -l JAVA --includePaths cpp-includes/$1.yaml --filtersFile cpp-filters/cpp-project-filter.yaml}
