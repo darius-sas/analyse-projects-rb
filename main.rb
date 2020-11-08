@@ -16,10 +16,11 @@ def run_arcan_CPP(project_name, input_dir, output_dir, filters_dir, includes_dir
 end
 
 def run_arcan_JAVA(project_name, input_dir, output_dir, filters_dir, log_file)
+    metrics = "AffectedClassesRatio,AffectedComponentType,AfferentAffectedRatio,CentreComponent,Shape,EfferentAffectedRatio,InstabilityGap,LOCDensity,NumberOfEdges,Size,PageRankWeighted,Strength,Support,TotalNumberOfChanges"
     branch = "HEAD"
     filters_file = "#{filters_dir}/#{project_name}.yaml"
     filters_file = "#{filters_dir}/all-projects.yaml" unless File.exist? filters_file
-    arcan_command = "java -jar #{ARCAN_JAR} analyse -p #{project_name} -i #{input_dir} -o #{output_dir} -l JAVA --branch #{branch} --filtersFile #{filters_file} --all -v output.dependencyGraph=true"
+    arcan_command = "java -jar #{ARCAN_JAR} analyse -p #{project_name} -i #{input_dir} -o #{output_dir} -l JAVA --branch #{branch} --filtersFile #{filters_file} --all -v output.dependencyGraph=true metrics.smells=#{metrics}"
     `echo "#{arcan_command}" > #{log_file}`
     return `#{arcan_command} 2>&1 >> #{log_file}`
 end

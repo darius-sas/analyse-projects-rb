@@ -5,11 +5,13 @@ df <- read.csv("/home/fenn/data/atd-estimation/csv/components.csv")
 
 
 df.loc <- df %>% 
-  filter(componentType == "unit") %>%
+  filter(componentLabel == "unit") %>%
   group_by(project) %>%
   summarise(LinesOfCode = sum(LinesOfCode), NumOfUnits = n())
 
-df <- df %>% group_by(project) %>%
+df <- df %>%
+  filter(componentLabel == "unit") %>%
+  group_by(project) %>%
   mutate(group = cut(sum(LinesOfCode), 
                      include.lowest = T,
                      breaks = quantile(df.loc$LinesOfCode, seq(0, 1, 1/12)),
