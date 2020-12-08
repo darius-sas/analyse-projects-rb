@@ -11,16 +11,10 @@ if (length(args) < 2) {
 merge.results <- function(dir, pattern){
   projectDirs <- list.files(dir, recursive = T, pattern = pattern)
   df <- data.frame()
-  
   for (entry in projectDirs) {
-    project <- strsplit(entry, "/")[[1]][1]
     df.pr <- read.table(paste(dir, entry, sep = "/"), header = T, sep = ",")
-    df.pr$project <- project
-    
     df <- rbind(df, df.pr)
   }
-  df$project <- as.factor(df$project)
-  df <- df %>% select(project, everything())
   return(df)
 }
 
@@ -54,23 +48,21 @@ ps.dataset = file.path(output.dir, "projects.csv")
 cc.dataset = file.path(output.dir, "components.csv")
 af.dataset = file.path(output.dir, "affected.csv")
 
-pattern = ".csv"
-
 # Invoke merging
 if(smells){
-  df <- merge.results(results.dir, paste("*smell-characteristics", pattern, sep=""))
+  df <- merge.results(results.dir, "*smell-characteristics.csv")
   write.csv(df, file = sc.dataset, row.names = F)
 }
 if(sizes){
-  df.projects <- merge.results(results.dir, paste("*project-sizes", pattern, sep=""))
+  df.projects <- merge.results(results.dir, "*project-sizes.csv")
   write.csv(df.projects, file = ps.dataset, row.names = F)
 }
 if(components){
-  df.components <- merge.results(results.dir, paste("*component-metrics", pattern, sep = ""))
+  df.components <- merge.results(results.dir, "*component-metrics.csv")
   write.csv(df.components, file = cc.dataset, row.names = F)
 }
 if(affected){
-  df.affected <- merge.results(results.dir, paste("*smell-affects", pattern, sep = ""))
+  df.affected <- merge.results(results.dir, "*smell-affects.csv")
   write.csv(df.affected, file = af.dataset, row.names = F)
 }
 
