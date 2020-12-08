@@ -24,7 +24,6 @@ merge.results <- function(dir, pattern){
   return(df)
 }
 
-consecOnly = TRUE
 components = FALSE
 smells = FALSE
 affected = FALSE
@@ -57,7 +56,7 @@ af.dataset = file.path(output.dir, "affected.csv")
 
 pattern = ".csv"
 
-# Invoke merging and do postprocessing
+# Invoke merging
 if(smells){
   df <- merge.results(results.dir, paste("*smell-characteristics", pattern, sep=""))
   write.csv(df, file = sc.dataset, row.names = F)
@@ -71,7 +70,7 @@ if(components){
   write.csv(df.components, file = cc.dataset, row.names = F)
 }
 if(affected){
-  df.affected <- merge.results(results.dir, paste("*affected-components", pattern, sep = ""))
+  df.affected <- merge.results(results.dir, paste("*smell-affects", pattern, sep = ""))
   write.csv(df.affected, file = af.dataset, row.names = F)
 }
 
