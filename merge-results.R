@@ -12,6 +12,7 @@ merge.results <- function(dir, pattern){
   projectDirs <- list.files(dir, recursive = T, pattern = pattern)
   df <- data.frame()
   for (entry in projectDirs) {
+    print(paste0("Reading ", entry))
     df.pr <- read.table(paste(dir, entry, sep = "/"), header = T, sep = ",")
     df <- rbind(df, df.pr)
   }
@@ -28,6 +29,7 @@ components = FALSE
 smells = FALSE
 affected = FALSE
 sizes = FALSE
+entity = FALSE
 
 if ("--components" %in% args) {
   components = TRUE
@@ -56,7 +58,7 @@ output.dir <- args[2]
 sc.dataset = file.path(output.dir, "smell-characteristics.csv")
 ps.dataset = file.path(output.dir, "projects.csv")
 cc.dataset = file.path(output.dir, "component-metrics.csv")
-af.dataset = file.path(output.dir, "smells-affected.csv")
+af.dataset = file.path(output.dir, "smell-affects.csv")
 en.dataset = file.path(output.dir, "entity-tracking.csv")
 
 # Invoke merging
