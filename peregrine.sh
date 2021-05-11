@@ -1,12 +1,12 @@
 #!/bin/bash
 #SBATCH --job-name=run-arcan-astracker
 #SBATCH --mail-type=END
-#SBATCH --time=5:00:00
+#SBATCH --time=168:00:00
 #SBATCH --mail-user=d.d.sas@rug.nl
 #SBATCH --output=job-%j.log
 #SBATCH --partition=regular
 #SBATCH --nodes=1
-#SBATCH --ntasks=16
+#SBATCH --ntasks=28
 #SBATCH --mem=64000
 
 module restore trackas

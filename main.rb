@@ -3,34 +3,38 @@
 require 'daru'
 require 'concurrent'
 
+JAVA = ENV["arcan_java"].nil? ? "java" : ENV["arcan_java"]
+ARCAN_JAR = ENV["arcan_jar"] # Change the value of this variable to the path to your jar, or set the env variable "arcan_jar" in your shell using export
 
-ARCAN_JAR = "/home/fenn/git/arcan-2/arcan-cli/target/Arcan2-cli-2.0.9-beta-jar-with-dependencies.jar"
 
 def run_arcan_CPP(project_name, input_dir, output_dir, filters_dir, includes_dir, log_file)
     branch = "HEAD"
     filters_file = "#{filters_dir}/#{project_name}.yaml"
     filters_file = "#{filters_dir}/all-projects.yaml" unless File.exist? filters_file
-    arcan_command = "java -jar #{ARCAN_JAR} analyse -p #{project_name} -i #{input_dir} -o #{output_dir} -l CPP --branch #{branch} --filtersFile #{filters_file} --auxiliaryPaths #{includes_dir} --all -v output.dependencyGraph=true"
+    arcan_command = "#{JAVA} -jar #{ARCAN_JAR} analyse -p #{project_name} -i #{input_dir} -o #{output_dir} -l CPP --branch #{branch} --filtersFile #{filters_file} --auxiliaryPaths #{includes_dir} --all -v output.dependencyGraph=true"
     `echo "#{arcan_command}" > #{log_file}`
     return `#{arcan_command} 2>&1 >> #{log_file}`
 end
 
-def run_arcan_JAVA(project_name, input_dir, output_dir, filters_dir, log_file)
+def run_arcan_JAVA(project_name, input_dir, output_dir, filters_dir, branch, log_file)
     metrics = "AffectedClassesRatio,AffectedComponentType,AfferentAffectedRatio,CentreComponent,Shape,EfferentAffectedRatio,InstabilityGap,LOCDensity,NumberOfEdges,Size,PageRankWeighted,Strength,Support,TotalNumberOfChanges"
-    branch = "HEAD"
+    metrics = "all"
     filters_file = "#{filters_dir}/#{project_name}.yaml"
     filters_file = "#{filters_dir}/all-projects.yaml" unless File.exist? filters_file
-    arcan_command = "java -jar #{ARCAN_JAR} analyse -p #{project_name} -i #{input_dir} -o #{output_dir} -l JAVA --branch #{branch} --filtersFile #{filters_file} --all -v output.dependencyGraph=true metrics.smells=#{metrics}"
+    #arcan_command = "java -jar #{ARCAN_JAR} analyse -p #{project_name} -i #{input_dir} -o #{output_dir} -l JAVA --branch #{branch} --filtersFile #{filters_file} --all -v output.dependencyGraph=true metrics.smells=#{metrics}"
+    arcan_command = "#{JAVA} -jar #{ARCAN_JAR} analyse -p #{project_name} -i #{input_dir} -o #{output_dir} -l JAVA --branch #{branch} --filtersFile #{filters_file} --all -v output.dependencyGraph=true metrics.smells=#{metrics} -e --startDate 1-1-1 --endDate 2021-12-12 --intervalDays 0"
     `echo "#{arcan_command}" > #{log_file}`
     return `#{arcan_command} 2>&1 >> #{log_file}`
 end
 
-def git_clone(link, project_dir, log_file)
-    return `git clone --progress --depth 1 #{link} #{project_dir} 2> #{log_file}`
+def git_clone(link, project_dir, log_file, shallow)
+    shallow_str = "--depth 1" if shallow
+    shallow_str = "" unless shallow
+    return `git clone --progress #{shallow_str} #{link} #{project_dir} 2> #{log_file}`
 end
 
 if ARGV.length <= 5
-    puts "Usage <projects-file> <repos-dir> <output-dir> <filters-dir> <includes-dir> [--runArcan] [--runGit]"
+    puts "Usage <projects-file> <repos-dir> <output-dir> <filters-dir> <includes-dir> [--runArcan] [--runGit] [--not-shallow] [--CPP]"
     exit 0
 else
     projects_file = ARGV[0]
@@ -41,10 +45,11 @@ else
     run_arcan = ARGV.include? "--runArcan";
     run_git = ARGV.include? "--runGit";
     is_cpp = ARGV.include? "--CPP";
+    shallow = !ARGV.include?("--not-shallow");
 end
 
 
-thread_pool_size = [2, Concurrent.processor_count].max
+thread_pool_size = [2, Concurrent.processor_count - ].max
 pool = Concurrent::FixedThreadPool.new(thread_pool_size)
 puts "Thread pool size: #{thread_pool_size}"
 
@@ -64,9 +69,6 @@ logs_dir_succ = "#{logs_dir}/success"
 `mkdir -p #{logs_dir_succ}`
 `mkdir -p #{logs_dir_fail}`
 
-`rm #{logs_dir_fail}/*`
-`rm #{logs_dir_succ}/*`
-
 git_projects.each_row do |p|
     puts "Queuing for analysis project '#{p['project.name']}'"
     pool.post do 
@@ -77,7 +79,7 @@ git_projects.each_row do |p|
         if not Dir.exist? project_dir and run_git
             puts "Cloning #{link}"
             log_file = "#{logs_dir}/#{folder_name}.git.log"
-            git_clone(link, project_dir, log_file)
+            git_clone(link, project_dir, log_file, shallow)
             puts "Git successfully cloned #{link}" if $?.success?
             puts "Git failed to clone #{link}" if not $?.success?
         else
@@ -88,10 +90,12 @@ git_projects.each_row do |p|
             puts "Running Arcan on #{project_dir}"
             log_file = "#{output_dir}/#{folder_name}.arcan.log"
 
+            default_branch = `git --git-dir=#{project_dir}/.git remote show origin | grep "HEAD branch" | cut -d ":" -f 2`
+            default_branch.strip!
             if is_cpp
                 run_arcan_CPP(folder_name, project_dir, output_dir, filters_dir, includes_dir, log_file)           
             else
-                run_arcan_JAVA(folder_name, project_dir, output_dir, filters_dir, log_file)
+                run_arcan_JAVA(folder_name, project_dir, output_dir, filters_dir, default_branch, log_file)
             end
 
             complete_success = $?.success?
