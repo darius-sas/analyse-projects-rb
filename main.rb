@@ -49,7 +49,7 @@ else
 end
 
 
-thread_pool_size = [2, Concurrent.processor_count - ].max
+thread_pool_size = [2, Concurrent.processor_count - 1].max
 pool = Concurrent::FixedThreadPool.new(thread_pool_size)
 puts "Thread pool size: #{thread_pool_size}"
 

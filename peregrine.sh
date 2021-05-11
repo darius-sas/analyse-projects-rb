@@ -10,4 +10,8 @@
 #SBATCH --mem=64000
 
 module restore trackas
-ruby main.rb ~/data/java-projects.csv ~/data/repos ~/data/output ~/data/filters ~/data --runGit --runArcan --not-shallow
+
+export arcan_java=/home/p284098/jars/jdk-14/bin/java
+export arcan_jar=/home/p284098/jars/Arcan2-cli-2.2.0-beta-jar-with-dependencies.jar
+
+ruby main.rb ~/dataset/java-projects-mini.csv ~/data/repos ~/data/output ~/data/filters ~/data --runGit --runArcan --not-shallow
