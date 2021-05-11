@@ -10,4 +10,4 @@
 #SBATCH --mem=64000
 
 module restore trackas
-ruby main.rb ~/data/java-projects.csv ~/data/repos ~/data/output ~/data/filters
+ruby main.rb ~/data/java-projects.csv ~/data/repos ~/data/output ~/data/filters ~/data --runGit --runArcan --not-shallow
