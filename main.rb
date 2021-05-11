@@ -104,7 +104,7 @@ git_projects.each_row do |p|
                 `mv #{log_file} #{logs_dir_succ}/#{folder_name}.arcan.log`
                 success << folder_name
             else
-                puts "Arcan failed to analyse #{folder_name}"
+                puts "Arcan failed to analyse #{folder_name} (exit code: #{$?.exitstatus})"
                 `rm -rf #{output_dir}/arcanOutput/#{folder_name}`
                 `mv #{log_file} #{logs_dir_fail}/#{folder_name}.arcan.log`
                 failed << folder_name
