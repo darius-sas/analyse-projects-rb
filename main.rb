@@ -59,6 +59,7 @@ git_projects = projects.filter_rows { |r|
 }
 
 success = Concurrent::Array.new
+partial_failure = Concurrent::Array.new
 failed = Concurrent::Array.new
 already_analysed = Concurrent::Array.new
 
@@ -108,6 +109,9 @@ git_projects.each_row do |p|
                 puts "Arcan failed to analyse #{folder_name} (exit code: #{$?.exitstatus})"
                 `rm -rf #{output_dir}/arcanOutput/#{folder_name}`
                 `mv #{log_file} #{logs_dir_fail}/#{folder_name}.arcan.log`
+                if $?.exitstatus != 255
+                    partial_failure << folder_name
+                end
                 failed << folder_name
             end
         else
@@ -124,8 +128,20 @@ pool.wait_for_termination
 puts "-------------------"
 puts "Summary:" 
 puts " - Successful: #{success.length}"
-puts " - Failed: #{failed.length}"
+puts " - Failed: #{failed.length} (of which #{partial_failure.length} were partial)"
 puts " - Already analysed: #{already_analysed.length}"
 puts "-------------------"
 puts "=> Analysed corpus: #{success.length + already_analysed.length}"
 puts "=> Total projects: #{n_projects}"
+
+File.open("#{logs_dir}/failed.log", "w+") do |f| 
+    f.puts(failed)
+end
+
+File.open("#{logs_dir}/successful.log", "w+") do |f| 
+    f.puts(success)
+end
+
+File.open("#{logs_dir}/partial.log", "w+") do |f| 
+    f.puts(partial)
+end
