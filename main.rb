@@ -90,8 +90,9 @@ git_projects.each_row do |p|
             puts "Running Arcan on #{project_dir}"
             log_file = "#{output_dir}/#{folder_name}.arcan.log"
 
-            default_branch = `git --git-dir=#{project_dir}/.git remote show origin | grep "HEAD branch" | cut -d ":" -f 2`
+            default_branch = `git branch -vv | grep -Po "^[\s\*]*\K[^\s]*(?=.*$(git branch -r | grep -Po "HEAD -> \K.*$").*)"`
             default_branch.strip!
+            default_branch = "master" if default_branch.empty?
             if is_cpp
                 run_arcan_CPP(folder_name, project_dir, output_dir, filters_dir, includes_dir, log_file)           
             else
