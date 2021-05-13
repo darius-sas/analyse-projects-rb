@@ -36,7 +36,7 @@ def git_clone(link, project_dir, log_file, shallow)
 end
 
 if ARGV.length <= 5
-    puts "Usage <projects-file> <repos-dir> <output-dir> <filters-dir> <includes-dir> [--runArcan] [--runGit] [--not-shallow] [--CPP]"
+    puts "Usage <projects-file> <repos-dir> <output-dir> <filters-dir> <includes-dir> [--runArcan] [--runGit] [--not-shallow] [--CPP] [--disable-csv-output]"
     exit 0
 else
     projects_file = ARGV[0]
@@ -48,6 +48,7 @@ else
     run_git = ARGV.include? "--runGit";
     is_cpp = ARGV.include? "--CPP";
     shallow = !ARGV.include?("--not-shallow");
+    disable_csv_output = ARGV.include? "--disable-csv-output"
 end
 
 
@@ -99,7 +100,7 @@ git_projects.each_row do |p|
             if is_cpp
                 run_arcan_CPP(folder_name, project_dir, output_dir, filters_dir, includes_dir, log_file)           
             else
-                run_arcan_JAVA(folder_name, project_dir, output_dir, filters_dir, default_branch, log_file, true)
+                run_arcan_JAVA(folder_name, project_dir, output_dir, filters_dir, default_branch, log_file, disable_csv_output)
             end
 
             complete_success = $?.success?
