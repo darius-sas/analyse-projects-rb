@@ -5,13 +5,14 @@ require 'concurrent'
 
 JAVA = ENV["arcan_java"].nil? ? "java" : ENV["arcan_java"]
 ARCAN_JAR = ENV["arcan_jar"] # Change the value of this variable to the path to your jar, or set the env variable "arcan_jar" in your shell using export
+ARCAN_MEM = ENV["arcan_mem"].nil? "3G" : ENV["arcan_mem"]
 
 
 def run_arcan_CPP(project_name, input_dir, output_dir, filters_dir, includes_dir, log_file)
     branch = "HEAD"
     filters_file = "#{filters_dir}/#{project_name}.yaml"
     filters_file = "#{filters_dir}/all-projects.yaml" unless File.exist? filters_file
-    arcan_command = "#{JAVA} -jar #{ARCAN_JAR} analyse -p #{project_name} -i #{input_dir} -o #{output_dir} -l CPP --branch #{branch} --filtersFile #{filters_file} --auxiliaryPaths #{includes_dir} --all -v output.dependencyGraph=true"
+    arcan_command = "#{JAVA} -Xmx#{ARCAN_MEM} -jar #{ARCAN_JAR} analyse -p #{project_name} -i #{input_dir} -o #{output_dir} -l CPP --branch #{branch} --filtersFile #{filters_file} --auxiliaryPaths #{includes_dir} --all -v output.dependencyGraph=true"
     `echo "#{arcan_command}" > #{log_file}`
     return `#{arcan_command} 2>&1 >> #{log_file}`
 end
@@ -22,7 +23,7 @@ def run_arcan_JAVA(project_name, input_dir, output_dir, filters_dir, branch, log
     filters_file = "#{filters_dir}/#{project_name}.yaml"
     filters_file = "#{filters_dir}/all-projects.yaml" unless File.exist? filters_file
     #arcan_command = "java -jar #{ARCAN_JAR} analyse -p #{project_name} -i #{input_dir} -o #{output_dir} -l JAVA --branch #{branch} --filtersFile #{filters_file} --all -v output.dependencyGraph=true metrics.smells=#{metrics}"
-    arcan_command = "#{JAVA} -jar #{ARCAN_JAR} analyse -p #{project_name} -i #{input_dir} -o #{output_dir} -l JAVA --branch #{branch} --filtersFile #{filters_file} --all -v output.dependencyGraph=true metrics.smells=#{metrics} -e --startDate 1-1-1 --endDate 2021-12-12 --intervalDays 0"
+    arcan_command = "#{JAVA} -Xmx#{ARCAN_MEM} -jar #{ARCAN_JAR} analyse -p #{project_name} -i #{input_dir} -o #{output_dir} -l JAVA --branch #{branch} --filtersFile #{filters_file} --all -v output.dependencyGraph=true metrics.smells=#{metrics} -e --startDate 1-1-1 --endDate 2021-12-12 --intervalDays 0"
     `echo "#{arcan_command}" > #{log_file}`
     return `#{arcan_command} 2>&1 >> #{log_file}`
 end
