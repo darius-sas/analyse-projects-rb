@@ -5,10 +5,10 @@ require 'concurrent'
 
 JAVA = ENV["arcan_java"].nil? ? "java" : ENV["arcan_java"]
 ARCAN_JAR = ENV["arcan_jar"] # Change the value of this variable to the path to your jar, or set the env variable "arcan_jar" in your shell using export
-ARCAN_MEM = ENV["arcan_mem"].nil? "3G" : ENV["arcan_mem"]
+ARCAN_MEM = ENV["arcan_mem"].nil? ? "3G" : ENV["arcan_mem"]
 
 
-def run_arcan_CPP(project_name, input_dir, output_dir, filters_dir, includes_dir, log_file)
+def run_arcan_CPP(project_name, input_dir, output_dir, filters_dir, includes_dir, log_file, disable_csv_output = false)
     branch = "HEAD"
     filters_file = "#{filters_dir}/#{project_name}.yaml"
     filters_file = "#{filters_dir}/all-projects.yaml" unless File.exist? filters_file
@@ -17,13 +17,14 @@ def run_arcan_CPP(project_name, input_dir, output_dir, filters_dir, includes_dir
     return `#{arcan_command} 2>&1 >> #{log_file}`
 end
 
-def run_arcan_JAVA(project_name, input_dir, output_dir, filters_dir, branch, log_file)
+def run_arcan_JAVA(project_name, input_dir, output_dir, filters_dir, branch, log_file, disable_csv_output = false)
     metrics = "AffectedClassesRatio,AffectedComponentType,AfferentAffectedRatio,CentreComponent,Shape,EfferentAffectedRatio,InstabilityGap,LOCDensity,NumberOfEdges,Size,PageRankWeighted,Strength,Support,TotalNumberOfChanges"
     metrics = "all"
     filters_file = "#{filters_dir}/#{project_name}.yaml"
     filters_file = "#{filters_dir}/all-projects.yaml" unless File.exist? filters_file
     #arcan_command = "java -jar #{ARCAN_JAR} analyse -p #{project_name} -i #{input_dir} -o #{output_dir} -l JAVA --branch #{branch} --filtersFile #{filters_file} --all -v output.dependencyGraph=true metrics.smells=#{metrics}"
-    arcan_command = "#{JAVA} -Xmx#{ARCAN_MEM} -jar #{ARCAN_JAR} analyse -p #{project_name} -i #{input_dir} -o #{output_dir} -l JAVA --branch #{branch} --filtersFile #{filters_file} --all -v output.dependencyGraph=true metrics.smells=#{metrics} -e --startDate 1-1-1 --endDate 2021-12-12 --intervalDays 0"
+    disable_csv_output_str = "output.metrics=false output.membership=false output.characteristics=false output.affected=false" if disable_csv_output
+    arcan_command = "#{JAVA} -Xmx#{ARCAN_MEM} -jar #{ARCAN_JAR} analyse -p #{project_name} -i #{input_dir} -o #{output_dir} -l JAVA --branch #{branch} --filtersFile #{filters_file} --all -v output.dependencyGraph=true metrics.smells=#{metrics} -e --startDate 1-1-1 --endDate 2021-12-12 --intervalDays 0 #{disable_csv_output}"
     `echo "#{arcan_command}" > #{log_file}`
     return `#{arcan_command} 2>&1 >> #{log_file}`
 end
@@ -98,7 +99,7 @@ git_projects.each_row do |p|
             if is_cpp
                 run_arcan_CPP(folder_name, project_dir, output_dir, filters_dir, includes_dir, log_file)           
             else
-                run_arcan_JAVA(folder_name, project_dir, output_dir, filters_dir, default_branch, log_file)
+                run_arcan_JAVA(folder_name, project_dir, output_dir, filters_dir, default_branch, log_file, true)
             end
 
             complete_success = $?.success?
