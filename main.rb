@@ -22,9 +22,10 @@ def run_arcan_JAVA(project_name, input_dir, output_dir, filters_dir, branch, log
     metrics = "all"
     filters_file = "#{filters_dir}/#{project_name}.yaml"
     filters_file = "#{filters_dir}/all-projects.yaml" unless File.exist? filters_file
-    #arcan_command = "java -jar #{ARCAN_JAR} analyse -p #{project_name} -i #{input_dir} -o #{output_dir} -l JAVA --branch #{branch} --filtersFile #{filters_file} --all -v output.dependencyGraph=true metrics.smells=#{metrics}"
+    repo = "#{output_dir}/#{project_name}/db"
+    `mkdir -p #{repo}`
     disable_csv_output_str = "output.metrics=false output.membership=false output.characteristics=false output.affected=false" if disable_csv_output
-    arcan_command = "#{JAVA} -Xmx#{ARCAN_MEM} -jar #{ARCAN_JAR} analyse -p #{project_name} -i #{input_dir} -o #{output_dir} -l JAVA --branch #{branch} --filtersFile #{filters_file} --all -v output.dependencyGraph=true metrics.smells=#{metrics} -e --startDate 1-1-1 --endDate 2021-12-12 --intervalDays 0 #{disable_csv_output}"
+    arcan_command = "#{JAVA} -Xmx#{ARCAN_MEM} -jar #{ARCAN_JAR} analyse -p #{project_name} -i #{input_dir} -o #{output_dir} -l JAVA --branch #{branch} --filtersFile #{filters_file} --all -v output.dependencyGraph=true metrics.smells=#{metrics} -e --startDate 1-1-1 --endDate 2021-12-12 --intervalDays 28 #{disable_csv_output_str} general.projectRepository.instance=LIGHT_DATABASE -r #{repo}"
     `echo "#{arcan_command}" > #{log_file}`
     return `#{arcan_command} 2>&1 >> #{log_file}`
 end
@@ -98,7 +99,7 @@ git_projects.each_row do |p|
             default_branch.strip!
             default_branch = "master" if default_branch.empty?
             if is_cpp
-                run_arcan_CPP(folder_name, project_dir, output_dir, filters_dir, includes_dir, log_file)           
+                run_arcan_CPP(folder_name, project_dir, output_dir, filters_dir, includes_dir, log_file,disable_csv_output)           
             else
                 run_arcan_JAVA(folder_name, project_dir, output_dir, filters_dir, default_branch, log_file, disable_csv_output)
             end

@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=mega-dataset
 #SBATCH --mail-type=END
-#SBATCH --time=5-00:00:00
+#SBATCH --time=10-00:00:00
 #SBATCH --mail-user=d.d.sas@rug.nl
 #SBATCH --output=job-%j.log
 #SBATCH --partition=regular
