@@ -14,7 +14,7 @@ merge.results <- function(dir, pattern){
   for (entry in projectDirs) {
     print(paste0("Reading ", entry))
     df.pr <- read.table(paste(dir, entry, sep = "/"), header = T, sep = ",")
-    df <- rbind(df, df.pr)
+    df <- bind_rows(df, df.pr)
   }
   return(df)
 }
@@ -65,26 +65,26 @@ en.dataset = file.path(output.dir, "entity-tracking.csv")
 if(smells){
   file.remove0(sc.dataset)
   df <- merge.results(results.dir, "*smell-characteristics.csv")
-  write.csv(df, file = sc.dataset, row.names = F)
+  write.csv(df, file = sc.dataset, row.names = F, quote = T)
 }
 if(sizes){
   file.remove0(ps.dataset)
   df.projects <- merge.results(results.dir, "*project-sizes.csv")
-  write.csv(df.projects, file = ps.dataset, row.names = F)
+  write.csv(df.projects, file = ps.dataset, row.names = F, quote = T)
 }
 if(components){
   file.remove0(cc.dataset)
   df.components <- merge.results(results.dir, "*component-metrics.csv")
-  write.csv(df.components, file = cc.dataset, row.names = F)
+  write.csv(df.components, file = cc.dataset, row.names = F, quote = T)
 }
 if(affected){
   file.remove0(af.dataset)
   df.affected <- merge.results(results.dir, "*smell-affects.csv")
-  write.csv(df.affected, file = af.dataset, row.names = F)
+  write.csv(df.affected, file = af.dataset, row.names = F, quote = T)
 }
 if(entity){
   file.remove0(en.dataset)
   df.entity <- merge.results(results.dir, "*entity-tracking.csv")
-  write.csv(df.entity, file = en.dataset, row.names = F)
+  write.csv(df.entity, file = en.dataset, row.names = F, quote = T)
 }
 
