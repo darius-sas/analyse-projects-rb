@@ -1,5 +1,6 @@
 scanners:
 - startDate: '0001-01-01'
   endDate: '9999-01-01'
-  include: ['{**/src,src}/main/**', '{**/src,src}/java/**', src/**]
+  include: ['{**/src,src}/main/**', '{**/src,src}/java/**', src/**, 
+  '**/src/**', '**/src']
   exclude: ['{**/src,src}/test/**', '*testing/**', '*-test*/**', test/**, '*examples/**']

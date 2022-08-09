@@ -3,29 +3,14 @@
 require 'daru'
 require 'concurrent'
 
-JAVA = ENV["arcan_java"].nil? ? "java" : ENV["arcan_java"]
-ARCAN_JAR = ENV["arcan_jar"] # Change the value of this variable to the path to your jar, or set the env variable "arcan_jar" in your shell using export
-ARCAN_MEM = ENV["arcan_mem"].nil? ? "3G" : ENV["arcan_mem"]
+ARCAN_COMMAND = '/home/fenn/git/arcan-2/arcan-cli/target/arcan.sh'
+ARCAN_MEMORY='3G'
 
-
-def run_arcan_CPP(project_name, input_dir, output_dir, filters_dir, includes_dir, log_file, disable_csv_output = false)
-    branch = "HEAD"
+def call_arcan(project_name, input_dir, output_dir, filters_dir, branch, language, log_file)
     filters_file = "#{filters_dir}/#{project_name}.yaml"
     filters_file = "#{filters_dir}/all-projects.yaml" unless File.exist? filters_file
-    arcan_command = "#{JAVA} -Xmx#{ARCAN_MEM} -jar #{ARCAN_JAR} analyse -p #{project_name} -i #{input_dir} -o #{output_dir} -l CPP --branch #{branch} --filtersFile #{filters_file} --auxiliaryPaths #{includes_dir} --all -v output.dependencyGraph=true"
-    `echo "#{arcan_command}" > #{log_file}`
-    return `#{arcan_command} 2>&1 >> #{log_file}`
-end
-
-def run_arcan_JAVA(project_name, input_dir, output_dir, filters_dir, branch, log_file, disable_csv_output = false)
-    metrics = "AffectedClassesRatio,AffectedComponentType,AfferentAffectedRatio,CentreComponent,Shape,EfferentAffectedRatio,InstabilityGap,LOCDensity,NumberOfEdges,Size,PageRankWeighted,Strength,Support,TotalNumberOfChanges"
-    metrics = "all"
-    filters_file = "#{filters_dir}/#{project_name}.yaml"
-    filters_file = "#{filters_dir}/all-projects.yaml" unless File.exist? filters_file
-    repo = "#{output_dir}/#{project_name}/db"
-    `mkdir -p #{repo}`
-    disable_csv_output_str = "output.metrics=false output.membership=false output.characteristics=false output.affected=false" if disable_csv_output
-    arcan_command = "#{JAVA} -Xmx#{ARCAN_MEM} -jar #{ARCAN_JAR} analyse -p #{project_name} -i #{input_dir} -o #{output_dir} -l JAVA --branch #{branch} --filtersFile #{filters_file} --all -v output.dependencyGraph=true metrics.smells=#{metrics} -e --startDate 1-1-1 --endDate 2021-12-12 --intervalDays 28 #{disable_csv_output_str} general.projectRepository.instance=LIGHT_DATABASE -r #{repo}"
+    output = "output.writeSmellCharacteristics=true output.writeComponentMetrics=true output.writeAffected=false output.writeEntities=true output.writeProjectMetrics=true"
+    arcan_command = "export JAVA_MEMORY=#{ARCAN_MEMORY} && #{ARCAN_COMMAND} analyse -p #{project_name} -i #{input_dir} -o #{output_dir} -l #{language} --branch #{branch} --filtersFile #{filters_file} --all -e --startDate 1-1-1 --endDate 2022-12-12 --intervalDays 180 -t #{output}"
     `echo "#{arcan_command}" > #{log_file}`
     return `#{arcan_command} 2>&1 >> #{log_file}`
 end
@@ -36,19 +21,18 @@ def git_clone(link, project_dir, log_file, shallow)
     return `git clone --progress #{shallow_str} #{link} #{project_dir} 2> #{log_file}`
 end
 
-if ARGV.length <= 5
-    puts "Usage <projects-file> <repos-dir> <output-dir> <filters-dir> <includes-dir> [--runArcan] [--runGit] [--not-shallow] [--CPP] [--disable-csv-output]"
+if ARGV.length <= 4
+    puts "Usage <projects-file> <repos-dir> <output-dir> <filters-dir> [--runArcan] [--runGit] [--not-shallow] [--delete-repos]"
     exit 0
 else
     projects_file = ARGV[0]
     projects_dir = ARGV[1]
     output_dir = ARGV[2]
     filters_dir = ARGV[3]
-    includes_dir = ARGV[4]
     run_arcan = ARGV.include? "--runArcan";
     run_git = ARGV.include? "--runGit";
-    is_cpp = ARGV.include? "--CPP";
     shallow = !ARGV.include?("--not-shallow");
+    delete_repos = ARGV.include? "--delete-repos"
     disable_csv_output = ARGV.include? "--disable-csv-output"
 end
 
@@ -71,6 +55,7 @@ n_projects = git_projects.size
 logs_dir = "#{output_dir}/logs"
 logs_dir_fail = "#{logs_dir}/failed"
 logs_dir_succ = "#{logs_dir}/success"
+`rm -rf #{logs_dir}`
 `mkdir -p #{logs_dir_succ}`
 `mkdir -p #{logs_dir_fail}`
 
@@ -87,23 +72,21 @@ git_projects.each_row do |p|
             git_clone(link, project_dir, log_file, shallow)
             puts "Git successfully cloned #{link}" if $?.success?
             puts "Git failed to clone #{link}" if not $?.success?
-        else
-            puts "Git repo already cloned #{project_dir}"
+        elsif Dir.exist? project_dir and run_git
+            puts "Git repo already cloned: #{project_dir}"
         end
         
-        if Dir.exists? project_dir and Dir["#{output_dir}/arcanOutput/#{folder_name}"].empty? and run_arcan
-            puts "Running Arcan on #{project_dir}"
+        partial_failure = []
+        if Dir.exists? "#{output_dir}/arcanOutput/#{folder_name}" and !Dir["#{output_dir}/arcanOutput/#{folder_name}"].empty?
+            puts "Project #{folder_name} was already analysed"
+            already_analysed << folder_name
+        elsif Dir.exists? project_dir and run_arcan
             log_file = "#{output_dir}/#{folder_name}.arcan.log"
-
-            default_branch = `git branch -vv | grep -Po "^[\s\*]*\K[^\s]*(?=.*$(git branch -r | grep -Po "HEAD -> \K.*$").*)"`
-            default_branch.strip!
-            default_branch = "master" if default_branch.empty?
-            if is_cpp
-                run_arcan_CPP(folder_name, project_dir, output_dir, filters_dir, includes_dir, log_file,disable_csv_output)           
-            else
-                run_arcan_JAVA(folder_name, project_dir, output_dir, filters_dir, default_branch, log_file, disable_csv_output)
-            end
-
+            language = p['language']
+            default_branch = p['project.branch']
+            puts "Running Arcan on #{project_dir} (#{language}, #{default_branch})"
+            call_arcan(folder_name, project_dir, output_dir, filters_dir, default_branch, language, log_file)
+            
             complete_success = $?.success?
             if complete_success
                 puts "Arcan successfully analysed #{folder_name}"
@@ -118,9 +101,10 @@ git_projects.each_row do |p|
                 end
                 failed << folder_name
             end
-        else
-            puts "Project #{folder_name} was already analysed"
-            already_analysed << folder_name
+        end
+        if delete_repos
+            puts "Deleting project's directory #{project_dir}"
+            `rm -rf #{project_dir}`
         end
         puts "Progress: #{success.length + failed.length + already_analysed.length}/#{n_projects}"
     end
@@ -147,5 +131,5 @@ File.open("#{logs_dir}/successful.log", "w+") do |f|
 end
 
 File.open("#{logs_dir}/partial.log", "w+") do |f| 
-    f.puts(partial)
+    f.puts(partial_failure)
 end
